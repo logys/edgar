@@ -1,4 +1,64 @@
-\documentclass{book}
+\documentclass[b5paper]{book}
+\usepackage[spanish, mexico]{babel}
+\title{Robot Móvil para rehabilitación}
+\date{}
+\author{Luis Antonio Sánchez Monterde}
 
 \begin{document}
+\maketitle
+
+\thispagestyle{empty}
+\chapter*{
+\pagenumbering{Roman} % para comenzar la numeracion de paginas en numeros romanos
+\setcounter{page}{3}
+\begin{flushright}
+\textit{Dedicado a mi familia}
+\end{flushright}}
+
+
+\chapter*{Agradecimientos} % si no queremos que añada la palabra ``Capitulo''
+\addcontentsline{toc}{chapter}{Agradecimientos} % si queremos que aparezca en el índice
+\markboth{AGRADECIMIENTOS}{AGRADECIMIENTOS} % encabezado
+ 
+A mis amigos del pasado, del presente y del futuro.
+
+\chapter*{Resumen} % si no queremos que añada la palabra ``Capitulo''
+\addcontentsline{toc}{section}{Resumen} % si queremos que aparezca en el índice
+\markboth{RESUMEN}{RESUMEN} % encabezado
+
+Una bonita historia
+
+
+\tableofcontents
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Lista de figuras} % para que aparezca en el indice de contenidos
+
+\listoffigures % indice de figuras
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Lista de tablas} % para que aparezca en el indice de contenidos
+\listoftables % indice de tablas
+
+
+
+\chapter{Introducción}\label{cap.introduccion}
+\pagenumbering{arabic} % para empezar la numeración con números
+Desafortunadamente existen muchas formas de perder la movilidad en brazos y 
+manos, desde accidentes hasta degeneraciones neurológicas. Existen tratamientos 
+para ayudar en la recuperación motriz, la intención es desarrollar un robot 
+móvil que ayude en las terapias de recuperación. La función del robot requiere 
+mover los miembros superiores dañados en un secuencia de trayectorias. La
+repetición continua de ejercicios de movimiento, ha demostrado ser de útilidad
+en la recuperación de la movilidad de dichos miembros.
+
+Para lograrlo hago uso del la metodología RUP, Re Unified Process, 
+desarrollada en el mundo de software, por Ivar Jacobson, es una metodología 
+del tipo plan driven o manejada por plan, la intensión es dividir el proyecto 
+en una pequeña cascada y posteriormente repetir la cascada hasta que los
+objetivos se alcancen.
+
+\include{objetivos}
+\include{metodologia}
+\include{analisis}
+
+
 \end{document}
