@@ -1,0 +1,78 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {spanish}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Agradecimientos}{V}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Resumen}{VII}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Lista de figuras}{XI}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Lista de tablas}{XIII}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introducción}{1}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Objetivos}{3}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Objetivo Principal}{3}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Objetivos Específicos}{3}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Metodología}{5}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Dos es mejor que una}{5}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}RUP}{5}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.2}XP}{7}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}¿Porqué no usar una metodología clásica?}{7}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Trazadora. Primera iteración}{9}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Requerimientos}{10}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}El movimiento}{10}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}Lenguaje de programación}{11}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Análisis}{11}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Selección de robot}{11}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Diseño}{12}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Arquitectura Electrónica}{12}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Selección de propulsor}{12}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Selección de dispositivo programable}{14}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Selección de fuente de poder}{14}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Control del motor}{14}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}Arquitectura de software}{15}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.3}Arquitectura mecánica}{17}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Implementación}{17}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.1}Implementación mecánica}{19}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.2}Implementación electrónica}{19}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.3}Implementación del programa}{19}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Robot}{19}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Motor}{22}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Botón}{23}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Timer}{25}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Main}{25}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Pruebas}{26}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Objetivos refinados}{27}{}%

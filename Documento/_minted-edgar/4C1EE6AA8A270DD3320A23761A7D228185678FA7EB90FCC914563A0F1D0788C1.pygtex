@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}ifndef MOTORDC\PYGZus{}H}
+\PYG{c+cp}{\PYGZsh{}define MOTORDC\PYGZus{}H}
+
+\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZdq{}motor.h\PYGZdq{}}
+
+\PYG{k}{class} \PYG{n+nc}{MotorDc} \PYG{o}{:} \PYG{k}{public} \PYG{n}{Motor}\PYG{p}{\PYGZob{}}
+	\PYG{k}{public}\PYG{o}{:}
+		\PYG{n}{MotorDc}\PYG{p}{(}\PYG{k+kt}{short} \PYG{k}{const} \PYG{n}{pin}\PYG{p}{);}
+		\PYG{k}{virtual} \PYG{k+kt}{void} \PYG{n}{on}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)} \PYG{k}{override}\PYG{p}{;}
+		\PYG{k}{virtual} \PYG{k+kt}{void} \PYG{n}{off}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)} \PYG{k}{override}\PYG{p}{;}
+\PYG{p}{\PYGZcb{};}
+\PYG{c+cp}{\PYGZsh{}endif}\PYG{c+c1}{// MOTORDC\PYGZus{}H}
+\end{Verbatim}

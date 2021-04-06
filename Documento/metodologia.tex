@@ -1,0 +1,131 @@
+\chapter{Metodología}
+La metodología elegida tiene un impacto fundamental en el desarrollo del proyecto,
+existen diferentes y variadas opciones, personalmente no fue hasta que comencé a 
+indagar en este tema que me comencé a sentir seguro de mi trabajo, realizar 
+cualquier proyecto era más cuestión de suerte y ganas que de puesta en 
+practica del conocimiento. De las muchas opciones, me decanto por dos:
+\begin{description}
+	\item[RUP] Rational Unified Process.
+	\item[XP] Extreme Programming.
+\end{description}
+\section{Dos es mejor que una}
+¿Se puede desarrollar un proyecto con dos metodologías?, la respuesta depende del
+tipo de proyecto, en este caso la respuesta es un contundente si, el proyecto es
+muy amplio implica partes mecánicas, eléctricas y de programación, mi propuesta 
+es utilizar \emph{RUP} para las partes mecánicas y eléctricas y \emph{XP} para 
+la programación.
+\subsection{RUP}
+Dentro de las metodologías hay dos polos, las ágiles y las guiadas por plan, 
+RUP
+es una metodología guiada por plan, sin embargo no está en un extremo opuesto a
+las ágiles.
+
+RUP consiste en una serie de pasos bien definidos, esta diseñada para abarcar 
+proyectos muy grandes, proyectos que implican colaboraciones entre países o entre
+empresas transnacionales, mi proyecto es pequeño en comparación, sin embargo 
+considero adecuado aprovechar varias de las características de esta metodología,
+los siguientes escalones son el esqueleto del proceso de desarrollo:
+\begin{description}
+	\item[Requisitación] En este primer paso estamos en el peor de los mundos, pues
+		tenemos poca información del problema y una especificación pobre.
+		Hacer una toma de requisitos en la metodología RUP, implica 
+		entender el lenguaje del dominio, no es lo mismo hablar con un
+		médico que con
+		un agricultor o un chef de cocina, entender a quien tiene el 
+		problema en es un paso fundamental para poder diseñar
+		una solución que satisfaga sus necesidades, no entender el 
+		lenguaje implicaría una serie de adivinanzas desafortunadas.
+
+		Cuando el entendimiento del lenguaje es suficiente, la prioridad
+		es encontrar los requerimientos, nuevamente los requerimientos 
+		vienen de parte de quien requiere la solución.
+	\item[Análisis] Con los requerimientos definidos, procedemos a analizarlos,
+		el proceso de análisis consiste en transformar los
+		requerimientos del lenguaje del dominio a el lenguaje de la 
+		ingeniería, cada requerimiento 
+		puede abarcar varias áreas, para el robot móvil implica 
+		mecánica, electronica y programación. 
+	\item[Diseño] Cada área de la ingeniería tiene una forma de diseño propia,
+		en el caso de la mecánica y la electronica consiste en crear la 
+		arquitectura que satisfaga el requerimiento y posteriormente 
+		hacer los cálculos de los parámetros que la
+		conforman. En el caso de la programación implica definir la 
+		arquitectura y encontrar las entidades que la satisfagan, la 
+		granularidad propia del software dificulta encontrar tales 
+		entidades. 
+	\item[Implemetación] La implementación es el trabajo pesado y manual, 
+		aquí es donde se ensamblan los componentes, se alambran los 
+		circuitos y se escribe el código, es la etapa más lenta de todas,
+		el punto de hacer una metodología es establecer las condiciones
+		necesarias
+		para que esta etapa pueda fluir lo más suave posible.
+	\item[Pruebas] Realizada la implementación se debe verificar que cumpla 
+		con las expectativas, si no lo hicieran debe repetirse el proceso
+		nuevamente, no se trata de iniciar desde cero, si no de corregir
+		lo que se erró en el proceso.
+\end{description}
+
+La intensión es realizar esta cascada de pasos para cada uno de los requisitos,
+las veces que sean necesarias hasta que se alcancen los mismos.
+En las primeras iteraciones la requisición se llevaran la mayor parte del tiempo,
+y con forme avancen las iteraciones irán perdiendo protagonismo pues cada vez 
+estarán más refinados, en las ultimas iteraciones las pruebas se llevarán el
+protagonismo.
+
+\subsection{XP}
+La metodología \emph{Extreme Programming} (XP), es una de las revolucionarias
+de los últimos
+tiempos, a diferencia de de RUP, donde se separan las fases de desarrollo, en 
+XP el análisis, diseño, pruebas e implementación se van haciendo al mismo tiempo,
+XP es el padre de las modernas SCRUM y KANBAN entre muchas otras, está diseñada
+para proyectos medianos y pequeños, pero se requiere una habilidad técnica muy alta
+para llévala acabo además de que solo se recomienda para proyectos de software.
+
+La técnica insignia de las metodologías ágiles es el diseño guiado por pruebas
+TDD\cite{tdd}, Test Drive Development en ingles, esta técnica consiste en 
+escribir la prueba primero y después 
+escribir solo el código necesario para que la prueba pase, la premisa del TDD
+es: \emph{la mejor forma de corregir bugs es evitar introducirlos}.
+Al realizar las pruebas primero se obliga a escribir código correcto, gracias a 
+las multiples herramientas existentes sobre pruebas unitarias, es posible 
+automatizar el proceso, personalmente he adoptado el TDD y ya no
+concibo programar de otra forma, aunque reconozco que proceso fue traumático,
+tuve que literalmente olvidar lo aprendido y volver a aprender con nuevas
+directivas.
+
+\section{¿Porqué no usar una metodología clásica?}
+Hay varias razones. El proceso de desarrollo de un proyecto según el PmBok es
+el siguiente
+\begin{enumerate}
+	\item Inicio.- Definir el proyecto.
+	\item Planificación.- Se establecen los objetivos, se analizan y se
+		diseña la solución.
+	\item Implementación
+	\item Medición de desempeño.
+	\item Cierre.
+\end{enumerate}
+
+Ciertamente no difiere mucho de RUP, sin embargo no implica iteración en ningún
+momento, definir el proyecto al inicio es muy difícil cuando de proyectos 
+innovadores se trata, lo más probable es que vamos a fallar, pienso que es más
+valioso aprender a lidiar con los cambios que planificar un proceso perfecto. 
+El diseño temprano e implementación tardía implica una rigidez enorme, si
+se añadieran requisitos obligarían a rediseñar todo el proyecto. ¿Y la planificación?, 
+¿acaso no es bueno planificar?, ami parecer planificar a corto plazo es bueno, 
+planificar grandes cantidades de trabajo es un ejercicio inútil.
+
+--Vamos a diseñar este proyecto y en dos meses el 5 de Junio comenzamos a 
+implementarlo.--
+
+Permítame reírme de sus planes.
+
+¿Qué pasa si una vez implementado el proyecto no pasa las pruebas?, con suerte 
+los cambios para pasar las pruebas serán lo suficientemente pequeños para poder
+desplegarlos, pero si no es así, si por alguna razón se nos escapo un detalle
+en el diseño o si el cliente añade una nueva característica, entonces sera el
+momento adecuado para hechar a andar nuestra imaginación para inventar las
+escusas más creativas, pues implementar los cambios requerirán un proceso 
+lento y doloroso.
+
+El mundo ideal no existe, la experiencia me indica que las cosas siempre 
+cambian, una metodología flexible es la que decido utilizar.  

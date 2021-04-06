@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZdq{}timer\PYGZus{}delay.h\PYGZdq{}}
+\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZlt{}util/delay.h\PYGZgt{}}
+
+\PYG{k+kt}{void} \PYG{n}{Timer\PYGZus{}delay}\PYG{o}{::}\PYG{n}{enable}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{unsigned} \PYG{k+kt}{long} \PYG{n}{Timer\PYGZus{}delay}\PYG{o}{::}\PYG{n}{getTime}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+	\PYG{n}{\PYGZus{}delay\PYGZus{}ms}\PYG{p}{(}\PYG{l+m+mi}{1000}\PYG{p}{);}
+	\PYG{k}{return} \PYG{l+m+mi}{1000}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,5 @@
+[1] Config.pm:312> INFO - This is Biber 2.15
+[5] Config.pm:315> INFO - Logfile is 'latex.blg'
+[166] biber:330> INFO - === mar mar 30, 2021, 13:08:49
+[252] Utils.pm:411> ERROR - Cannot find 'latex.bcf'!
+[252] Biber.pm:132> INFO - ERRORS: 1

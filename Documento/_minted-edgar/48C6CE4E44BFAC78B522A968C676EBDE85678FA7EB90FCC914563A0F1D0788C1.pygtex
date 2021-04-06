@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}ifndef MOTOR\PYGZus{}H}
+\PYG{c+cp}{\PYGZsh{}define MOTOR\PYGZus{}H}
+\PYG{k}{class} \PYG{n+nc}{Motor}\PYG{p}{\PYGZob{}}
+	\PYG{k}{public}\PYG{o}{:}
+		\PYG{k}{virtual} \PYG{k+kt}{void} \PYG{n}{on}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+		\PYG{k}{virtual} \PYG{k+kt}{void} \PYG{n}{off}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{p}{\PYGZcb{};}
+\PYG{c+cp}{\PYGZsh{}endif}\PYG{c+c1}{// MOTOR\PYGZus{}H}
+\end{Verbatim}

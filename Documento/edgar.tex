@@ -1,0 +1,101 @@
+\documentclass[b5paper]{book}
+\usepackage[spanish, mexico]{babel}
+\usepackage[pdftex]{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{rotating}
+\usepackage[]{csquotes}
+\usepackage[]{biblatex}
+\usepackage{minted}
+\addbibresource{bibliografia.bib}
+
+\title{Robot Móvil para rehabilitación}
+\date{}
+\author{Luis Antonio Sánchez Monterde}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\begin{document}
+\maketitle
+
+\newcommand{\newschematic}[2]{
+\begin{sidewaysfigure}[p]
+	\noindent\makebox[0.9\textwidth][c]{
+	\includegraphics[width=\textwidth]{#1}}
+	\caption{#2}
+	\label{fig:#2}
+\end{sidewaysfigure}
+}
+\newcommand{\newdraw}[2]{
+\begin{sidewaysfigure}[p]
+	\noindent\makebox[0.9\textwidth][c]{
+	\includegraphics[width=\textwidth]{#1}}
+	\caption{#2}
+	\label{fig:#2}
+\end{sidewaysfigure}
+}
+
+\thispagestyle{empty}
+\chapter*{
+\pagenumbering{Roman} % para comenzar la numeracion de paginas en numeros romanos
+\setcounter{page}{3}
+\begin{flushright}
+\textit{Dedicado a mi familia}
+\end{flushright}}
+
+
+\chapter*{Agradecimientos} % si no queremos que añada la palabra ``Capitulo''
+\addcontentsline{toc}{chapter}{Agradecimientos} % si queremos que aparezca en el índice
+\markboth{AGRADECIMIENTOS}{AGRADECIMIENTOS} % encabezado
+ 
+A mis amigos del pasado, del presente y del futuro.
+
+\chapter*{Resumen} % si no queremos que añada la palabra ``Capitulo''
+\addcontentsline{toc}{section}{Resumen} % si queremos que aparezca en el índice
+\markboth{RESUMEN}{RESUMEN} % encabezado
+
+Una bonita historia
+
+
+\tableofcontents
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Lista de figuras} % para que aparezca en el indice de contenidos
+
+\listoffigures % indice de figuras
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Lista de tablas} % para que aparezca en el indice de contenidos
+\listoftables % indice de tablas
+
+
+
+\chapter{Introducción}\label{cap.introduccion}
+\pagenumbering{arabic} % para empezar la numeración con números
+Desafortunadamente hay muchas formas de perder la movilidad en brazos y 
+manos, desde accidentes hasta degeneraciones neurológicas. Existen tratamientos 
+para ayudar en la recuperación motriz, la intención es desarrollar un robot 
+móvil que ayude en las terapias de recuperación. La función del robot consiste en 
+mover los miembros superiores dañados en un secuencia de trayectorias, la
+repetición continua de ejercicios de movimiento ha demostrado ser de útilidad
+en la recuperación de movilidad.
+
+Para lograrlo hago uso del la metodología RUP, Rational Unified Process \cite{booch}, 
+desarrollada en el mundo de software, por Ivar Jacobson, es una metodología 
+del tipo plan driven o manejada por plan, aunque surgida del software puede ser 
+aplicada también a otros ambientes, no se pretende hacer una implementación completa
+de RUP, se utilizara un pequeño subconjunto de las directivas que considero son 
+suficientes para cumplir con las expectativas del proyecto. La idea es dividir 
+el proyecto 
+en una pequeña cascada de pasos y posteriormente repetir la cascada hasta que los
+objetivos se alcancen.
+
+En concreto se realizara un proceso iterativo e incremental, agregando funcionalidad
+por funcionalidad e integrándolas paso a paso. 
+
+El objetivo clave es cumplir con las expectativas del paciente y medico y para
+hacerlo, tengo la certeza de que esta es la aproximación que dará el mejor resultado.
+
+\include{objetivos}
+\include{metodologia}
+\include{trazadora}
+\printbibliography[title={Bibliografía}]
+\end{document}

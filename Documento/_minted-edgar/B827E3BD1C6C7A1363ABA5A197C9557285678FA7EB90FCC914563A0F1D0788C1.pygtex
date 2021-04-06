@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}ifndef ROBOT\PYGZus{}H}
+\PYG{c+cp}{\PYGZsh{}define ROBOT\PYGZus{}H}
+
+\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZdq{}motor.h\PYGZdq{}}
+\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZdq{}timer.h\PYGZdq{}}
+\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZdq{}button.h\PYGZdq{}}
+
+\PYG{k}{class} \PYG{n+nc}{Robot}\PYG{p}{\PYGZob{}}
+	\PYG{k}{private}\PYG{o}{:}
+		\PYG{n}{Button} \PYG{o}{*} \PYG{n}{button\PYGZus{}}\PYG{p}{;}
+		\PYG{n}{Motor} \PYG{o}{*} \PYG{n}{motor\PYGZus{}}\PYG{p}{;}
+		\PYG{n}{Timer} \PYG{o}{*} \PYG{n}{timer\PYGZus{}}\PYG{p}{;}
+	\PYG{k}{public}\PYG{o}{:}
+		\PYG{n}{Robot}\PYG{p}{(}\PYG{n}{Motor} \PYG{o}{*}\PYG{p}{,} \PYG{n}{Timer} \PYG{o}{*}\PYG{p}{,} \PYG{n}{Button} \PYG{o}{*}\PYG{p}{);}
+		\PYG{k+kt}{void} \PYG{n+nf}{moveFordward}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{);}
+\PYG{p}{\PYGZcb{};}
+\PYG{c+cp}{\PYGZsh{}endif }\PYG{c+c1}{// ROBOT\PYGZus{}H}
+\end{Verbatim}

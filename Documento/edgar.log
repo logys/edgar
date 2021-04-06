@@ -1,0 +1,895 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.12)  6 APR 2021 00:50
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**edgar.tex
+(./edgar.tex
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-12-03> xparse <2020-03-03>
+(/usr/share/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count177
+\c@chapter=\count178
+\c@section=\count179
+\c@subsection=\count180
+\c@subsubsection=\count181
+\c@paragraph=\count182
+\c@subparagraph=\count183
+\c@figure=\count184
+\c@table=\count185
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/10/27 3.51 The Babel package
+
+(/usr/share/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/10/27 3.51 Babel common definitions
+\babel@savecnt=\count186
+\U@D=\dimen139
+\l@babelnohyphens=\language86
+
+(/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count187
+
+(/usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
+\es@quottoks=\toks15
+\es@quotdepth=\count188
+Package babel Info: Making " an active character on input line 561.
+))
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen140
+\Gin@req@width=\dimen141
+)
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+)
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+(/usr/share/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count189
+\rotFPtop=\skip49
+\rotFPbot=\skip50
+\rot@float@box=\box47
+\rot@mess@toks=\toks19
+)
+(/usr/share/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
+
+(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count190
+)
+\csq@reset=\count191
+\csq@gtype=\count192
+\csq@glevel=\count193
+\csq@qlevel=\count194
+\csq@maxlvl=\count195
+\csq@tshold=\count196
+\csq@ltx@everypar=\toks20
+
+(/usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/share/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2020/08/23 v3.15a programmable bibliographies (PK/MW)
+
+(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(/usr/share/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count197
+
+(/usr/share/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count198
+\c@listtotal=\count199
+\c@listcount=\count266
+\c@liststart=\count267
+\c@liststop=\count268
+\c@citecount=\count269
+\c@citetotal=\count270
+\c@multicitecount=\count271
+\c@multicitetotal=\count272
+\c@instcount=\count273
+\c@maxnames=\count274
+\c@minnames=\count275
+\c@maxitems=\count276
+\c@minitems=\count277
+\c@citecounter=\count278
+\c@maxcitecounter=\count279
+\c@savedcitecounter=\count280
+\c@uniquelist=\count281
+\c@uniquename=\count282
+\c@refsection=\count283
+\c@refsegment=\count284
+\c@maxextratitle=\count285
+\c@maxextratitleyear=\count286
+\c@maxextraname=\count287
+\c@maxextradate=\count288
+\c@maxextraalpha=\count289
+\c@abbrvpenalty=\count290
+\c@highnamepenalty=\count291
+\c@lownamepenalty=\count292
+\c@maxparens=\count293
+\c@parenlevel=\count294
+\blx@tempcnta=\count295
+\blx@tempcntb=\count296
+\blx@tempcntc=\count297
+\blx@maxsection=\count298
+\blx@maxsegment@0=\count299
+\blx@notetype=\count300
+\blx@parenlevel@text=\count301
+\blx@parenlevel@foot=\count302
+\blx@sectionciteorder@0=\count303
+\blx@entrysetcounter=\count304
+\blx@biblioinstance=\count305
+\labelnumberwidth=\skip51
+\labelalphawidth=\skip52
+\biblabelsep=\skip53
+\bibitemsep=\skip54
+\bibnamesep=\skip55
+\bibinitsep=\skip56
+\bibparsep=\skip57
+\bibhang=\skip58
+\blx@bcfin=\read3
+\blx@bcfout=\write3
+\blx@langwohyphens=\language87
+\c@mincomprange=\count306
+\c@maxcomprange=\count307
+\c@mincompwidth=\count308
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2020/08/23 v3.15a biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count309
+\c@savedafterword=\count310
+\c@annotator=\count311
+\c@savedannotator=\count312
+\c@author=\count313
+\c@savedauthor=\count314
+\c@bookauthor=\count315
+\c@savedbookauthor=\count316
+\c@commentator=\count317
+\c@savedcommentator=\count318
+\c@editor=\count319
+\c@savededitor=\count320
+\c@editora=\count321
+\c@savededitora=\count322
+\c@editorb=\count323
+\c@savededitorb=\count324
+\c@editorc=\count325
+\c@savededitorc=\count326
+\c@foreword=\count327
+\c@savedforeword=\count328
+\c@holder=\count329
+\c@savedholder=\count330
+\c@introduction=\count331
+\c@savedintroduction=\count332
+\c@namea=\count333
+\c@savednamea=\count334
+\c@nameb=\count335
+\c@savednameb=\count336
+\c@namec=\count337
+\c@savednamec=\count338
+\c@translator=\count339
+\c@savedtranslator=\count340
+\c@shortauthor=\count341
+\c@savedshortauthor=\count342
+\c@shorteditor=\count343
+\c@savedshorteditor=\count344
+\c@labelname=\count345
+\c@savedlabelname=\count346
+\c@institution=\count347
+\c@savedinstitution=\count348
+\c@lista=\count349
+\c@savedlista=\count350
+\c@listb=\count351
+\c@savedlistb=\count352
+\c@listc=\count353
+\c@savedlistc=\count354
+\c@listd=\count355
+\c@savedlistd=\count356
+\c@liste=\count357
+\c@savedliste=\count358
+\c@listf=\count359
+\c@savedlistf=\count360
+\c@location=\count361
+\c@savedlocation=\count362
+\c@organization=\count363
+\c@savedorganization=\count364
+\c@origlocation=\count365
+\c@savedoriglocation=\count366
+\c@origpublisher=\count367
+\c@savedorigpublisher=\count368
+\c@publisher=\count369
+\c@savedpublisher=\count370
+\c@language=\count371
+\c@savedlanguage=\count372
+\c@origlanguage=\count373
+\c@savedoriglanguage=\count374
+\c@pageref=\count375
+\c@savedpageref=\count376
+\shorthandwidth=\skip59
+\shortjournalwidth=\skip60
+\shortserieswidth=\skip61
+\shorttitlewidth=\skip62
+\shortauthorwidth=\skip63
+\shorteditorwidth=\skip64
+\locallabelnumberwidth=\skip65
+\locallabelalphawidth=\skip66
+\localshorthandwidth=\skip67
+\localshortjournalwidth=\skip68
+\localshortserieswidth=\skip69
+\localshorttitlewidth=\skip70
+\localshortauthorwidth=\skip71
+\localshorteditorwidth=\skip72
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
+)
+(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-12-03 L3 programming layer (loader) 
+
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count377
+\l__pdf_internal_box=\box48
+))
+Package biblatex Info: expl3
+(biblatex)             2020-12-03 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+Package biblatex Info: Trying to load expl3 case changing code...
+Package biblatex Info: ... file 'blx-case-expl3.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.def
+(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2020-10-27 L3 Experimental document command parser
+
+(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))
+File: blx-case-expl3 2020/08/23 v3.15a expl3 case changing code for biblatex
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
+\c@textcitecount=\count378
+\c@textcitetotal=\count379
+\c@textcitemaxnames=\count380
+\c@biburlbigbreakpenalty=\count381
+\c@biburlbreakpenalty=\count382
+\c@biburlnumpenalty=\count383
+\c@biburlucpenalty=\count384
+\c@biburllcpenalty=\count385
+\biburlbigskip=\muskip17
+\biburlnumskip=\muskip18
+\biburlucskip=\muskip19
+\biburllcskip=\muskip20
+\c@smartand=\count386
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2020/08/23 v3.15a biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2020/08/23 v3.15a biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count387
+\c@bbx:relatedtotal=\count388
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2020/08/23 v3.15a biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+))
+(/usr/share/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+
+(/usr/share/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+
+(/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count389
+\FV@InFile=\read4
+\FV@TabBox=\box49
+\c@FancyVerbLine=\count390
+\FV@StepNumber=\count391
+\FV@OutFile=\write4
+)
+(/usr/share/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(/usr/share/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+))
+(/usr/share/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count392
+\output=\toks21
+\linenoprevgraf=\count393
+\linenumbersep=\dimen142
+\linenumberwidth=\dimen143
+\c@linenumber=\count394
+\c@pagewiselinenumber=\count395
+\c@LN@truepage=\count396
+\c@internallinenumber=\count397
+\c@internallinenumbers=\count398
+\quotelinenumbersep=\dimen144
+\bframerule=\dimen145
+\bframesep=\dimen146
+\bframebox=\box50
+
+
+LaTeX Warning: Command \@parboxrestore  has changed.
+               Check if current package is valid.
+
+LaTeX Info: Redefining \\ on input line 3056.
+)
+
+Package fvextra Warning: csquotes should be loaded after fvextra, to avoid a wa
+rning from the lineno package on input line 37.
+
+\c@FV@TrueTabGroupLevel=\count399
+\c@FV@TrueTabCounter=\count400
+\FV@TabBox@Group=\box51
+\FV@TmpLength=\skip73
+\c@FV@HighlightLinesStart=\count401
+\c@FV@HighlightLinesStop=\count402
+\FV@LoopCount=\count403
+\FV@NCharsBox=\box52
+\FV@BreakIndent=\dimen147
+\FV@BreakIndentNChars=\count404
+\FV@BreakSymbolSepLeft=\dimen148
+\FV@BreakSymbolSepLeftNChars=\count405
+\FV@BreakSymbolSepRight=\dimen149
+\FV@BreakSymbolSepRightNChars=\count406
+\FV@BreakSymbolIndentLeft=\dimen150
+\FV@BreakSymbolIndentLeftNChars=\count407
+\FV@BreakSymbolIndentRight=\dimen151
+\FV@BreakSymbolIndentRightNChars=\count408
+\c@FancyVerbLineBreakLast=\count409
+\FV@LineBox=\box53
+\FV@LineIndentBox=\box54
+\FV@LineWidth=\dimen152
+) (/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count410
+\calc@Bcount=\count411
+\calc@Adimen=\dimen153
+\calc@Bdimen=\dimen154
+\calc@Askip=\skip74
+\calc@Bskip=\skip75
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count412
+\calc@Cskip=\skip76
+)
+(/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(/usr/share/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(/usr/share/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+
+(/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+(/usr/share/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+runsystem(uname -s > "edgar.w18")...executed.
+
+ (./edgar.w18)
+runsystem(rm -- "edgar.w18")...executed.
+
+)
+(/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count413
+\decimalpart=\count414
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+(/usr/share/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip77
+\fb@frw=\dimen155
+\fb@frh=\dimen156
+\FrameRule=\dimen157
+\FrameSep=\dimen158
+)
+(/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count415
+\float@exts=\toks22
+\float@box=\box55
+\@float@everytoks=\toks23
+\@floatcapt=\box56
+)
+\minted@appexistsfile=\read5
+\minted@bgbox=\box57
+\minted@code=\write5
+\c@minted@FancyVerbLineTemp=\count416
+\c@minted@pygmentizecounter=\count417
+\@float@every@listing=\toks24
+\c@listing=\count418
+)
+runsystem(mkdir -p _minted-edgar)...executed.
+
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'spanish'.
+
+(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+runsystem(which pygmentize && touch edgar.aex)...executed.
+
+runsystem(rm edgar.aex)...executed.
+
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
+8.
+
+(/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) (./edgar.aux
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+ (./objetivos.aux) (./metodologia.aux) (./trazadora.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Info: Redefining \. on input line 18.
+LaTeX Info: Redefining \% on input line 18.
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count419
+\scratchdimen=\dimen159
+\scratchbox=\box58
+\nofMPsegments=\count420
+\nofMParguments=\count421
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count422
+\MPscratchDim=\dimen160
+\MPnumerator=\count423
+\makeMPintoPDFobject=\count424
+\everyMPtoPDFconversion=\toks26
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package biblatex Info: Trying to load language 'spanish'...
+Package biblatex Info: ... file 'spanish.lbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
+File: spanish.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'edgar.bbl' found.
+ (./edgar.bbl)
+Package biblatex Info: Reference section=0 on input line 18.
+Package biblatex Info: Reference segment=0 on input line 18.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 19.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 19.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 19.
+
+[1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+] [3] [4
+
+] [5]
+LaTeX Info: Redefining \. on input line 53.
+LaTeX Info: Redefining \% on input line 53.
+ [6
+
+]
+[7]
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
+ [8
+
+] (./edgar.toc
+LaTeX Info: Redefining \sptext on input line 2.
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 6.
+ [9])
+\tf@toc=\write6
+LaTeX Info: Redefining \. on input line 61.
+LaTeX Info: Redefining \% on input line 61.
+ [10] (./edgar.lof
+LaTeX Info: Redefining \sptext on input line 2.
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+)
+\tf@lof=\write7
+ [11
+
+
+]
+LaTeX Info: Redefining \. on input line 65.
+LaTeX Info: Redefining \% on input line 65.
+ [12
+
+] (./edgar.lot
+LaTeX Info: Redefining \sptext on input line 2.
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+)
+\tf@lot=\write8
+ [13
+
+]
+LaTeX Info: Redefining \. on input line 71.
+LaTeX Info: Redefining \% on input line 71.
+
+[14
+
+]
+Cap\'{\i }tulo 1.
+[1] (./objetivos.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [2
+
+
+]
+Cap\'{\i }tulo 2.
+[3])
+LaTeX Info: Redefining \. on input line 97.
+LaTeX Info: Redefining \% on input line 97.
+ [4] (./metodologia.tex
+Cap\'{\i }tulo 3.
+[5
+
+
+
+
+]
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
+ [6]
+LaTeX Info: Redefining \. on input line 119.
+LaTeX Info: Redefining \% on input line 119.
+ [7])
+LaTeX Info: Redefining \. on input line 98.
+LaTeX Info: Redefining \% on input line 98.
+ [8] (./trazadora.tex
+Cap\'{\i }tulo 4.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9
+
+
+
+
+]
+LaTeX Info: Redefining \. on input line 82.
+LaTeX Info: Redefining \% on input line 82.
+
+[10]
+LaTeX Info: Redefining \. on input line 120.
+LaTeX Info: Redefining \% on input line 120.
+ [11]
+<img/esquematico1.pdf, id=92, 794.97pt x 614.295pt>
+File: img/esquematico1.pdf Graphic file (type pdf)
+<use img/esquematico1.pdf>
+Package pdftex.def Info: img/esquematico1.pdf  used on input line 139.
+(pdftex.def)             Requested size: 466.0pt x 360.09692pt.
+LaTeX Info: Redefining \. on input line 157.
+LaTeX Info: Redefining \% on input line 157.
+ [12]
+LaTeX Info: Redefining \. on input line 157.
+LaTeX Info: Redefining \% on input line 157.
+ [13 <./img/esquematico1.pdf>]
+LaTeX Info: Redefining \. on input line 196.
+LaTeX Info: Redefining \% on input line 196.
+ [14]
+LaTeX Info: Redefining \. on input line 239.
+LaTeX Info: Redefining \% on input line 239.
+ [15]
+<img/arquitecturaSoftware1.png, id=143, 329.23pt x 137.51375pt>
+File: img/arquitecturaSoftware1.png Graphic file (type png)
+<use img/arquitecturaSoftware1.png>
+Package pdftex.def Info: img/arquitecturaSoftware1.png  used on input line 258.
+
+(pdftex.def)             Requested size: 164.6146pt x 68.7567pt.
+<img/arquitecturaSoftware1.2.png, id=145, 437.635pt x 375.4025pt>
+File: img/arquitecturaSoftware1.2.png Graphic file (type png)
+<use img/arquitecturaSoftware1.2.png>
+Package pdftex.def Info: img/arquitecturaSoftware1.2.png  used on input line 28
+1.
+(pdftex.def)             Requested size: 218.81696pt x 187.70079pt.
+LaTeX Info: Redefining \. on input line 293.
+LaTeX Info: Redefining \% on input line 293.
+ [16 <./img/arquitecturaSoftware1.png>]
+<img/plano1.pdf, id=153, 711.65875pt x 500.87125pt>
+File: img/plano1.pdf Graphic file (type pdf)
+<use img/plano1.pdf>
+Package pdftex.def Info: img/plano1.pdf  used on input line 297.
+(pdftex.def)             Requested size: 466.0pt x 327.96988pt.
+LaTeX Info: Redefining \. on input line 309.
+LaTeX Info: Redefining \% on input line 309.
+ [17 <./img/arquitecturaSoftware1.2.png>]
+LaTeX Info: Redefining \. on input line 309.
+LaTeX Info: Redefining \% on input line 309.
+ [18 <./img/plano1.pdf>]
+<img/robot1.png, id=165, 263.0628pt x 264.0264pt>
+File: img/robot1.png Graphic file (type png)
+<use img/robot1.png>
+Package pdftex.def Info: img/robot1.png  used on input line 314.
+(pdftex.def)             Requested size: 263.06215pt x 264.02574pt.
+(./_minted-edgar/default-pyg-prefix.pygstyle) (./_minted-edgar/default.pygstyle
+)
+(./_minted-edgar/B827E3BD1C6C7A1363ABA5A197C9557285678FA7EB90FCC914563A0F1D0788
+C1.pygtex
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+.
+ (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 9.
+LaTeX Info: Redefining \. on input line 11.
+LaTeX Info: Redefining \% on input line 11.
+ [19]
+LaTeX Info: Redefining \. on input line 11.
+LaTeX Info: Redefining \% on input line 11.
+ [20 <./img/robot1.png>])
+(./_minted-edgar/0E6B51CA1E0EC7F8B97A17B44B2F0E887F683EBDC3AE89028A3832D3B9AA27
+5E.pygtex)
+LaTeX Info: Redefining \. on input line 393.
+LaTeX Info: Redefining \% on input line 393.
+ [21]
+(./_minted-edgar/48C6CE4E44BFAC78B522A968C676EBDE85678FA7EB90FCC914563A0F1D0788
+C1.pygtex)
+(./_minted-edgar/4C1EE6AA8A270DD3320A23761A7D228185678FA7EB90FCC914563A0F1D0788
+C1.pygtex)
+(./_minted-edgar/2833FC2B63FBFE230EB2F31C37B148BE85678FA7EB90FCC914563A0F1D0788
+C1.pygtex
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+ [22])
+(./_minted-edgar/85A2BB1B6489A24F05BC46EAD2024ACF85678FA7EB90FCC914563A0F1D0788
+C1.pygtex
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+ [23])
+(./_minted-edgar/87F2CFCE6584CC13FBAAF0C39FC20E7685678FA7EB90FCC914563A0F1D0788
+C1.pygtex)
+(./_minted-edgar/E513EC41285CFB53C5BD2C9F179178E485678FA7EB90FCC914563A0F1D0788
+C1.pygtex)
+(./_minted-edgar/58571929EA5D83C4DEC21896E96D267385678FA7EB90FCC914563A0F1D0788
+C1.pygtex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [24])
+(./_minted-edgar/00A025F820A9287357A986BB3E8AD01985678FA7EB90FCC914563A0F1D0788
+C1.pygtex
+LaTeX Info: Redefining \. on input line 19.
+LaTeX Info: Redefining \% on input line 19.
+ [25])
+LaTeX Info: Redefining \. on input line 596.
+LaTeX Info: Redefining \% on input line 596.
+ [26]
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
+598.
+ (/usr/share/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+))
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+
+[27]
+LaTeX Info: Redefining \. on input line 100.
+LaTeX Info: Redefining \% on input line 100.
+ [28
+
+
+
+]
+
+LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <10> not available
+(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 100.
+
+
+Overfull \hbox (14.88832pt too wide) in paragraph at lines 100--100
+\T1/cmss/m/n/10 me-ga328p. 7810D-AVR-01/15. Mi-cro-chip. 2015. \T1/cmr/m/sc/10 
+url\T1/cmss/m/n/10 : $\T1/cmtt/m/n/10 https : / / ww1 . microchip .
+ []
+
+
+Overfull \hbox (24.19055pt too wide) in paragraph at lines 100--100
+\T1/cmtt/m/n/10 com / downloads / en / DeviceDoc / Atmel -[] 7810 -[] Automotiv
+e -[] Microcontrollers -[]
+ []
+
+[29] (./edgar.aux
+LaTeX Info: Redefining \sptext on input line 9.
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+ (./objetivos.aux) (./metodologia.aux) (./trazadora.aux))
+runsystem(rm edgar.pyg)...executed.
+
+Package logreq Info: Writing requests to 'edgar.run.xml'.
+ ) 
+Here is how much of TeX's memory you used:
+ 14393 strings out of 479383
+ 266392 string characters out of 5875830
+ 1043883 words of memory out of 5000000
+ 31248 multiletter control sequences out of 15000+600000
+ 421743 words of font info for 58 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 80i,10n,85p,738b,1920s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
+exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+share/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/share/texmf-dis
+t/fonts/type1/public/cm-super/sfit1000.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/cm-super/sfrm0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
+sfsi1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfso2488.pfb></
+usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf
+-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/cm-super/sfss0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
+per/sfss1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1200.pf
+b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1728.pfb></usr/share/t
+exmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf-dist/fonts
+/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf-dist/fonts/type1/public/c
+m-super/sfsx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx207
+4.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on edgar.pdf (43 pages, 2834928 bytes).
+PDF statistics:
+ 278 PDF objects out of 1000 (max. 8388607)
+ 189 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+

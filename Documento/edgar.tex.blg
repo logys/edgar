@@ -1,0 +1,5 @@
+[0] Config.pm:312> INFO - This is Biber 2.15
+[1] Config.pm:315> INFO - Logfile is 'edgar.tex.blg'
+[190] biber:330> INFO - === sáb abr  3, 2021, 21:03:33
+[267] Utils.pm:411> ERROR - Cannot find 'edgar.tex.bcf'!
+[268] Biber.pm:132> INFO - ERRORS: 1

@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}ifndef BUTTON\PYGZus{}H}
+\PYG{c+cp}{\PYGZsh{}define BUTTON\PYGZus{}H}
+\PYG{k}{class} \PYG{n+nc}{Button}\PYG{p}{\PYGZob{}}
+	\PYG{k}{public}\PYG{o}{:}
+		\PYG{k}{virtual} \PYG{k+kt}{bool} \PYG{n}{pushed}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{p}{\PYGZcb{};}
+\PYG{c+cp}{\PYGZsh{}endif}\PYG{c+c1}{// BUTTON\PYGZus{}H}
+\end{Verbatim}
