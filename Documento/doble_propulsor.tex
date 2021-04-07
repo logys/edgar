@@ -1,0 +1,27 @@
+\chapter{Doble propulsor. Segunda iteración}
+Es momento de trabajar en serio, en esta ocasión no avanzaré al siguiente objetivo
+si no se cumple primero el presente, para ello si lo requiero repetiré el proceso
+de manera continua tratando de mejorar el trabajo previo.
+\section{Requerimientos}
+El objetivo es el mismo más una especificación, 
+\begin{itemize}
+	\item Mover el robot hacia adelante.
+	\item Utilizar un tren de propulsión de dos unidades.
+\end{itemize}
+\section{Análisis}
+Nuevamente aprovechare el trabajo previo.
+\begin{itemize}
+	\item Rediseñar el circuito.
+	\item Rediseñar la base.
+	\item Rediseñar el programa.
+\end{itemize}
+\section{Diseño}
+Hay cambios, por fortuna estamos a tiempo de implementarlos, el impacto es alto
+pero el tiempo requerido es poco.
+\subsection{Arquitectura electrónica}
+Agregar un nuevo motor es una trivialidad, basta con repetir el modulo del motor,
+pero invirtiendo la polaridad, los motores estarán alineados y para que el robot 
+avance, un motor debe girar en sentido dextrógiro y el otro en levógiro.
+El esquemático se muestra en la figura \ref{fig:Esquematico 2}.
+\newschematic{img/esquematico2.pdf}{Esquemático 2}
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.12)  6 APR 2021 00:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.12)  6 APR 2021 21:40
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -551,7 +551,8 @@ File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) (./edgar.aux
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
- (./objetivos.aux) (./metodologia.aux) (./trazadora.aux))
+ (./objetivos.aux) (./metodologia.aux) (./trazadora.aux) (./doble_propulsor.aux
+))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
@@ -826,44 +827,74 @@ File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 LaTeX Info: Redefining \. on input line 99.
 LaTeX Info: Redefining \% on input line 99.
 
-[27]
+[27] (./doble_propulsor.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [28
+
+
+
+
+]
+Cap\'{\i }tulo 5.
+[29]
+
+LaTeX Warning: Reference `fig:Esquematico 2' on page 30 undefined on input line
+ 25.
+
+<img/esquematico2.pdf, id=206, 794.97pt x 614.295pt>
+File: img/esquematico2.pdf Graphic file (type pdf)
+<use img/esquematico2.pdf>
+Package pdftex.def Info: img/esquematico2.pdf  used on input line 26.
+(pdftex.def)             Requested size: 466.0pt x 360.09692pt.
+)
 LaTeX Info: Redefining \. on input line 100.
 LaTeX Info: Redefining \% on input line 100.
- [28
+ [30]
+LaTeX Info: Redefining \. on input line 100.
+LaTeX Info: Redefining \% on input line 100.
+ [31 <./img/esquematico2.pdf>]
+LaTeX Info: Redefining \. on input line 101.
+LaTeX Info: Redefining \% on input line 101.
+ [32
 
 
 
 ]
 
 LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <10> not available
-(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 100.
+(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 101.
 
 
-Overfull \hbox (14.88832pt too wide) in paragraph at lines 100--100
+Overfull \hbox (14.88832pt too wide) in paragraph at lines 101--101
 \T1/cmss/m/n/10 me-ga328p. 7810D-AVR-01/15. Mi-cro-chip. 2015. \T1/cmr/m/sc/10 
 url\T1/cmss/m/n/10 : $\T1/cmtt/m/n/10 https : / / ww1 . microchip .
  []
 
 
-Overfull \hbox (24.19055pt too wide) in paragraph at lines 100--100
+Overfull \hbox (24.19055pt too wide) in paragraph at lines 101--101
 \T1/cmtt/m/n/10 com / downloads / en / DeviceDoc / Atmel -[] 7810 -[] Automotiv
 e -[] Microcontrollers -[]
  []
 
-[29] (./edgar.aux
+[33] (./edgar.aux
 LaTeX Info: Redefining \sptext on input line 9.
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
- (./objetivos.aux) (./metodologia.aux) (./trazadora.aux))
+ (./objetivos.aux) (./metodologia.aux) (./trazadora.aux)
+(./doble_propulsor.aux))
+
+LaTeX Warning: There were undefined references.
+
 runsystem(rm edgar.pyg)...executed.
 
 Package logreq Info: Writing requests to 'edgar.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 14393 strings out of 479383
- 266392 string characters out of 5875830
- 1043883 words of memory out of 5000000
- 31248 multiletter control sequences out of 15000+600000
+ 14412 strings out of 479383
+ 266786 string characters out of 5875830
+ 1046536 words of memory out of 5000000
+ 31259 multiletter control sequences out of 15000+600000
  421743 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,10n,85p,738b,1920s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -886,10 +917,10 @@ exmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf-dist/fonts
 m-super/sfsx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx207
 4.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/sha
 re/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on edgar.pdf (43 pages, 2834928 bytes).
+Output written on edgar.pdf (47 pages, 2884354 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
- 189 compressed objects within 2 object streams
+ 368 PDF objects out of 1000 (max. 8388607)
+ 241 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
