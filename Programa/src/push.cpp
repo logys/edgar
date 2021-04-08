@@ -9,7 +9,7 @@ Push::Push(short const pin)
 
 bool Push::pushed(void)
 {
-	if((PIND&(1<<PD2)) == 0)
+	if((PIND&(1<<PD2)) != 0)
 		return true;
 	else
 		return false;

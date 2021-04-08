@@ -1,17 +1,17 @@
 #ifndef ROBOT_H
 #define ROBOT_H
 
-#include "motor.h"
+#include "power_train.h"
 #include "timer.h"
 #include "button.h"
 
 class Robot{
 	private:
 		Button * button_;
-		Motor * motor_;
+		PowerTrain * train_;
 		Timer * timer_;
 	public:
-		Robot(Motor *, Timer *, Button *);
+		Robot(PowerTrain *, Timer *, Button *);
 		void moveFordward(void);
 };
 #endif // ROBOT_H

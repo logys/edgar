@@ -1,18 +1,18 @@
 #include "robot.h"
-#include "timer.h"
-#include "button.h"
-#include "motor.h"
-#include "motor_single.h"
+#include "motorDc.h"
+#include "differential.h"
 #include "timer_delay.h"
 #include "push.h"
 
 
 int main(void)
 {
-	Single_motor motor(1);
+	MotorDc left(1);
+	MotorDc right(2);
+	Differential train(&left, &right);
 	Timer_delay timer;
 	Push push(2);
-	Robot robot(&motor,&timer, &push);
+	Robot robot(&train, &timer, &push);
 
 	while(1){
 		robot.moveFordward();

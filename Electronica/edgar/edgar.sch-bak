@@ -1,0 +1,261 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 5906 4764
+encoding utf-8
+Sheet 1 1
+Title "Primera iteración"
+Date "2021-03-29"
+Rev "0.1.0"
+Comp "LANR, Luis Antonio Sánchez Monterde"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Control de movimiento de un motor"
+$EndDescr
+Wire Wire Line
+	2950 1350 2950 1200
+$Comp
+L power:GND #PWR02
+U 1 1 60645E2B
+P 2950 1350
+F 0 "#PWR02" H 2950 1100 50  0001 C CNN
+F 1 "GND" H 2955 1177 50  0000 C CNN
+F 2 "" H 2950 1350 50  0001 C CNN
+F 3 "" H 2950 1350 50  0001 C CNN
+	1    2950 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60644C18
+P 1950 2500
+F 0 "R1" V 1743 2500 50  0000 C CNN
+F 1 "1k" V 1834 2500 50  0000 C CNN
+F 2 "" V 1880 2500 50  0001 C CNN
+F 3 "~" H 1950 2500 50  0001 C CNN
+	1    1950 2500
+	0    1    1    0   
+$EndComp
+Connection ~ 2550 2050
+Wire Wire Line
+	2550 2050 2550 2300
+Wire Wire Line
+	2000 1950 2000 2050
+Wire Wire Line
+	2000 2050 2550 2050
+Wire Wire Line
+	2550 1500 2550 1200
+Connection ~ 2550 1500
+Wire Wire Line
+	2000 1500 2550 1500
+Wire Wire Line
+	2000 1550 2000 1500
+Wire Wire Line
+	2550 1550 2550 1500
+$Comp
+L power:GND #PWR04
+U 1 1 6063A0BC
+P 1950 700
+F 0 "#PWR04" H 1950 450 50  0001 C CNN
+F 1 "GND" H 1955 527 50  0000 C CNN
+F 2 "" H 1950 700 50  0001 C CNN
+F 3 "" H 1950 700 50  0001 C CNN
+	1    1950 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q1
+U 1 1 6062AB37
+P 2450 2500
+F 0 "Q1" H 2641 2546 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 2641 2455 50  0000 L CNN
+F 2 "" H 2650 2600 50  0001 C CNN
+F 3 "~" H 2450 2500 50  0001 C CNN
+	1    2450 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 6062CE34
+P 2550 3000
+F 0 "#PWR01" H 2550 2750 50  0001 C CNN
+F 1 "GND" H 2555 2827 50  0000 C CNN
+F 2 "" H 2550 3000 50  0001 C CNN
+F 3 "" H 2550 3000 50  0001 C CNN
+	1    2550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D1
+U 1 1 6062C388
+P 2000 1750
+F 0 "D1" V 2046 1622 50  0000 R CNN
+F 1 "DIODE" V 1955 1622 50  0000 R CNN
+F 2 "" H 2000 1750 50  0001 C CNN
+F 3 "~" H 2000 1750 50  0001 C CNN
+	1    2000 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 6062BB47
+P 1950 2950
+F 0 "SW1" H 1950 3235 50  0000 C CNN
+F 1 "SW_Push" H 1950 3144 50  0000 C CNN
+F 2 "" H 1950 3150 50  0001 C CNN
+F 3 "~" H 1950 3150 50  0001 C CNN
+	1    1950 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_DC M1
+U 1 1 6062B3C5
+P 2550 1750
+F 0 "M1" H 2708 1746 50  0000 L CNN
+F 1 "Motor_DC" H 2708 1655 50  0000 L CNN
+F 2 "" H 2550 1660 50  0001 C CNN
+F 3 "~" H 2550 1660 50  0001 C CNN
+	1    2550 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery BT1
+U 1 1 6062A16A
+P 2750 1200
+F 0 "BT1" V 2995 1200 50  0000 C CNN
+F 1 "9V" V 2904 1200 50  0000 C CNN
+F 2 "" V 2750 1260 50  0001 C CNN
+F 3 "~" V 2750 1260 50  0001 C CNN
+	1    2750 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-AU U1
+U 1 1 60635F30
+P 850 1900
+F 0 "U1" H 200 450 50  0000 C CNN
+F 1 "ATmega328P-AU" H 400 350 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 850 1900 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 850 1900 50  0001 C CNN
+	1    850  1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  400  950  400 
+Wire Wire Line
+	950  400  1650 400 
+Connection ~ 950  400 
+$Comp
+L power:GND #PWR03
+U 1 1 60637D56
+P 850 3400
+F 0 "#PWR03" H 850 3150 50  0001 C CNN
+F 1 "GND" H 1150 3350 50  0000 C CNN
+F 2 "" H 850 3400 50  0001 C CNN
+F 3 "" H 850 3400 50  0001 C CNN
+	1    850  3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2700 2550 2950
+Wire Wire Line
+	2250 2500 2100 2500
+Wire Wire Line
+	1800 2500 1650 2500
+Wire Wire Line
+	1650 2500 1650 2600
+Wire Wire Line
+	1650 2600 1450 2600
+Wire Wire Line
+	1750 2950 1750 2700
+Wire Wire Line
+	1750 2700 1450 2700
+Wire Wire Line
+	2150 2950 2550 2950
+Connection ~ 2550 2950
+Wire Wire Line
+	2550 2950 2550 3000
+$Comp
+L Regulator_Linear:L7805 U2
+U 1 1 6065C1D8
+P 1950 400
+F 0 "U2" H 1950 642 50  0000 C CNN
+F 1 "L7805" H 1950 551 50  0000 C CNN
+F 2 "" H 1975 250 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1950 350 50  0001 C CNN
+	1    1950 400 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1200 2550 400 
+Wire Wire Line
+	2550 400  2250 400 
+Connection ~ 2550 1200
+$Comp
+L Device:R R?
+U 1 1 606DA723
+P 3700 2400
+F 0 "R?" V 3493 2400 50  0000 C CNN
+F 1 "1k" V 3584 2400 50  0000 C CNN
+F 2 "" V 3630 2400 50  0001 C CNN
+F 3 "~" H 3700 2400 50  0001 C CNN
+	1    3700 2400
+	0    1    1    0   
+$EndComp
+Connection ~ 4300 1950
+Wire Wire Line
+	4300 1950 4300 2200
+Wire Wire Line
+	3750 1850 3750 1950
+Wire Wire Line
+	3750 1950 4300 1950
+Wire Wire Line
+	4300 1400 4300 1100
+Connection ~ 4300 1400
+Wire Wire Line
+	3750 1400 4300 1400
+Wire Wire Line
+	3750 1450 3750 1400
+Wire Wire Line
+	4300 1450 4300 1400
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 606DA732
+P 4200 2400
+F 0 "Q?" H 4391 2446 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 4391 2355 50  0000 L CNN
+F 2 "" H 4400 2500 50  0001 C CNN
+F 3 "~" H 4200 2400 50  0001 C CNN
+	1    4200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 606DA738
+P 3750 1650
+F 0 "D?" V 3796 1522 50  0000 R CNN
+F 1 "DIODE" V 3705 1522 50  0000 R CNN
+F 2 "" H 3750 1650 50  0001 C CNN
+F 3 "~" H 3750 1650 50  0001 C CNN
+	1    3750 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Motor:Motor_DC M?
+U 1 1 606DA73E
+P 4300 1750
+F 0 "M?" H 4458 1746 50  0000 L CNN
+F 1 "Motor_DC" H 4458 1655 50  0000 L CNN
+F 2 "" H 4300 1660 50  0001 C CNN
+F 3 "~" H 4300 1660 50  0001 C CNN
+	1    4300 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 2600 4300 2850
+Wire Wire Line
+	4000 2400 3850 2400
+Wire Wire Line
+	3550 2400 3400 2400
+$EndSCHEMATC

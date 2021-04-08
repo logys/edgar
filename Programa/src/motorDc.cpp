@@ -1,15 +1,15 @@
 #include "motorDc.h"
-#include <avr/io.h>
+#include "gpioHandler.h"
 
-MotorDc::MotorDc(short const pin)
+MotorDc::MotorDc(short const pin) : pin_{pin}
 {
-	DDRD |= 1<<PD3;
+	gpio_setDirection(pin_, OUTPUT);
 }
 void MotorDc::on(void)
 {
-	PORTD |= 1<<PD3;
+	gpio_setLevel(pin_, HIGH);
 }
 void MotorDc::off(void)
 {
-	PORTD &= ~(1<<PD3);
+	gpio_setLevel(pin_, LOW);
 }

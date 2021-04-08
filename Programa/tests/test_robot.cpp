@@ -1,10 +1,10 @@
 #include "CppUTest/TestHarness.h"
 #include "CppUTestExt/MockSupport.h"
 #include "../src/robot.h"
-#include "../src/motor.h"
+#include "../src/power_train.h"
 #include "../src/timer.h"
 
-class MotorStub : public Motor{
+class Train_stub : public PowerTrain{
 	virtual void on(void) override
 	{
 		mock().actualCall("on");
@@ -32,7 +32,7 @@ class ButtonStub : public Button{
 };
 
 Button * button;
-Motor * motor;
+PowerTrain * train;
 Timer * timer;
 Robot * robot;
 
@@ -42,15 +42,15 @@ TEST_GROUP(ROBOT)
 	void setup(void)
 	{
 		button = new ButtonStub();
-		motor = new MotorStub();
+		train = new Train_stub();
 		timer = new TimerStub();
-		robot = new Robot(motor, timer, button);
+		robot = new Robot(train, timer, button);
 	}
 
 	void teardown(void)
 	{
 		delete button;
-		delete motor;
+		delete train;
 		delete timer;
 		delete robot;
 		mock().clear();

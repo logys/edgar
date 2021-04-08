@@ -4,6 +4,8 @@
 #include "motor.h"
 
 class MotorDc : public Motor{
+	private:
+		short pin_;
 	public:
 		MotorDc(short const pin);
 		virtual void on(void) override;
