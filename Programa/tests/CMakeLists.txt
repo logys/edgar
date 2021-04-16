@@ -28,7 +28,7 @@ target_link_libraries(run_tests PRIVATE robot)
 target_link_libraries(run_tests PRIVATE push)
 target_link_libraries(run_tests PRIVATE timer)
 target_link_libraries(run_tests PRIVATE differential)
-target_link_libraries(run_tests PRIVATE gpioHandler)
+target_link_libraries(run_tests PRIVATE gpio)
 
 add_executable(test_motordc test_motorDc.cpp RunAllTests.cpp)
 target_link_libraries(test_motordc PRIVATE motor)

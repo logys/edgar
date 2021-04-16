@@ -2,7 +2,7 @@
 #include "CppUTestExt/MockSupport.h"
 #include "../src/motorDc.h"
 #include "../src/motor.h"
-#include "../src/gpioHandler.h"
+#include "../src/gpio.h"
 
 static Motor * motor;
 

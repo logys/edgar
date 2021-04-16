@@ -1,5 +1,5 @@
 #include "motorDc.h"
-#include "gpioHandler.h"
+#include "gpio.h"
 
 MotorDc::MotorDc(short const pin) : pin_{pin}
 {

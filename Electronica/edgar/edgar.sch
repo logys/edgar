@@ -98,17 +98,6 @@ F 3 "~" H 2450 2150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Switch:SW_Push SW1
-U 1 1 6062BB47
-P 2400 3350
-F 0 "SW1" H 2400 3635 50  0000 C CNN
-F 1 "SW_Push" H 2400 3544 50  0000 C CNN
-F 2 "" H 2400 3550 50  0001 C CNN
-F 3 "~" H 2400 3550 50  0001 C CNN
-	1    2400 3350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Motor:Motor_DC M1
 U 1 1 6062B3C5
 P 3000 2150
@@ -243,9 +232,6 @@ Wire Wire Line
 Wire Wire Line
 	4750 1150 3000 1150
 Wire Wire Line
-	3000 800  3000 1150
-Connection ~ 3000 1150
-Wire Wire Line
 	3000 1150 3000 1600
 $Comp
 L power:GND #PWR05
@@ -280,4 +266,57 @@ Text GLabel 3850 2800 0    50   Input ~ 0
 PD4
 Text GLabel 1900 3200 2    50   Input ~ 0
 PD4
+$Comp
+L Device:Battery BT2
+U 1 1 6076A98B
+P 3200 800
+F 0 "BT2" V 3445 800 50  0000 C CNN
+F 1 "9V" V 3354 800 50  0000 C CNN
+F 2 "" V 3200 860 50  0001 C CNN
+F 3 "~" V 3200 860 50  0001 C CNN
+	1    3200 800 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 6076B005
+P 3450 900
+F 0 "#PWR06" H 3450 650 50  0001 C CNN
+F 1 "GND" H 3455 727 50  0000 C CNN
+F 2 "" H 3450 900 50  0001 C CNN
+F 3 "" H 3450 900 50  0001 C CNN
+	1    3450 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 800  3450 800 
+Wire Wire Line
+	3450 800  3450 900 
+$Comp
+L Switch:SW_Push_Open SW1
+U 1 1 6076CD93
+P 2400 3350
+F 0 "SW1" H 2400 3565 50  0000 C CNN
+F 1 "SW_Push_Open" H 2400 3474 50  0000 C CNN
+F 2 "" H 2400 3550 50  0001 C CNN
+F 3 "~" H 2400 3550 50  0001 C CNN
+	1    2400 3350
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	3050 1100 3500 1100
+Wire Notes Line
+	3500 1100 3500 500 
+Wire Notes Line
+	3500 500  3050 500 
+Wire Notes Line
+	3050 500  3050 1100
+Wire Notes Line
+	2100 3450 2650 3450
+Wire Notes Line
+	2650 3450 2650 3050
+Wire Notes Line
+	2650 3050 2100 3050
+Wire Notes Line
+	2100 3050 2100 3450
 $EndSCHEMATC

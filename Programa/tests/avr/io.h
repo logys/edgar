@@ -27,6 +27,17 @@ extern uint8_t PIND;
 #define PD6 6
 #define PD7 7
 
+extern uint8_t DDRC;
+extern uint8_t PORTC;
+#define PC0 0
+#define PC1 1
+#define PC2 2
+#define PC3 3
+#define PC4 4
+#define PC5 5
+#define PC6 6
+#define PC7 7
+
 extern uint8_t TCCR0A;
 #define WGM00 0
 #define WGM01 1

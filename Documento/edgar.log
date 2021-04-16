@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.12)  6 APR 2021 22:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.9)  16 APR 2021 00:17
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -24,33 +24,171 @@ File: bk10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+
+(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen139
+\Hy@linkcounter=\count186
+\Hy@pagecounter=\count187
+
+(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count188
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count189
+
+(/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen140
+
+(/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count190
+\Field@Width=\dimen141
+\Fld@charsize=\dimen142
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+
+(/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count191
+\c@Item=\count192
+\c@Hfootnote=\count193
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+
+(/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\Fld@listcount=\count194
+\c@bookmark@seq@number=\count195
+
+(/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip49
+)
+(/usr/share/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks16
+\SOUL@lasttoken=\toks17
+\SOUL@cmds=\toks18
+\SOUL@buffer=\toks19
+\SOUL@token=\toks20
+\SOUL@spaceskip=\skip50
+\SOUL@ttwidth=\dimen143
+\SOUL@uldp=\dimen144
+\SOUL@ulht=\dimen145
+)
 (/usr/share/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2020/10/27 3.51 The Babel package
 
 (/usr/share/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2020/10/27 3.51 Babel common definitions
-\babel@savecnt=\count186
-\U@D=\dimen139
+\babel@savecnt=\count196
+\U@D=\dimen146
 \l@babelnohyphens=\language86
 
 (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 )
-\bbl@dirlevel=\count187
+\bbl@dirlevel=\count197
 
 (/usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
-\es@quottoks=\toks15
-\es@quotdepth=\count188
+\es@quottoks=\toks21
+\es@quotdepth=\count198
 Package babel Info: Making " an active character on input line 561.
 ))
 (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
-)
 (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
 
@@ -65,16 +203,16 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen140
-\Gin@req@width=\dimen141
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
 )
 (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
 )
 (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks17
-\inpenc@posthook=\toks18
+\inpenc@prehook=\toks22
+\inpenc@posthook=\toks23
 )
 (/usr/share/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
@@ -82,26 +220,26 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count189
-\rotFPtop=\skip49
-\rotFPbot=\skip50
+\c@r@tfl@t=\count199
+\rotFPtop=\skip51
+\rotFPbot=\skip52
 \rot@float@box=\box47
-\rot@mess@toks=\toks19
+\rot@mess@toks=\toks24
 )
 (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
 
 (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count190
+\etb@tempcnta=\count266
 )
-\csq@reset=\count191
-\csq@gtype=\count192
-\csq@glevel=\count193
-\csq@qlevel=\count194
-\csq@maxlvl=\count195
-\csq@tshold=\count196
-\csq@ltx@everypar=\toks20
+\csq@reset=\count267
+\csq@gtype=\count268
+\csq@glevel=\count269
+\csq@qlevel=\count270
+\csq@maxlvl=\count271
+\csq@tshold=\count272
+\csq@ltx@everypar=\toks25
 
 (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
@@ -115,96 +253,69 @@ File: csquotes.cfg
 (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2020/08/23 v3.15a programmable bibliographies (PK/MW)
 
-(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
-)
-(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
-
-(/usr/share/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-))
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count197
+\lrq@indent=\count273
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-(/usr/share/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip16
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-\c@tabx@nest=\count198
-\c@listtotal=\count199
-\c@listcount=\count266
-\c@liststart=\count267
-\c@liststop=\count268
-\c@citecount=\count269
-\c@citetotal=\count270
-\c@multicitecount=\count271
-\c@multicitetotal=\count272
-\c@instcount=\count273
-\c@maxnames=\count274
-\c@minnames=\count275
-\c@maxitems=\count276
-\c@minitems=\count277
-\c@citecounter=\count278
-\c@maxcitecounter=\count279
-\c@savedcitecounter=\count280
-\c@uniquelist=\count281
-\c@uniquename=\count282
-\c@refsection=\count283
-\c@refsegment=\count284
-\c@maxextratitle=\count285
-\c@maxextratitleyear=\count286
-\c@maxextraname=\count287
-\c@maxextradate=\count288
-\c@maxextraalpha=\count289
-\c@abbrvpenalty=\count290
-\c@highnamepenalty=\count291
-\c@lownamepenalty=\count292
-\c@maxparens=\count293
-\c@parenlevel=\count294
-\blx@tempcnta=\count295
-\blx@tempcntb=\count296
-\blx@tempcntc=\count297
-\blx@maxsection=\count298
-\blx@maxsegment@0=\count299
-\blx@notetype=\count300
-\blx@parenlevel@text=\count301
-\blx@parenlevel@foot=\count302
-\blx@sectionciteorder@0=\count303
-\blx@entrysetcounter=\count304
-\blx@biblioinstance=\count305
-\labelnumberwidth=\skip51
-\labelalphawidth=\skip52
-\biblabelsep=\skip53
-\bibitemsep=\skip54
-\bibnamesep=\skip55
-\bibinitsep=\skip56
-\bibparsep=\skip57
-\bibhang=\skip58
+\c@tabx@nest=\count274
+\c@listtotal=\count275
+\c@listcount=\count276
+\c@liststart=\count277
+\c@liststop=\count278
+\c@citecount=\count279
+\c@citetotal=\count280
+\c@multicitecount=\count281
+\c@multicitetotal=\count282
+\c@instcount=\count283
+\c@maxnames=\count284
+\c@minnames=\count285
+\c@maxitems=\count286
+\c@minitems=\count287
+\c@citecounter=\count288
+\c@maxcitecounter=\count289
+\c@savedcitecounter=\count290
+\c@uniquelist=\count291
+\c@uniquename=\count292
+\c@refsection=\count293
+\c@refsegment=\count294
+\c@maxextratitle=\count295
+\c@maxextratitleyear=\count296
+\c@maxextraname=\count297
+\c@maxextradate=\count298
+\c@maxextraalpha=\count299
+\c@abbrvpenalty=\count300
+\c@highnamepenalty=\count301
+\c@lownamepenalty=\count302
+\c@maxparens=\count303
+\c@parenlevel=\count304
+\blx@tempcnta=\count305
+\blx@tempcntb=\count306
+\blx@tempcntc=\count307
+\blx@maxsection=\count308
+\blx@maxsegment@0=\count309
+\blx@notetype=\count310
+\blx@parenlevel@text=\count311
+\blx@parenlevel@foot=\count312
+\blx@sectionciteorder@0=\count313
+\blx@entrysetcounter=\count314
+\blx@biblioinstance=\count315
+\labelnumberwidth=\skip53
+\labelalphawidth=\skip54
+\biblabelsep=\skip55
+\bibitemsep=\skip56
+\bibnamesep=\skip57
+\bibinitsep=\skip58
+\bibparsep=\skip59
+\bibhang=\skip60
 \blx@bcfin=\read3
 \blx@bcfout=\write3
 \blx@langwohyphens=\language87
-\c@mincomprange=\count306
-\c@maxcomprange=\count307
-\c@mincompwidth=\count308
+\c@mincomprange=\count316
+\c@maxcomprange=\count317
+\c@mincompwidth=\count318
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -213,88 +324,88 @@ File: blx-dm.def 2020/08/23 v3.15a biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count309
-\c@savedafterword=\count310
-\c@annotator=\count311
-\c@savedannotator=\count312
-\c@author=\count313
-\c@savedauthor=\count314
-\c@bookauthor=\count315
-\c@savedbookauthor=\count316
-\c@commentator=\count317
-\c@savedcommentator=\count318
-\c@editor=\count319
-\c@savededitor=\count320
-\c@editora=\count321
-\c@savededitora=\count322
-\c@editorb=\count323
-\c@savededitorb=\count324
-\c@editorc=\count325
-\c@savededitorc=\count326
-\c@foreword=\count327
-\c@savedforeword=\count328
-\c@holder=\count329
-\c@savedholder=\count330
-\c@introduction=\count331
-\c@savedintroduction=\count332
-\c@namea=\count333
-\c@savednamea=\count334
-\c@nameb=\count335
-\c@savednameb=\count336
-\c@namec=\count337
-\c@savednamec=\count338
-\c@translator=\count339
-\c@savedtranslator=\count340
-\c@shortauthor=\count341
-\c@savedshortauthor=\count342
-\c@shorteditor=\count343
-\c@savedshorteditor=\count344
-\c@labelname=\count345
-\c@savedlabelname=\count346
-\c@institution=\count347
-\c@savedinstitution=\count348
-\c@lista=\count349
-\c@savedlista=\count350
-\c@listb=\count351
-\c@savedlistb=\count352
-\c@listc=\count353
-\c@savedlistc=\count354
-\c@listd=\count355
-\c@savedlistd=\count356
-\c@liste=\count357
-\c@savedliste=\count358
-\c@listf=\count359
-\c@savedlistf=\count360
-\c@location=\count361
-\c@savedlocation=\count362
-\c@organization=\count363
-\c@savedorganization=\count364
-\c@origlocation=\count365
-\c@savedoriglocation=\count366
-\c@origpublisher=\count367
-\c@savedorigpublisher=\count368
-\c@publisher=\count369
-\c@savedpublisher=\count370
-\c@language=\count371
-\c@savedlanguage=\count372
-\c@origlanguage=\count373
-\c@savedoriglanguage=\count374
-\c@pageref=\count375
-\c@savedpageref=\count376
-\shorthandwidth=\skip59
-\shortjournalwidth=\skip60
-\shortserieswidth=\skip61
-\shorttitlewidth=\skip62
-\shortauthorwidth=\skip63
-\shorteditorwidth=\skip64
-\locallabelnumberwidth=\skip65
-\locallabelalphawidth=\skip66
-\localshorthandwidth=\skip67
-\localshortjournalwidth=\skip68
-\localshortserieswidth=\skip69
-\localshorttitlewidth=\skip70
-\localshortauthorwidth=\skip71
-\localshorteditorwidth=\skip72
+\c@afterword=\count319
+\c@savedafterword=\count320
+\c@annotator=\count321
+\c@savedannotator=\count322
+\c@author=\count323
+\c@savedauthor=\count324
+\c@bookauthor=\count325
+\c@savedbookauthor=\count326
+\c@commentator=\count327
+\c@savedcommentator=\count328
+\c@editor=\count329
+\c@savededitor=\count330
+\c@editora=\count331
+\c@savededitora=\count332
+\c@editorb=\count333
+\c@savededitorb=\count334
+\c@editorc=\count335
+\c@savededitorc=\count336
+\c@foreword=\count337
+\c@savedforeword=\count338
+\c@holder=\count339
+\c@savedholder=\count340
+\c@introduction=\count341
+\c@savedintroduction=\count342
+\c@namea=\count343
+\c@savednamea=\count344
+\c@nameb=\count345
+\c@savednameb=\count346
+\c@namec=\count347
+\c@savednamec=\count348
+\c@translator=\count349
+\c@savedtranslator=\count350
+\c@shortauthor=\count351
+\c@savedshortauthor=\count352
+\c@shorteditor=\count353
+\c@savedshorteditor=\count354
+\c@labelname=\count355
+\c@savedlabelname=\count356
+\c@institution=\count357
+\c@savedinstitution=\count358
+\c@lista=\count359
+\c@savedlista=\count360
+\c@listb=\count361
+\c@savedlistb=\count362
+\c@listc=\count363
+\c@savedlistc=\count364
+\c@listd=\count365
+\c@savedlistd=\count366
+\c@liste=\count367
+\c@savedliste=\count368
+\c@listf=\count369
+\c@savedlistf=\count370
+\c@location=\count371
+\c@savedlocation=\count372
+\c@organization=\count373
+\c@savedorganization=\count374
+\c@origlocation=\count375
+\c@savedoriglocation=\count376
+\c@origpublisher=\count377
+\c@savedorigpublisher=\count378
+\c@publisher=\count379
+\c@savedpublisher=\count380
+\c@language=\count381
+\c@savedlanguage=\count382
+\c@origlanguage=\count383
+\c@savedoriglanguage=\count384
+\c@pageref=\count385
+\c@savedpageref=\count386
+\shorthandwidth=\skip61
+\shortjournalwidth=\skip62
+\shortserieswidth=\skip63
+\shorttitlewidth=\skip64
+\shortauthorwidth=\skip65
+\shorteditorwidth=\skip66
+\locallabelnumberwidth=\skip67
+\locallabelalphawidth=\skip68
+\localshorthandwidth=\skip69
+\localshortjournalwidth=\skip70
+\localshortserieswidth=\skip71
+\localshorttitlewidth=\skip72
+\localshortauthorwidth=\skip73
+\localshorteditorwidth=\skip74
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -306,7 +417,7 @@ Package: expl3 2020-12-03 L3 programming layer (loader)
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count377
+\l__kernel_color_stack_int=\count387
 \l__pdf_internal_box=\box48
 ))
 Package biblatex Info: expl3
@@ -328,19 +439,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
-\c@textcitecount=\count378
-\c@textcitetotal=\count379
-\c@textcitemaxnames=\count380
-\c@biburlbigbreakpenalty=\count381
-\c@biburlbreakpenalty=\count382
-\c@biburlnumpenalty=\count383
-\c@biburlucpenalty=\count384
-\c@biburllcpenalty=\count385
+\c@textcitecount=\count388
+\c@textcitetotal=\count389
+\c@textcitemaxnames=\count390
+\c@biburlbigbreakpenalty=\count391
+\c@biburlbreakpenalty=\count392
+\c@biburlnumpenalty=\count393
+\c@biburlucpenalty=\count394
+\c@biburllcpenalty=\count395
 \biburlbigskip=\muskip17
 \biburlnumskip=\muskip18
 \biburlucskip=\muskip19
 \biburllcskip=\muskip20
-\c@smartand=\count386
+\c@smartand=\count396
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -352,8 +463,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2020/08/23 v3.15a biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count387
-\c@bbx:relatedtotal=\count388
+\c@bbx:relatedcount=\count397
+\c@bbx:relatedtotal=\count398
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -386,11 +497,11 @@ Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
 
 (/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count389
+\FV@CodeLineNo=\count399
 \FV@InFile=\read4
 \FV@TabBox=\box49
-\c@FancyVerbLine=\count390
-\FV@StepNumber=\count391
+\c@FancyVerbLine=\count400
+\FV@StepNumber=\count401
 \FV@OutFile=\write4
 )
 (/usr/share/texmf-dist/tex/latex/upquote/upquote.sty
@@ -402,19 +513,19 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ))
 (/usr/share/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count392
-\output=\toks21
-\linenoprevgraf=\count393
-\linenumbersep=\dimen142
-\linenumberwidth=\dimen143
-\c@linenumber=\count394
-\c@pagewiselinenumber=\count395
-\c@LN@truepage=\count396
-\c@internallinenumber=\count397
-\c@internallinenumbers=\count398
-\quotelinenumbersep=\dimen144
-\bframerule=\dimen145
-\bframesep=\dimen146
+\linenopenalty=\count402
+\output=\toks26
+\linenoprevgraf=\count403
+\linenumbersep=\dimen149
+\linenumberwidth=\dimen150
+\c@linenumber=\count404
+\c@pagewiselinenumber=\count405
+\c@LN@truepage=\count406
+\c@internallinenumber=\count407
+\c@internallinenumbers=\count408
+\quotelinenumbersep=\dimen151
+\bframerule=\dimen152
+\bframesep=\dimen153
 \bframebox=\box50
 
 
@@ -427,40 +538,40 @@ LaTeX Info: Redefining \\ on input line 3056.
 Package fvextra Warning: csquotes should be loaded after fvextra, to avoid a wa
 rning from the lineno package on input line 37.
 
-\c@FV@TrueTabGroupLevel=\count399
-\c@FV@TrueTabCounter=\count400
+\c@FV@TrueTabGroupLevel=\count409
+\c@FV@TrueTabCounter=\count410
 \FV@TabBox@Group=\box51
-\FV@TmpLength=\skip73
-\c@FV@HighlightLinesStart=\count401
-\c@FV@HighlightLinesStop=\count402
-\FV@LoopCount=\count403
+\FV@TmpLength=\skip75
+\c@FV@HighlightLinesStart=\count411
+\c@FV@HighlightLinesStop=\count412
+\FV@LoopCount=\count413
 \FV@NCharsBox=\box52
-\FV@BreakIndent=\dimen147
-\FV@BreakIndentNChars=\count404
-\FV@BreakSymbolSepLeft=\dimen148
-\FV@BreakSymbolSepLeftNChars=\count405
-\FV@BreakSymbolSepRight=\dimen149
-\FV@BreakSymbolSepRightNChars=\count406
-\FV@BreakSymbolIndentLeft=\dimen150
-\FV@BreakSymbolIndentLeftNChars=\count407
-\FV@BreakSymbolIndentRight=\dimen151
-\FV@BreakSymbolIndentRightNChars=\count408
-\c@FancyVerbLineBreakLast=\count409
+\FV@BreakIndent=\dimen154
+\FV@BreakIndentNChars=\count414
+\FV@BreakSymbolSepLeft=\dimen155
+\FV@BreakSymbolSepLeftNChars=\count415
+\FV@BreakSymbolSepRight=\dimen156
+\FV@BreakSymbolSepRightNChars=\count416
+\FV@BreakSymbolIndentLeft=\dimen157
+\FV@BreakSymbolIndentLeftNChars=\count417
+\FV@BreakSymbolIndentRight=\dimen158
+\FV@BreakSymbolIndentRightNChars=\count418
+\c@FancyVerbLineBreakLast=\count419
 \FV@LineBox=\box53
 \FV@LineIndentBox=\box54
-\FV@LineWidth=\dimen152
+\FV@LineWidth=\dimen159
 ) (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count410
-\calc@Bcount=\count411
-\calc@Adimen=\dimen153
-\calc@Bdimen=\dimen154
-\calc@Askip=\skip74
-\calc@Bskip=\skip75
+\calc@Acount=\count420
+\calc@Bcount=\count421
+\calc@Adimen=\dimen160
+\calc@Bdimen=\dimen161
+\calc@Askip=\skip76
+\calc@Bskip=\skip77
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count412
-\calc@Cskip=\skip76
+\calc@Ccount=\count422
+\calc@Cskip=\skip78
 )
 (/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
@@ -471,10 +582,7 @@ Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
 
 (/usr/share/texmf-dist/tex/generic/catchfile/catchfile.sty
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
-
-(/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-))
+)
 (/usr/share/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
@@ -486,34 +594,34 @@ runsystem(rm -- "edgar.w18")...executed.
 )
 (/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count413
-\decimalpart=\count414
+\integerpart=\count423
+\decimalpart=\count424
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
 (/usr/share/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip77
-\fb@frw=\dimen155
-\fb@frh=\dimen156
-\FrameRule=\dimen157
-\FrameSep=\dimen158
+\OuterFrameSep=\skip79
+\fb@frw=\dimen162
+\fb@frh=\dimen163
+\FrameRule=\dimen164
+\FrameSep=\dimen165
 )
 (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count415
-\float@exts=\toks22
+\c@float@type=\count425
+\float@exts=\toks27
 \float@box=\box55
-\@float@everytoks=\toks23
+\@float@everytoks=\toks28
 \@floatcapt=\box56
 )
 \minted@appexistsfile=\read5
 \minted@bgbox=\box57
 \minted@code=\write5
-\c@minted@FancyVerbLineTemp=\count416
-\c@minted@pygmentizecounter=\count417
-\@float@every@listing=\toks24
-\c@listing=\count418
+\c@minted@FancyVerbLineTemp=\count426
+\c@minted@pygmentizecounter=\count427
+\@float@every@listing=\toks29
+\c@listing=\count428
 )
 runsystem(mkdir -p _minted-edgar)...executed.
 
@@ -543,46 +651,66 @@ runsystem(which pygmentize && touch edgar.aex)...executed.
 
 runsystem(rm edgar.aex)...executed.
 
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-8.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 2
+0.
 
 (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) (./edgar.aux
-LaTeX Info: Redefining \. on input line 9.
-LaTeX Info: Redefining \% on input line 9.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
  (./objetivos.aux) (./metodologia.aux) (./trazadora.aux) (./doble_propulsor.aux
-))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Info: Redefining \. on input line 18.
-LaTeX Info: Redefining \% on input line 18.
+) (./it3/atras.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+Package hyperref Info: Link coloring OFF on input line 20.
+ (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count429
+)
+LaTeX Info: Redefining \ref on input line 20.
+LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \nameref on input line 20.
+
+(./edgar.out) (./edgar.out)
+\@outlinefile=\write6
+LaTeX Info: Redefining \. on input line 20.
+LaTeX Info: Redefining \% on input line 20.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count419
-\scratchdimen=\dimen159
+\scratchcounter=\count430
+\scratchdimen=\dimen166
 \scratchbox=\box58
-\nofMPsegments=\count420
-\nofMParguments=\count421
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count422
-\MPscratchDim=\dimen160
-\MPnumerator=\count423
-\makeMPintoPDFobject=\count424
-\everyMPtoPDFconversion=\toks26
+\nofMPsegments=\count431
+\nofMParguments=\count432
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count433
+\MPscratchDim=\dimen167
+\MPnumerator=\count434
+\makeMPintoPDFobject=\count435
+\everyMPtoPDFconversion=\toks31
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -604,14 +732,14 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'edgar.bbl' found.
  (./edgar.bbl)
-Package biblatex Info: Reference section=0 on input line 18.
-Package biblatex Info: Reference segment=0 on input line 18.
+Package biblatex Info: Reference section=0 on input line 20.
+Package biblatex Info: Reference segment=0 on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 19.
+(Font)              <12> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 19.
+(Font)              <8> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 19.
+(Font)              <6> on input line 22.
 
 [1
 
@@ -621,14 +749,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ] [3] [4
 
 ] [5]
-LaTeX Info: Redefining \. on input line 53.
-LaTeX Info: Redefining \% on input line 53.
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
  [6
 
 ]
 [7]
-LaTeX Info: Redefining \. on input line 60.
-LaTeX Info: Redefining \% on input line 60.
+LaTeX Info: Redefining \. on input line 62.
+LaTeX Info: Redefining \% on input line 62.
  [8
 
 ] (./edgar.toc
@@ -640,21 +768,21 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 6.
  [9])
-\tf@toc=\write6
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
+\tf@toc=\write7
+LaTeX Info: Redefining \. on input line 63.
+LaTeX Info: Redefining \% on input line 63.
  [10] (./edgar.lof
 LaTeX Info: Redefining \sptext on input line 2.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 )
-\tf@lof=\write7
+\tf@lof=\write8
  [11
 
 
 ]
-LaTeX Info: Redefining \. on input line 65.
-LaTeX Info: Redefining \% on input line 65.
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
  [12
 
 ] (./edgar.lot
@@ -662,28 +790,38 @@ LaTeX Info: Redefining \sptext on input line 2.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 )
-\tf@lot=\write8
+\tf@lot=\write9
  [13
 
 ]
-LaTeX Info: Redefining \. on input line 71.
-LaTeX Info: Redefining \% on input line 71.
+LaTeX Info: Redefining \. on input line 73.
+LaTeX Info: Redefining \% on input line 73.
 
 [14
 
 ]
 Cap\'{\i }tulo 1.
-[1] (./objetivos.tex
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.99 \include{objetivos}
+                         [1] (./objetivos.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [2
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            {Objetivos} \label{objetivos} [2
 
 
 ]
 Cap\'{\i }tulo 2.
 [3])
-LaTeX Info: Redefining \. on input line 97.
-LaTeX Info: Redefining \% on input line 97.
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
  [4] (./metodologia.tex
 Cap\'{\i }tulo 3.
 [5
@@ -698,8 +836,8 @@ LaTeX Info: Redefining \% on input line 83.
 LaTeX Info: Redefining \. on input line 119.
 LaTeX Info: Redefining \% on input line 119.
  [7])
-LaTeX Info: Redefining \. on input line 98.
-LaTeX Info: Redefining \% on input line 98.
+LaTeX Info: Redefining \. on input line 100.
+LaTeX Info: Redefining \% on input line 100.
  [8] (./trazadora.tex
 Cap\'{\i }tulo 4.
 
@@ -718,7 +856,7 @@ LaTeX Info: Redefining \% on input line 82.
 LaTeX Info: Redefining \. on input line 120.
 LaTeX Info: Redefining \% on input line 120.
  [11]
-<img/esquematico1.pdf, id=92, 794.97pt x 614.295pt>
+<img/esquematico1.pdf, id=393, 794.97pt x 614.295pt>
 File: img/esquematico1.pdf Graphic file (type pdf)
 <use img/esquematico1.pdf>
 Package pdftex.def Info: img/esquematico1.pdf  used on input line 139.
@@ -728,20 +866,26 @@ LaTeX Info: Redefining \% on input line 157.
  [12]
 LaTeX Info: Redefining \. on input line 157.
 LaTeX Info: Redefining \% on input line 157.
- [13 <./img/esquematico1.pdf>]
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.157 R
+       epito la prueba pero con el robot bloqueado, con la misma tensi√≥n, l...
+ <./img/esquematico1.pdf>]
 LaTeX Info: Redefining \. on input line 196.
 LaTeX Info: Redefining \% on input line 196.
  [14]
 LaTeX Info: Redefining \. on input line 239.
 LaTeX Info: Redefining \% on input line 239.
  [15]
-<img/arquitecturaSoftware1.png, id=143, 329.23pt x 137.51375pt>
+<img/arquitecturaSoftware1.png, id=460, 329.23pt x 137.51375pt>
 File: img/arquitecturaSoftware1.png Graphic file (type png)
 <use img/arquitecturaSoftware1.png>
 Package pdftex.def Info: img/arquitecturaSoftware1.png  used on input line 258.
 
 (pdftex.def)             Requested size: 164.6146pt x 68.7567pt.
-<img/arquitecturaSoftware1.2.png, id=145, 437.635pt x 375.4025pt>
+<img/arquitecturaSoftware1.2.png, id=464, 437.635pt x 375.4025pt>
 File: img/arquitecturaSoftware1.2.png Graphic file (type png)
 <use img/arquitecturaSoftware1.2.png>
 Package pdftex.def Info: img/arquitecturaSoftware1.2.png  used on input line 28
@@ -749,25 +893,40 @@ Package pdftex.def Info: img/arquitecturaSoftware1.2.png  used on input line 28
 (pdftex.def)             Requested size: 218.81696pt x 187.70079pt.
 LaTeX Info: Redefining \. on input line 293.
 LaTeX Info: Redefining \% on input line 293.
- [16 <./img/arquitecturaSoftware1.png>]
-<img/plano1.pdf, id=153, 845.1575pt x 597.23125pt>
+ [16pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.293 
+       <./img/arquitecturaSoftware1.png>]
+<img/plano1.pdf, id=478, 845.1575pt x 597.23125pt>
 File: img/plano1.pdf Graphic file (type pdf)
 <use img/plano1.pdf>
 Package pdftex.def Info: img/plano1.pdf  used on input line 297.
 (pdftex.def)             Requested size: 466.0pt x 329.30748pt.
 LaTeX Info: Redefining \. on input line 309.
 LaTeX Info: Redefining \% on input line 309.
- [17 <./img/arquitecturaSoftware1.2.png>]
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.309 
+       <./img/arquitecturaSoftware1.2.png>]
 LaTeX Info: Redefining \. on input line 309.
 LaTeX Info: Redefining \% on input line 309.
- [18 <./img/plano1.pdf>]
-<img/robot1.png, id=165, 263.0628pt x 264.0264pt>
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.309 
+       <./img/plano1.pdf>]
+<img/robot1.png, id=495, 263.0628pt x 264.0264pt>
 File: img/robot1.png Graphic file (type png)
 <use img/robot1.png>
 Package pdftex.def Info: img/robot1.png  used on input line 314.
 (pdftex.def)             Requested size: 263.06215pt x 264.02574pt.
-(./_minted-edgar/default-pyg-prefix.pygstyle) (./_minted-edgar/default.pygstyle
-)
+ (./_minted-edgar/default-pyg-prefix.pygstyle)
+(./_minted-edgar/default.pygstyle)
 (./_minted-edgar/B827E3BD1C6C7A1363ABA5A197C9557285678FA7EB90FCC914563A0F1D0788
 C1.pygtex
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
@@ -782,7 +941,12 @@ LaTeX Info: Redefining \% on input line 11.
  [19]
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
- [20 <./img/robot1.png>])
+ [20pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.11 ...G{o}{*} \PYG{n}{button\PYGZus{}}\PYG{p}{;}
+                                                   <./img/robot1.png>])
 (./_minted-edgar/0E6B51CA1E0EC7F8B97A17B44B2F0E887F683EBDC3AE89028A3832D3B9AA27
 5E.pygtex)
 LaTeX Info: Redefining \. on input line 393.
@@ -824,8 +988,8 @@ LaTeX Font Info:    Trying to load font information for TS1+cmss on input line
  (/usr/share/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ))
-LaTeX Info: Redefining \. on input line 99.
-LaTeX Info: Redefining \% on input line 99.
+LaTeX Info: Redefining \. on input line 101.
+LaTeX Info: Redefining \% on input line 101.
 
 [27] (./doble_propulsor.tex
 LaTeX Info: Redefining \. on input line 1.
@@ -838,75 +1002,146 @@ LaTeX Info: Redefining \% on input line 1.
 ]
 Cap\'{\i }tulo 5.
 [29]
-<img/esquematico2.pdf, id=206, 794.97pt x 614.295pt>
+<img/esquematico2.pdf, id=569, 794.97pt x 614.295pt>
 File: img/esquematico2.pdf Graphic file (type pdf)
 <use img/esquematico2.pdf>
-Package pdftex.def Info: img/esquematico2.pdf  used on input line 26.
+Package pdftex.def Info: img/esquematico2.pdf  used on input line 27.
 (pdftex.def)             Requested size: 466.0pt x 360.09692pt.
-<img/plano2.pdf, id=207, 845.1575pt x 597.23125pt>
+<img/plano2.pdf, id=571, 845.1575pt x 597.23125pt>
 File: img/plano2.pdf Graphic file (type pdf)
 <use img/plano2.pdf>
-Package pdftex.def Info: img/plano2.pdf  used on input line 30.
+Package pdftex.def Info: img/plano2.pdf  used on input line 31.
 (pdftex.def)             Requested size: 466.0pt x 329.30748pt.
-<img/arquitecturaSoftware2.png, id=208, 390.45876pt x 478.78876pt>
+<img/arquitecturaSoftware2.png, id=573, 390.45876pt x 478.78876pt>
 File: img/arquitecturaSoftware2.png Graphic file (type png)
 <use img/arquitecturaSoftware2.png>
-Package pdftex.def Info: img/arquitecturaSoftware2.png  used on input line 37.
+Package pdftex.def Info: img/arquitecturaSoftware2.png  used on input line 38.
 (pdftex.def)             Requested size: 195.2289pt x 239.39378pt.
-)
-LaTeX Info: Redefining \. on input line 100.
-LaTeX Info: Redefining \% on input line 100.
- [30]
-LaTeX Info: Redefining \. on input line 100.
-LaTeX Info: Redefining \% on input line 100.
- [31 <./img/esquematico2.pdf>]
-LaTeX Info: Redefining \. on input line 100.
-LaTeX Info: Redefining \% on input line 100.
- [32 <./img/plano2.pdf>]
-LaTeX Info: Redefining \. on input line 100.
-LaTeX Info: Redefining \% on input line 100.
- [33 <./img/arquitecturaSoftware2.png>]
-LaTeX Info: Redefining \. on input line 101.
-LaTeX Info: Redefining \% on input line 101.
- [34
+
+(./_minted-edgar/1C596F74C0DB0EA3653CD68F683F8F7B85678FA7EB90FCC914563A0F1D0788
+C1.pygtex
+Overfull \hbox (13.20158pt too wide) in paragraph at lines 47--1
+[]\T1/cmss/m/n/10 Esta par-te re-quie-re m·s cam-bios, crea-mos una nue-va in-t
+er-faz, lla-ma-da $\OML/cmm/m/it/10 PowerTrain$
+ []
+
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+[30]
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+ [31pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.7 ...{n}{on}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)}
+                                                   <./img/esquematico2.pdf>]
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+
+[32pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.7 ...{n}{on}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)}
+                                                   <./img/plano2.pdf>]
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+ [33pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.7 ...{n}{on}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)}
+                                                   <./img/arquitecturaSoftware2
+.png>])
+(./_minted-edgar/1B6BD8E129F337AF1A0D3D141555AB3E85678FA7EB90FCC914563A0F1D0788
+C1.pygtex
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
+ [34])
+LaTeX Info: Redefining \. on input line 134.
+LaTeX Info: Redefining \% on input line 134.
+ [35]
+<img/esquematico2.2.pdf, id=684, 794.97pt x 614.295pt>
+File: img/esquematico2.2.pdf Graphic file (type pdf)
+<use img/esquematico2.2.pdf>
+Package pdftex.def Info: img/esquematico2.2.pdf  used on input line 137.
+(pdftex.def)             Requested size: 466.0pt x 360.09692pt.
+<img/arquitecturaSoftware2.2.png, id=686, 395.4775pt x 517.935pt>
+File: img/arquitecturaSoftware2.2.png Graphic file (type png)
+<use img/arquitecturaSoftware2.2.png>
+Package pdftex.def Info: img/arquitecturaSoftware2.2.png  used on input line 14
+5.
+(pdftex.def)             Requested size: 197.73827pt x 258.96686pt.
+LaTeX Info: Redefining \. on input line 176.
+LaTeX Info: Redefining \% on input line 176.
+ [36]
+LaTeX Info: Redefining \. on input line 176.
+LaTeX Info: Redefining \% on input line 176.
+ [37pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.176 				\end{itemize}
+                        <./img/esquematico2.2.pdf>]
+LaTeX Info: Redefining \. on input line 176.
+LaTeX Info: Redefining \% on input line 176.
+ [38pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.176 				\end{itemize}
+                        <./img/arquitecturaSoftware2.2.png>])
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+ [39]
+(./it3/atras.tex)
+LaTeX Info: Redefining \. on input line 104.
+LaTeX Info: Redefining \% on input line 104.
+ [40
+
+
+
 
 
 
 ]
 
 LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <10> not available
-(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 101.
+(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 104.
 
 
-Overfull \hbox (14.88832pt too wide) in paragraph at lines 101--101
+Overfull \hbox (14.88832pt too wide) in paragraph at lines 104--104
 \T1/cmss/m/n/10 me-ga328p. 7810D-AVR-01/15. Mi-cro-chip. 2015. \T1/cmr/m/sc/10 
-url\T1/cmss/m/n/10 : $\T1/cmtt/m/n/10 https : / / ww1 . microchip .
+url\T1/cmss/m/n/10 : []$\T1/cmtt/m/n/10 https : / / ww1 . microchip .
  []
 
 
-Overfull \hbox (24.19055pt too wide) in paragraph at lines 101--101
+Overfull \hbox (24.19055pt too wide) in paragraph at lines 104--104
 \T1/cmtt/m/n/10 com / downloads / en / DeviceDoc / Atmel -[] 7810 -[] Automotiv
 e -[] Microcontrollers -[]
  []
 
-[35] (./edgar.aux
-LaTeX Info: Redefining \sptext on input line 9.
-LaTeX Info: Redefining \. on input line 9.
-LaTeX Info: Redefining \% on input line 9.
+[41] (./edgar.aux
+LaTeX Info: Redefining \sptext on input line 26.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
  (./objetivos.aux) (./metodologia.aux) (./trazadora.aux)
-(./doble_propulsor.aux))
+(./doble_propulsor.aux) (./it3/atras.aux))
+Package rerunfilecheck Info: File `edgar.out' has not changed.
+(rerunfilecheck)             Checksum: D1706CDE88B2772E8954E94D6A123A52;3098.
 runsystem(rm edgar.pyg)...executed.
 
 Package logreq Info: Writing requests to 'edgar.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 14426 strings out of 479383
- 267108 string characters out of 5875830
- 1046562 words of memory out of 5000000
- 31271 multiletter control sequences out of 15000+600000
+ 18239 strings out of 479383
+ 326253 string characters out of 5875831
+ 1132098 words of memory out of 5000000
+ 34825 multiletter control sequences out of 15000+600000
  421743 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,10n,85p,738b,1920s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 80i,10n,85p,738b,2192s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
 exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -926,10 +1161,10 @@ exmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf-dist/fonts
 m-super/sfsx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx207
 4.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/sha
 re/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on edgar.pdf (49 pages, 2994672 bytes).
+Output written on edgar.pdf (55 pages, 3083704 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
- 249 compressed objects within 3 object streams
- 0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 916 PDF objects out of 1000 (max. 8388607)
+ 738 compressed objects within 8 object streams
+ 169 named destinations out of 1000 (max. 500000)
+ 419 words of extra memory for PDF output out of 10000 (max. 10000000)
 

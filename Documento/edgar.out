@@ -1,0 +1,46 @@
+\BOOKMARK [0][-]{chapter*.2}{Agradecimientos}{}% 1
+\BOOKMARK [1][-]{chapter*.3}{Resumen}{chapter*.2}% 2
+\BOOKMARK [0][-]{chapter*.4}{Lista de figuras}{}% 3
+\BOOKMARK [0][-]{chapter*.5}{Lista de tablas}{}% 4
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 5
+\BOOKMARK [0][-]{chapter.2}{Objetivos}{}% 6
+\BOOKMARK [1][-]{section.2.1}{Objetivo Principal}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.2}{Objetivos Espec\355ficos}{chapter.2}% 8
+\BOOKMARK [0][-]{chapter.3}{Metodolog\355a}{}% 9
+\BOOKMARK [1][-]{section.3.1}{Dos es mejor que una}{chapter.3}% 10
+\BOOKMARK [2][-]{subsection.3.1.1}{RUP}{section.3.1}% 11
+\BOOKMARK [2][-]{subsection.3.1.2}{XP}{section.3.1}% 12
+\BOOKMARK [1][-]{section.3.2}{\277Porqu\351 no usar una metodolog\355a cl\341sica?}{chapter.3}% 13
+\BOOKMARK [0][-]{chapter.4}{Trazadora. Primera iteraci\363n}{}% 14
+\BOOKMARK [1][-]{section.4.1}{Requerimientos}{chapter.4}% 15
+\BOOKMARK [2][-]{subsection.4.1.1}{El movimiento}{section.4.1}% 16
+\BOOKMARK [2][-]{subsection.4.1.2}{Lenguaje de programaci\363n}{section.4.1}% 17
+\BOOKMARK [1][-]{section.4.2}{An\341lisis}{chapter.4}% 18
+\BOOKMARK [2][-]{subsection.4.2.1}{Selecci\363n de robot}{section.4.2}% 19
+\BOOKMARK [1][-]{section.4.3}{Dise\361o}{chapter.4}% 20
+\BOOKMARK [2][-]{subsection.4.3.1}{Arquitectura electr\363nica}{section.4.3}% 21
+\BOOKMARK [2][-]{subsection.4.3.2}{Arquitectura de software}{section.4.3}% 22
+\BOOKMARK [2][-]{subsection.4.3.3}{Arquitectura mec\341nica}{section.4.3}% 23
+\BOOKMARK [1][-]{section.4.4}{Implementaci\363n}{chapter.4}% 24
+\BOOKMARK [2][-]{subsection.4.4.1}{Implementaci\363n mec\341nica}{section.4.4}% 25
+\BOOKMARK [2][-]{subsection.4.4.2}{Implementaci\363n electr\363nica}{section.4.4}% 26
+\BOOKMARK [2][-]{subsection.4.4.3}{Implementaci\363n del programa}{section.4.4}% 27
+\BOOKMARK [1][-]{section.4.5}{Pruebas}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.6}{Objetivos refinados}{chapter.4}% 29
+\BOOKMARK [0][-]{chapter.5}{Doble propulsor. Segunda iteraci\363n}{}% 30
+\BOOKMARK [1][-]{section.5.1}{Requerimientos}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.2}{An\341lisis}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.3}{Dise\361o}{chapter.5}% 33
+\BOOKMARK [2][-]{subsection.5.3.1}{Arquitectura electr\363nica}{section.5.3}% 34
+\BOOKMARK [2][-]{subsection.5.3.2}{Arquitectura mec\341nica}{section.5.3}% 35
+\BOOKMARK [2][-]{subsection.5.3.3}{Arquitectura de software}{section.5.3}% 36
+\BOOKMARK [1][-]{section.5.4}{Implementaci\363n}{chapter.5}% 37
+\BOOKMARK [2][-]{subsection.5.4.1}{Implementaci\363n electr\363nica y mec\341nica}{section.5.4}% 38
+\BOOKMARK [2][-]{subsection.5.4.2}{Implementaci\363n de software}{section.5.4}% 39
+\BOOKMARK [1][-]{section.5.5}{Pruebas}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.6}{Segunda iteraci\363n}{chapter.5}% 41
+\BOOKMARK [2][-]{subsection.5.6.1}{Requerimientos y An\341lisis}{section.5.6}% 42
+\BOOKMARK [2][-]{subsection.5.6.2}{Dise\361o}{section.5.6}% 43
+\BOOKMARK [2][-]{subsection.5.6.3}{Implementaci\363n}{section.5.6}% 44
+\BOOKMARK [2][-]{subsection.5.6.4}{Pruebas}{section.5.6}% 45
+\BOOKMARK [1][-]{section.5.7}{Objetivos refinados}{chapter.5}% 46

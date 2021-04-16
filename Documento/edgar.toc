@@ -1,92 +1,120 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {spanish}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Agradecimientos}{V}{}%
+\contentsline {chapter}{Agradecimientos}{V}{chapter*.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Resumen}{VII}{}%
+\contentsline {section}{Resumen}{VII}{chapter*.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Lista de figuras}{XI}{}%
+\contentsline {chapter}{Lista de figuras}{XI}{chapter*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Lista de tablas}{XIII}{}%
+\contentsline {chapter}{Lista de tablas}{XIII}{chapter*.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Introducción}{1}{}%
+\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Objetivos}{3}{}%
+\contentsline {chapter}{\numberline {2}Objetivos}{3}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Objetivo Principal}{3}{}%
+\contentsline {section}{\numberline {2.1}Objetivo Principal}{3}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Objetivos Específicos}{3}{}%
+\contentsline {section}{\numberline {2.2}Objetivos Específicos}{3}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Metodología}{5}{}%
+\contentsline {chapter}{\numberline {3}Metodología}{5}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Dos es mejor que una}{5}{}%
+\contentsline {section}{\numberline {3.1}Dos es mejor que una}{5}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}RUP}{5}{}%
+\contentsline {subsection}{\numberline {3.1.1}RUP}{5}{subsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}XP}{7}{}%
+\contentsline {subsection}{\numberline {3.1.2}XP}{7}{subsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}¿Porqué no usar una metodología clásica?}{7}{}%
+\contentsline {section}{\numberline {3.2}¿Porqué no usar una metodología clásica?}{7}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Trazadora. Primera iteración}{9}{}%
+\contentsline {chapter}{\numberline {4}Trazadora. Primera iteración}{9}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Requerimientos}{10}{}%
+\contentsline {section}{\numberline {4.1}Requerimientos}{10}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}El movimiento}{10}{}%
+\contentsline {subsection}{\numberline {4.1.1}El movimiento}{10}{subsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Lenguaje de programación}{11}{}%
+\contentsline {subsection}{\numberline {4.1.2}Lenguaje de programación}{11}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Análisis}{11}{}%
+\contentsline {section}{\numberline {4.2}Análisis}{11}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Selección de robot}{11}{}%
+\contentsline {subsection}{\numberline {4.2.1}Selección de robot}{11}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Diseño}{12}{}%
+\contentsline {section}{\numberline {4.3}Diseño}{12}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Arquitectura electrónica}{12}{}%
+\contentsline {subsection}{\numberline {4.3.1}Arquitectura electrónica}{12}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Selección de propulsor}{12}{}%
+\contentsline {subsubsection}{Selección de propulsor}{12}{section*.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Selección de dispositivo programable}{14}{}%
+\contentsline {subsubsection}{Selección de dispositivo programable}{14}{section*.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Selección de fuente de poder}{14}{}%
+\contentsline {subsubsection}{Selección de fuente de poder}{14}{section*.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Control del motor}{14}{}%
+\contentsline {subsubsection}{Control del motor}{14}{section*.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Arquitectura de software}{15}{}%
+\contentsline {subsection}{\numberline {4.3.2}Arquitectura de software}{15}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Arquitectura mecánica}{17}{}%
+\contentsline {subsection}{\numberline {4.3.3}Arquitectura mecánica}{17}{subsection.4.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Implementación}{17}{}%
+\contentsline {section}{\numberline {4.4}Implementación}{17}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Implementación mecánica}{19}{}%
+\contentsline {subsection}{\numberline {4.4.1}Implementación mecánica}{19}{subsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}Implementación electrónica}{19}{}%
+\contentsline {subsection}{\numberline {4.4.2}Implementación electrónica}{19}{subsection.4.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.3}Implementación del programa}{19}{}%
+\contentsline {subsection}{\numberline {4.4.3}Implementación del programa}{19}{subsection.4.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Robot}{19}{}%
+\contentsline {subsubsection}{Robot}{19}{section*.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Motor}{22}{}%
+\contentsline {subsubsection}{Motor}{22}{section*.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Botón}{23}{}%
+\contentsline {subsubsection}{Botón}{23}{section*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Timer}{25}{}%
+\contentsline {subsubsection}{Timer}{25}{section*.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Main}{25}{}%
+\contentsline {subsubsection}{Main}{25}{section*.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Pruebas}{26}{}%
+\contentsline {section}{\numberline {4.5}Pruebas}{26}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Objetivos refinados}{27}{}%
+\contentsline {section}{\numberline {4.6}Objetivos refinados}{27}{section.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Doble propulsor. Segunda iteración}{29}{}%
+\contentsline {chapter}{\numberline {5}Doble propulsor. Segunda iteración}{29}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Requerimientos}{29}{}%
+\contentsline {section}{\numberline {5.1}Requerimientos}{29}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Análisis}{29}{}%
+\contentsline {section}{\numberline {5.2}Análisis}{29}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Diseño}{30}{}%
+\contentsline {section}{\numberline {5.3}Diseño}{30}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Arquitectura electrónica}{30}{}%
+\contentsline {subsection}{\numberline {5.3.1}Arquitectura electrónica}{30}{subsection.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Arquitectura mecánica}{30}{}%
+\contentsline {subsection}{\numberline {5.3.2}Arquitectura mecánica}{30}{subsection.5.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}Arquitectura de software}{30}{}%
+\contentsline {subsection}{\numberline {5.3.3}Arquitectura de software}{30}{subsection.5.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Implementación}{30}{section.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.1}Implementación electrónica y mecánica}{30}{subsection.5.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.2}Implementación de software}{30}{subsection.5.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Firmware}{34}{section*.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}Pruebas}{35}{section.5.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.6}Segunda iteración}{35}{section.5.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.1}Requerimientos y Análisis}{35}{subsection.5.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.2}Diseño}{35}{subsection.5.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Diseño electrónico}{35}{section*.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Diseño mecánico}{36}{section*.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Diseño del programa}{36}{section*.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.3}Implementación}{36}{subsection.5.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.4}Pruebas}{36}{subsection.5.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.7}Objetivos refinados}{36}{section.5.7}%

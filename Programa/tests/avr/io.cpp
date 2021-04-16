@@ -3,6 +3,9 @@
 uint8_t DDRB = 0;
 uint8_t PORTB= 0;
 uint8_t PINB= 0;
+uint8_t DDRC = 0;
+uint8_t PORTC= 0;
+uint8_t PINC= 0;
 uint8_t DDRD = 0;
 uint8_t PORTD= 0;
 uint8_t PIND= 0;
