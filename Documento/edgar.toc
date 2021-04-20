@@ -118,3 +118,23 @@
 \contentsline {subsection}{\numberline {5.6.4}Pruebas}{36}{subsection.5.6.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.7}Objetivos refinados}{36}{section.5.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Volviendo al pasado, tercera iteración}{41}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Requerimientos}{41}{section.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Análisis}{41}{section.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Diseño}{42}{section.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.1}Diseño electrónico}{42}{subsection.6.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.2}Diseño de programa}{43}{subsection.6.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Implementación}{45}{section.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.5}Pruebas}{49}{section.6.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.6}Objetivos refinados}{49}{section.6.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Moverse en línea recta}{51}{chapter.7}%

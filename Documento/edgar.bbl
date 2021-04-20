@@ -105,6 +105,24 @@
       \field{title}{The pragmatic programmer: your journey to mastery}
       \field{year}{2020}
     \endentry
+    \entry{l298}{manual}{}
+      \list{organization}{1}{%
+        {STMicroelectronics}%
+      }
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labeltitlesource}{title}
+      \field{note}{Rev. 1}
+      \field{number}{L298}
+      \field{title}{DUAL FULL-BRIDGE DRIVER}
+      \field{year}{2000}
+      \verb{urlraw}
+      \verb https://www.st.com/resource/en/datasheet/l298.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.st.com/resource/en/datasheet/l298.pdf
+      \endverb
+    \endentry
     \entry{booch}{book}{}
       \name{author}{1}{}{%
         {{hash=d2bd1ce6586e49faad72a9930f528de5}{%

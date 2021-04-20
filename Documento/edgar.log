@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.9)  16 APR 2021 00:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.18)  20 APR 2021 15:54
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -856,7 +856,7 @@ LaTeX Info: Redefining \% on input line 82.
 LaTeX Info: Redefining \. on input line 120.
 LaTeX Info: Redefining \% on input line 120.
  [11]
-<img/esquematico1.pdf, id=393, 794.97pt x 614.295pt>
+<img/esquematico1.pdf, id=442, 794.97pt x 614.295pt>
 File: img/esquematico1.pdf Graphic file (type pdf)
 <use img/esquematico1.pdf>
 Package pdftex.def Info: img/esquematico1.pdf  used on input line 139.
@@ -879,13 +879,13 @@ LaTeX Info: Redefining \% on input line 196.
 LaTeX Info: Redefining \. on input line 239.
 LaTeX Info: Redefining \% on input line 239.
  [15]
-<img/arquitecturaSoftware1.png, id=460, 329.23pt x 137.51375pt>
+<img/arquitecturaSoftware1.png, id=509, 329.23pt x 137.51375pt>
 File: img/arquitecturaSoftware1.png Graphic file (type png)
 <use img/arquitecturaSoftware1.png>
 Package pdftex.def Info: img/arquitecturaSoftware1.png  used on input line 258.
 
 (pdftex.def)             Requested size: 164.6146pt x 68.7567pt.
-<img/arquitecturaSoftware1.2.png, id=464, 437.635pt x 375.4025pt>
+<img/arquitecturaSoftware1.2.png, id=513, 437.635pt x 375.4025pt>
 File: img/arquitecturaSoftware1.2.png Graphic file (type png)
 <use img/arquitecturaSoftware1.2.png>
 Package pdftex.def Info: img/arquitecturaSoftware1.2.png  used on input line 28
@@ -899,7 +899,7 @@ LaTeX Info: Redefining \% on input line 293.
                                                   
 l.293 
        <./img/arquitecturaSoftware1.png>]
-<img/plano1.pdf, id=478, 845.1575pt x 597.23125pt>
+<img/plano1.pdf, id=527, 845.1575pt x 597.23125pt>
 File: img/plano1.pdf Graphic file (type pdf)
 <use img/plano1.pdf>
 Package pdftex.def Info: img/plano1.pdf  used on input line 297.
@@ -920,7 +920,7 @@ LaTeX Info: Redefining \% on input line 309.
                                                   
 l.309 
        <./img/plano1.pdf>]
-<img/robot1.png, id=495, 263.0628pt x 264.0264pt>
+<img/robot1.png, id=544, 263.0628pt x 264.0264pt>
 File: img/robot1.png Graphic file (type png)
 <use img/robot1.png>
 Package pdftex.def Info: img/robot1.png  used on input line 314.
@@ -1002,17 +1002,17 @@ LaTeX Info: Redefining \% on input line 1.
 ]
 Cap\'{\i }tulo 5.
 [29]
-<img/esquematico2.pdf, id=569, 794.97pt x 614.295pt>
+<img/esquematico2.pdf, id=619, 794.97pt x 614.295pt>
 File: img/esquematico2.pdf Graphic file (type pdf)
 <use img/esquematico2.pdf>
 Package pdftex.def Info: img/esquematico2.pdf  used on input line 27.
 (pdftex.def)             Requested size: 466.0pt x 360.09692pt.
-<img/plano2.pdf, id=571, 845.1575pt x 597.23125pt>
+<img/plano2.pdf, id=621, 845.1575pt x 597.23125pt>
 File: img/plano2.pdf Graphic file (type pdf)
 <use img/plano2.pdf>
 Package pdftex.def Info: img/plano2.pdf  used on input line 31.
 (pdftex.def)             Requested size: 466.0pt x 329.30748pt.
-<img/arquitecturaSoftware2.png, id=573, 390.45876pt x 478.78876pt>
+<img/arquitecturaSoftware2.png, id=623, 390.45876pt x 478.78876pt>
 File: img/arquitecturaSoftware2.png Graphic file (type png)
 <use img/arquitecturaSoftware2.png>
 Package pdftex.def Info: img/arquitecturaSoftware2.png  used on input line 38.
@@ -1062,12 +1062,12 @@ LaTeX Info: Redefining \% on input line 15.
 LaTeX Info: Redefining \. on input line 134.
 LaTeX Info: Redefining \% on input line 134.
  [35]
-<img/esquematico2.2.pdf, id=684, 794.97pt x 614.295pt>
+<img/esquematico2.2.pdf, id=734, 794.97pt x 614.295pt>
 File: img/esquematico2.2.pdf Graphic file (type pdf)
 <use img/esquematico2.2.pdf>
 Package pdftex.def Info: img/esquematico2.2.pdf  used on input line 137.
 (pdftex.def)             Requested size: 466.0pt x 360.09692pt.
-<img/arquitecturaSoftware2.2.png, id=686, 395.4775pt x 517.935pt>
+<img/arquitecturaSoftware2.2.png, id=736, 395.4775pt x 517.935pt>
 File: img/arquitecturaSoftware2.2.png Graphic file (type png)
 <use img/arquitecturaSoftware2.2.png>
 Package pdftex.def Info: img/arquitecturaSoftware2.2.png  used on input line 14
@@ -1095,50 +1095,130 @@ l.176 				\end{itemize}
 LaTeX Info: Redefining \. on input line 102.
 LaTeX Info: Redefining \% on input line 102.
  [39]
-(./it3/atras.tex)
-LaTeX Info: Redefining \. on input line 104.
-LaTeX Info: Redefining \% on input line 104.
+(./it3/atras.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
  [40
 
 
 
+
+]
+Cap\'{\i }tulo 6.
+[41]
+<it3/img/motordc.pdf, id=850, page=1, 794.97pt x 614.295pt>
+File: it3/img/motordc.pdf Graphic file (type pdf)
+<use it3/img/motordc.pdf, page 1>
+Package pdftex.def Info: it3/img/motordc.pdf , page1 used on input line 32.
+(pdftex.def)             Requested size: 310.4979pt x 239.93027pt.
+<it3/img/esquematico3.pdf, id=855, 4267.91315pt x 3442.78334pt>
+File: it3/img/esquematico3.pdf Graphic file (type pdf)
+<use it3/img/esquematico3.pdf>
+Package pdftex.def Info: it3/img/esquematico3.pdf  used on input line 51.
+(pdftex.def)             Requested size: 466.0pt x 375.87059pt.
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
+ [42pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.56 \begin{description}
+                         <./it3/img/motordc.pdf>]
+LaTeX Info: Redefining \. on input line 77.
+LaTeX Info: Redefining \% on input line 77.
+ [43]
+LaTeX Info: Redefining \. on input line 77.
+LaTeX Info: Redefining \% on input line 77.
+ [44pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.77 M
+      odificamos la clase $MotorDc$ para contener los tres pines y para aña...
+ <./it3/img/esquematico3.pdf>]
+(./_minted-edgar/30C090BD640A5C251DDFBA4F584D36B285678FA7EB90FCC914563A0F1D0788
+C1.pygtex)
+(./_minted-edgar/094884FDAB59D8CC860FF7A91F79CD2885678FA7EB90FCC914563A0F1D0788
+C1.pygtex
+LaTeX Info: Redefining \. on input line 20.
+LaTeX Info: Redefining \% on input line 20.
+ [45])
+(./_minted-edgar/DCFEC6D443F0FB6253842863D5BA1B3285678FA7EB90FCC914563A0F1D0788
+C1.pygtex
+LaTeX Info: Redefining \. on input line 20.
+LaTeX Info: Redefining \% on input line 20.
+ [46])
+(./_minted-edgar/507815E65340D3A52FF9254AC8AD50E485678FA7EB90FCC914563A0F1D0788
+C1.pygtex)
+(./_minted-edgar/4472B1B12E60E3626A55CBF91C76660C85678FA7EB90FCC914563A0F1D0788
+C1.pygtex
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
+ [47])
+(./_minted-edgar/1436D86F20777B7E274862729356824A85678FA7EB90FCC914563A0F1D0788
+C1.pygtex
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+ [48])
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
+ [49])
+LaTeX Info: Redefining \. on input line 103.
+LaTeX Info: Redefining \% on input line 103.
+ [50] (./it4/pwm.tex
+Cap\'{\i }tulo 7.
+) [51
+
+
+
+
+]
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
+ [52
 
 
 
 ]
 
 LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <10> not available
-(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 104.
+(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 105.
 
 
-Overfull \hbox (14.88832pt too wide) in paragraph at lines 104--104
+Overfull \hbox (14.88832pt too wide) in paragraph at lines 105--105
 \T1/cmss/m/n/10 me-ga328p. 7810D-AVR-01/15. Mi-cro-chip. 2015. \T1/cmr/m/sc/10 
 url\T1/cmss/m/n/10 : []$\T1/cmtt/m/n/10 https : / / ww1 . microchip .
  []
 
 
-Overfull \hbox (24.19055pt too wide) in paragraph at lines 104--104
+Overfull \hbox (24.19055pt too wide) in paragraph at lines 105--105
 \T1/cmtt/m/n/10 com / downloads / en / DeviceDoc / Atmel -[] 7810 -[] Automotiv
 e -[] Microcontrollers -[]
  []
 
-[41] (./edgar.aux
+[53] (./edgar.aux
 LaTeX Info: Redefining \sptext on input line 26.
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
  (./objetivos.aux) (./metodologia.aux) (./trazadora.aux)
-(./doble_propulsor.aux) (./it3/atras.aux))
-Package rerunfilecheck Info: File `edgar.out' has not changed.
-(rerunfilecheck)             Checksum: D1706CDE88B2772E8954E94D6A123A52;3098.
+(./doble_propulsor.aux) (./it3/atras.aux) (./it4/pwm.aux))
+
+Package rerunfilecheck Warning: File `edgar.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `edgar.out':
+(rerunfilecheck)             Before: D8A4C8887475FF8D4722BB6BC42E4A83;3687
+(rerunfilecheck)             After:  7B00AE621A4FB0BB9C039D7874A65AAE;3748.
 runsystem(rm edgar.pyg)...executed.
 
 Package logreq Info: Writing requests to 'edgar.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 18239 strings out of 479383
- 326253 string characters out of 5875831
- 1132098 words of memory out of 5000000
- 34825 multiletter control sequences out of 15000+600000
+ 18341 strings out of 479383
+ 329687 string characters out of 5875830
+ 1136675 words of memory out of 5000000
+ 34863 multiletter control sequences out of 15000+600000
  421743 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,10n,85p,738b,2192s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1161,10 +1241,10 @@ exmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf-dist/fonts
 m-super/sfsx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx207
 4.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/sha
 re/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on edgar.pdf (55 pages, 3083704 bytes).
+Output written on edgar.pdf (67 pages, 3324185 bytes).
 PDF statistics:
- 916 PDF objects out of 1000 (max. 8388607)
- 738 compressed objects within 8 object streams
- 169 named destinations out of 1000 (max. 500000)
- 419 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1109 PDF objects out of 1200 (max. 8388607)
+ 891 compressed objects within 9 object streams
+ 206 named destinations out of 1000 (max. 500000)
+ 501 words of extra memory for PDF output out of 10000 (max. 10000000)
 

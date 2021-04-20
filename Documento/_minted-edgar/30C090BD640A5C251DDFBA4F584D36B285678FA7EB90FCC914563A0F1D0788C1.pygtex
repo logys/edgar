@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{MotorDc} \PYG{o}{:} \PYG{k}{public} \PYG{n}{Motor}\PYG{p}{\PYGZob{}}
+	\PYG{k}{private}\PYG{o}{:}
+		\PYG{k+kt}{short} \PYG{n}{pin\PYGZus{}enable\PYGZus{}}\PYG{p}{;}
+		\PYG{k+kt}{short} \PYG{n}{pin\PYGZus{}input1\PYGZus{}}\PYG{p}{;}
+		\PYG{k+kt}{short} \PYG{n}{pin\PYGZus{}input2\PYGZus{}}\PYG{p}{;}
+	\PYG{k}{public}\PYG{o}{:}
+		\PYG{n}{MotorDc}\PYG{p}{(}\PYG{k+kt}{short} \PYG{k}{const} \PYG{n}{pin\PYGZus{}enable}\PYG{p}{,} \PYG{k+kt}{short} \PYG{k}{const} \PYG{n}{pin\PYGZus{}input1}\PYG{p}{,}
+			       	\PYG{k+kt}{short} \PYG{k}{const} \PYG{n}{pin\PYGZus{}input2}\PYG{p}{);}
+		\PYG{k}{virtual} \PYG{k+kt}{void} \PYG{n}{forward}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)} \PYG{k}{override}\PYG{p}{;}
+		\PYG{k}{virtual} \PYG{k+kt}{void} \PYG{n}{backward}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)} \PYG{k}{override}\PYG{p}{;}
+		\PYG{k}{virtual} \PYG{k+kt}{void} \PYG{n}{off}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)} \PYG{k}{override}\PYG{p}{;}
+\PYG{p}{\PYGZcb{};}
+\end{Verbatim}

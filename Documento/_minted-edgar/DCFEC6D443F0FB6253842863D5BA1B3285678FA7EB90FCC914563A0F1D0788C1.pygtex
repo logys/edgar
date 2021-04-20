@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}ifndef DIFFERENTIAL\PYGZus{}H}
+\PYG{c+cp}{\PYGZsh{}define DIFFERENTIAL\PYGZus{}H}
+
+\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZdq{}power\PYGZus{}train.h\PYGZdq{}}
+\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZdq{}motor.h\PYGZdq{}}
+
+\PYG{k}{class} \PYG{n+nc}{Differential} \PYG{o}{:} \PYG{k}{public} \PYG{n}{PowerTrain}\PYG{p}{\PYGZob{}}
+	\PYG{k}{private}\PYG{o}{:}
+		\PYG{n}{Motor} \PYG{o}{*}\PYG{n}{left\PYGZus{}}\PYG{p}{;}
+		\PYG{n}{Motor} \PYG{o}{*}\PYG{n}{rigth\PYGZus{}}\PYG{p}{;}
+	\PYG{k}{public}\PYG{o}{:}
+		\PYG{n}{Differential}\PYG{p}{(}\PYG{n}{Motor} \PYG{o}{*}\PYG{p}{,} \PYG{n}{Motor} \PYG{o}{*}\PYG{p}{);}
+		\PYG{k}{virtual} \PYG{k+kt}{void} \PYG{n}{forward}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)} \PYG{k}{override}\PYG{p}{;}
+		\PYG{k}{virtual} \PYG{k+kt}{void} \PYG{n}{backward}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)} \PYG{k}{override}\PYG{p}{;}
+		\PYG{k}{virtual} \PYG{k+kt}{void} \PYG{n}{off}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)} \PYG{k}{override}\PYG{p}{;}
+\PYG{p}{\PYGZcb{};}
+
+\PYG{c+cp}{\PYGZsh{}endif}\PYG{c+c1}{// DIFFERENTIAL\PYGZus{}H}
+\end{Verbatim}

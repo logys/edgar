@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZdq{}robot.h\PYGZdq{}}
+
+\PYG{n}{Robot}\PYG{o}{::}\PYG{n}{Robot}\PYG{p}{(}\PYG{n}{PowerTrain} \PYG{o}{*} \PYG{n}{train}\PYG{p}{,} \PYG{n}{Timer} \PYG{o}{*} \PYG{n}{timer}\PYG{p}{)}\PYG{o}{:}
+	\PYG{n}{train\PYGZus{}}\PYG{p}{\PYGZob{}}\PYG{n}{train}\PYG{p}{\PYGZcb{},} \PYG{n}{timer\PYGZus{}}\PYG{p}{\PYGZob{}}\PYG{n}{timer}\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZob{}}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{void} \PYG{n}{Robot}\PYG{o}{::}\PYG{n}{moveForward}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+	\PYG{n}{train\PYGZus{}}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{forward}\PYG{p}{();}
+	\PYG{n}{timer\PYGZus{}}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{enable}\PYG{p}{();}
+	\PYG{k}{while}\PYG{p}{(}\PYG{n}{timer\PYGZus{}}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{getTime}\PYG{p}{()} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{1000}\PYG{p}{);}
+	\PYG{n}{train\PYGZus{}}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{off}\PYG{p}{();}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{void} \PYG{n}{Robot}\PYG{o}{::}\PYG{n}{moveBackward}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+	\PYG{n}{train\PYGZus{}}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{backward}\PYG{p}{();}
+	\PYG{n}{timer\PYGZus{}}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{enable}\PYG{p}{();}
+	\PYG{k}{while}\PYG{p}{(}\PYG{n}{timer\PYGZus{}}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{getTime}\PYG{p}{()} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{1000}\PYG{p}{);}
+	\PYG{n}{train\PYGZus{}}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{off}\PYG{p}{();}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

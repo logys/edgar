@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZdq{}differential.h\PYGZdq{}}
+\PYG{n}{Differential}\PYG{o}{::}\PYG{n}{Differential}\PYG{p}{(}\PYG{n}{Motor} \PYG{o}{*} \PYG{n}{left}\PYG{p}{,} \PYG{n}{Motor} \PYG{o}{*} \PYG{n}{right}\PYG{p}{)} \PYG{o}{:}
+       	\PYG{n}{rigth\PYGZus{}}\PYG{p}{\PYGZob{}}\PYG{n}{right}\PYG{p}{\PYGZcb{},} \PYG{n}{left\PYGZus{}}\PYG{p}{\PYGZob{}}\PYG{n}{left}\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZob{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{void} \PYG{n}{Differential}\PYG{o}{::}\PYG{n}{forward}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+	\PYG{n}{left\PYGZus{}}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{forward}\PYG{p}{();}
+	\PYG{n}{rigth\PYGZus{}}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{backward}\PYG{p}{();}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{void} \PYG{n}{Differential}\PYG{o}{::}\PYG{n}{backward}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+	\PYG{n}{left\PYGZus{}}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{backward}\PYG{p}{();}
+	\PYG{n}{rigth\PYGZus{}}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{forward}\PYG{p}{();}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{void} \PYG{n}{Differential}\PYG{o}{::}\PYG{n}{off}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+	\PYG{n}{rigth\PYGZus{}}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{off}\PYG{p}{();}
+	\PYG{n}{left\PYGZus{}}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{off}\PYG{p}{();}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

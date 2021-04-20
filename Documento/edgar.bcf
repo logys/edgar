@@ -2357,6 +2357,7 @@
     <bcf:citekey order="5">atmega328p</bcf:citekey>
     <bcf:citekey order="6">2n2222a</bcf:citekey>
     <bcf:citekey order="7">clean_architecture</bcf:citekey>
+    <bcf:citekey order="8">l298</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
