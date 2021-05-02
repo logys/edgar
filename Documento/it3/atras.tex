@@ -39,14 +39,15 @@ de tipo puente. Uno muy utilizado es el \emph{L298}\cite{l298}, en especifico
 este circuito integrado tiene la capacidad de manejar a dos motores, con una
 potencia total de $25[W]$ y una corriente continua máxima de $2[A]$ por cada 
 motor, es suficiente por ahora pero tengo mis dudas para el futuro, a ojo de 
-buen cubero pienso que requiero al menos $20[W]$ por cada motor, llegado a ese 
+buen cubero pienso que requiero al menos $20[W]$ por cada motor, llegado ese 
 momento decidiré que hacer con el circuito integrado.\footnote{¿Por qué no usar
 un circuito integrado más poderoso de una vez?, no hay
 ninguna razón técnica, es el que tengo disponible en este instante.}
 Regresando al L298, 
 nos permite controlar la dirección de rotación de los motores y mediante una 
 técnica de conmutación también podemos controlar su velocidad. En la figura 
-\ref{fig:Esquemático 3}.\footnote{El L298 requiere dos fuentes de voltaje
+\ref{fig:Esquemático 3} se muestra el esquemático.\footnote{El L298 requiere dos
+	fuentes de voltaje
 una para entregar potencia a los motores y otra para el control.}
 \newschematic{it3/img/esquematico3.pdf}{Esquemático 3}
 El circuito integrado esta dividido en dos canales A y B, uno para cada motor,
@@ -65,8 +66,8 @@ correspondientes son:
 Por lo tanto requerimos al menos  tres pines de nuestro microcontrolador para 
 controlar cada uno de los motores, tenemos muchos pines disponibles, no es un 
 problema, no requerimos medir la corriente así que los pines 1 y 15 van directos
-a tierra. El esquemático se ha simplificado mucho, pese a que añadí funcionalidad
-estos satisfecho.
+a tierra. El esquemático se ha simplificado mucho pese a que añadí funcionalidad,
+estoy satisfecho.
 \subsection{Diseño de programa}
 La arquitectura es la misma, los cambios se dan en el modulo $MotorDc$, se
 requiere que cada motor utilice tres pines.
@@ -77,7 +78,7 @@ esquemáticos y planos, los cambios en esta etapa se dan en el software.
 Modificamos la clase $MotorDc$ para contener los tres pines y para añadir un
 nuevo comportamiento, ahora los motores pueden ir hacia adelante o hacia 
 atrás.\footnote{Igualmente se modifican las declaraciones de los métodos virtuales
-en la interfaz Motor}
+en la interfaz $Motor$}
 \begin{minted}{C++}
 class MotorDc : public Motor{
 	private:
@@ -85,21 +86,27 @@ class MotorDc : public Motor{
 		short pin_input1_;
 		short pin_input2_;
 	public:
-		MotorDc(short const pin_enable, short const pin_input1,
-			       	short const pin_input2);
+		MotorDc(short const pin_enable, 
+			short const pin_input1,
+			short const pin_input2);
 		virtual void forward(void) override;
 		virtual void backward(void) override;
 		virtual void off(void) override;
 };
 \end{minted}
 la implementación es igualmente simple, se configuran los tres pines para indicar
-el comportamiento, el código se explica por si solo.
+el comportamiento ($pin\_enable\_$, $pin\_input1\_$, $pin\_input2\_$), se reemplaza 
+el método $on$ por $fordward$ y $backward$. La implementación es la siguiente:
 \begin{minted}[linenos]{C++}
 #include "motorDc.h"
 #include "gpio.h"
 
-MotorDc::MotorDc(short const pin_enable, short const pin_input1, short const pin_input2) :
-       	pin_enable_{pin_enable}, pin_input1_{pin_input1}, pin_input2_{pin_input2}
+MotorDc::MotorDc(short const pin_enable, 
+		short const pin_input1, 
+		short const pin_input2) :
+		pin_enable_{pin_enable},
+		pin_input1_{pin_input1}, 
+		pin_input2_{pin_input2}
 {
 	gpio_setDirection(pin_enable_, OUTPUT);
 	gpio_setDirection(pin_input1_, OUTPUT);
@@ -128,12 +135,13 @@ void MotorDc::off(void)
 \end{minted}
 
 Ahora que cambiamos la interfaz de $Motor$, el módulo $differential$ ya no entiende
-los motores hay que modificarlo también,\footnote{Igualmente se modifica la interfaz
-PowerTrain} $differential$ tiene dos funciones, las
+a los motores hay que modificarlo también,\footnote{Igualmente se modifica la 
+	interfaz PowerTrain} $differential$ tiene dos funciones, las
 modifico igual que $motor$,\footnote{En el futuro differential tendrá funciones
 diferentes a Motor, es pura coincidencia que ahora sean iguales.} recordemos que
 los motores deben girar en direcciones opuestas para hacer el desplazamiento.
-\begin{minted}{C++}
+
+\begin{minted}[linenos]{C++}
 #ifndef DIFFERENTIAL_H
 #define DIFFERENTIAL_H
 

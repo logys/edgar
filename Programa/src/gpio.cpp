@@ -1,4 +1,4 @@
-//gpio.c
+//gpio.cpp
 #include "gpio.h"
 #include <avr/io.h>
 #include <stdint.h>
@@ -31,11 +31,11 @@ void gpio_setDirection(short const pin, DIRECTION direction)
 
 static char portOfPin(short const pin)
 {
-	if((pin >= 2 && pin <= 6) || pin >= 11 && pin <= 13){
+	if(pin >= 30 && pin <= 32 || pin >= 9 && pin <= 11 || pin == 1 || pin == 2){
 		return 'd';
-	}else if(pin == 8 || pin == 9 || (pin >= 14 && pin <= 19)){
+	}else if(pin == 8 || pin == 7 || (pin >= 12 && pin <= 17)){
 		return 'b';
-	}else if(pin == 1 || (pin >= 23 && pin <= 28)){
+	}else if(pin >= 23 && pin <= 29){
 		return 'c';
 	}else
 		return '0';

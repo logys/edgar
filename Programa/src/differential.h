@@ -10,7 +10,8 @@ class Differential : public PowerTrain{
 		Motor *rigth_;
 	public:
 		Differential(Motor *, Motor *);
-		virtual void on(void) override;
+		virtual void forward(void) override;
+		virtual void backward(void) override;
 		virtual void off(void) override;
 };
 

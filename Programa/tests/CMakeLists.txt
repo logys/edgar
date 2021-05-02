@@ -19,7 +19,7 @@ include_directories(env ${CPPUTEST_HOME}/include)
 add_library(avr avr/io.cpp)
 add_library(util util/delay.cpp)
 
-add_executable(run_tests test_gpioHandler.cpp test_differential.cpp 
+add_executable(run_tests test_motorDc.cpp test_pwm.cpp test_gpioHandler.cpp test_differential.cpp 
 	test_timerDelay.cpp test_robot.cpp test_button.cpp RunAllTests.cpp)
 target_link_libraries(run_tests PRIVATE avr)
 target_link_libraries(run_tests PRIVATE util)
@@ -28,8 +28,6 @@ target_link_libraries(run_tests PRIVATE robot)
 target_link_libraries(run_tests PRIVATE push)
 target_link_libraries(run_tests PRIVATE timer)
 target_link_libraries(run_tests PRIVATE differential)
+target_link_libraries(run_tests PRIVATE motor)
+target_link_libraries(run_tests PRIVATE pwm)
 target_link_libraries(run_tests PRIVATE gpio)
-
-add_executable(test_motordc test_motorDc.cpp RunAllTests.cpp)
-target_link_libraries(test_motordc PRIVATE motor)
-target_link_libraries(test_motordc PRIVATE CppUTest CppUTestExt)

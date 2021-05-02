@@ -8,7 +8,7 @@ Un tipo de bala utilizada por los vehículos artillados es la llamada
 bala trazadora, tiene la característica de brillar de color rojo cuando es 
 detonada y cuando se impacta produce un destello de luz, el objetivo de esta
 bala es iluminar la trayectoria del resto de balas cuando son disparadas en 
-ráfagas. 
+ráfagas, Dave Hunt indica el uso de una bala trazadora,
 
 ``We use the term tracer bullet development to visually illustrate the need for
 immediate feedback under actual conditions with a moving goal.''\cite{pragmatic}
@@ -39,9 +39,7 @@ Una forma simple de adquirir los requerimientos es por medio de casos de uso,
 ``A use case is all the ways of using a system to achieve a particular goal for a particular
 user.''\cite{ivar}
 
-Es decir los casos de uso son nuestros objetivos.
-
-Un actor es aquel que requiere un caso de uso, para el proyecto un actor
+Un \emph{actor} es aquel que requiere un caso de uso, para el proyecto un actor
 inmediato es el paciente, pues es quien interactúa con el dispositivo de
 manera directa y durante la mayor parte del tiempo, sin embargo no es el único,
 otro actor muy importante es el operador, usualmente el operador es el médico o
@@ -59,7 +57,7 @@ Los requisitos sintetizados en esta etapa ya se mencionaron en el capitulo
 	\item Mover de un punto A a B.
 \end{itemize}
 
-Interpretando nuestro objetivo, mover de un punto A a un punto B, es muy amplio,
+Nuestro objetivo, mover de un punto A a un punto B, es muy amplio,
 implementar algo así llevaría mucho tiempo, nuestra prioridad por ahora es obtener
 información, así que acotare el objetivo a desplazar el robot hacia adelante nada
 más.
@@ -101,12 +99,12 @@ que tipo?, estas tres opciones suenan interesantes:
 		es ampliamente utilizado en la industria manufacturera sobre todo
 		en la automotriz, sin embargo tiene una gran desventaja para 
 		nuestro propósito, es muy costoso de implementar, principalmente
-		por el tipo de actuadores que requiere, esta configuración produce 
+		por el tipo de actuadores que requiere, la configuración produce 
 		un torque muy grande en su base, lo que deriva en una base de 
 		acero y actuadores hidráulicos o neumáticos.
 	\item[Robot prismático] Este robot es excelente para movimientos precisos 
 		en el plano, es fácil de implementar y soporta cargas muy grandes,
-		en un principio esta era una opción muy atractiva, pero tiene un par 
+		en un principio fue una opción muy atractiva, pero tiene un par 
 		de desventajas, es relativamente caro y es menos mantenible que 
 		la tercera opción.
 	\item[Robot móvil] Es la opción que satisface de mejor manera los
@@ -119,7 +117,7 @@ que tipo?, estas tres opciones suenan interesantes:
 		horizontal.
 \end{description}
 
-La elección es un robot móvil, ¿con qué características?, con las necessaries, 
+La elección es un robot móvil, ¿con qué características?, con las necesarias, 
 las que nos indique el problema para su resolución. Por ahora nos interesa
 trasladar el robot hacia adelante, requerimos
 \begin{itemize}
@@ -176,19 +174,20 @@ adecuada, debido al tamaño y la autonomía, las agregaremos como requisitos y
 más adelante las especificaremos, por ahora cualquier batería con tensión mayor 
 a 5 volts basta, me decido por una pila cuadrada de 9 volts.
 \subsubsection{Control del motor}
-El motor va en un solo sentido, basta con un transistor de propósito general 
-que soporte más de 200mA por su colector. Un 2n2222A\cite{2n2222a} es
+Para que el motor pueda girar se requiere inducir una corriente eléctrica a
+través de sus terminales, cada pin del microcontrolador solo tiene la capacidad
+de entregar $20[mA]$ como máximo, no podemos conectar el motor a un pin directamente.
+La solución para un motor que va en un solo sentido, es un transistor de
+propósito general 
+que soporte más de $500[mA]$ por su colector. Un 2n2222A\cite{2n2222a} es
 suficiente.
 
 El transistor se utiliza como switch, se induce una pequeña corriente a través de la
 base del transistor, esto provoca que el colector ``se abra'' y pueda conducir una
-corriente proporcional a la base, de 100 veces o más para este transistor, 
-por ejemplo si inducimos $1mA$ por la base, obtendremos por lo menos $100mA$ por
-el colector, este comportamiento nos ayuda mucho, pues el microcontrolador solo 
-es capaz de entregar/recibir $20mA$ por cada pin, por su parte el transistor soporta
-corrientes continuas de hasta $600mA$.
-
-La forma de inducir la corriente es muy sencilla, se conecta una resistencia 
+corriente proporcional a la base, de 100 veces o más para este transistor, si se
+deja de inducir corriente por la base, el transistor ``se cierra'' y el colector
+deja de conducir corriente. La forma de inducir la corriente es muy sencilla, 
+se conecta una resistencia 
 entre el pin de la base y el pin del microcontrolador como indica el esquemático.
 Con ley de Ohm:
 \begin{displaymath}
@@ -204,7 +203,9 @@ despejando la resistencia
 Podemos permitirnos ser conservadores y poner una resistencia de $1000 \Omega$.
 \subsection{Arquitectura de software}
 Soy electrónico pero soy una persona de software, estás etapas de diseño son muy
-satisfactorias para mí. Los planos arquitectónicos de una casa deben verse como
+satisfactorias para mí.
+
+Los planos arquitectónicos de una casa deben verse como
 los de una casa y los de una escuela como una escuela, seria absurdo una casa con
 fachada de escuela, desafortunadamente la gente de software no alcanza a entender
 bien esta idea y programan todo de la misma forma, no es mi caso, mi arquitectura
@@ -212,7 +213,7 @@ se verá como un robot móvil.
 
 Me gusta utilizar la arquitectura definida por Robert C. Martin \emph{Clean 
 Architecture} \cite{clean_architecture}, es un modelo basado en 
-capas, donde la capa más 
+capas (coo una cebolla), donde la capa más 
 profunda es constituida por las llamadas entidades criticas, las capas intermedias
 por las reglas de negocio y las capas exteriores las componen los detalles.
 \begin{description}
@@ -301,7 +302,7 @@ desarrollo avance.
 \section{Implementación}
 Las tres partes pueden implementarse en forma individual y paralela, al final se
 hará una etapa de integración.\footnote{En esta etapa es donde se diferencian los
-hombres de los niños}. Por simple gusto implemento primero la parte mecánica.
+hombres de los niños.} Por simple gusto implemento primero la parte mecánica.
 \subsection{Implementación mecánica}
 Cualquier material nos sirve para hacer la base, me decido por utilizar cartón,
 es fácil de manipular y barato, para los soportes utilizo lapices, la llanta es
@@ -328,8 +329,8 @@ más tiempo y cuidado, sobre todo la primera vez.
 Es muy complicado explicar el proceso de programación, la forma correcta sería 
 colocar el código y su evolución con cada una de las decisiones de diseño que
 tomamos, pero para un programa de 10 lineas, tendría que mostrar unas 20 versiones,
-pasando por cada una de las pruebas unitarias. Prefiero mostrar únicamente las 
-partes que considero relevantes.
+pasando por cada una de las pruebas unitarias y analizando cada uno de los cambios.
+Prefiero mostrar únicamente las partes que considero relevantes.
 
 \subsubsection{Robot}
 Aprovechando los conceptos de modularidad y programación orientada a objetos
@@ -388,8 +389,8 @@ apagar, pero no tiene idea de como esta conectado, de que tipo es, de corriente 
 alterna, tamaño o potencia, etc, lo mismo para el temporizador y botón.
 
 Inicializados los apuntadores, los usamos para acceder a los métodos y creamos una 
-sencilla rutina, se explica por si sola, si el botón está presionado, enciende el 
-motor por un segundo.
+sencilla rutina $moveFordward$, se explica por si sola, si el botón está 
+presionado, enciende el motor por un segundo.
 \subsubsection{Motor}
 ¿Y como se implementa el motor con interfaces?,
 \begin{minted}[linenos]{C++}
@@ -456,15 +457,15 @@ Para implementar el motor modificamos dos registros, \textbf{DDRD} y \textbf{POR
 el primero Data direction register, nos permite configurar a el pin como entrada
 o salida, el método constructor configura al pin \textbf{PD3} como salida, el 
 segundo registro nos permite indicar el nivel lógico, bajo o alto, 0 o 5 volts, 
-respectivamente. Las funciones on y off modifican este registro, escribiendo
+respectivamente. Las funciones $on$ y $off$ modifican este registro, escribiendo
 nivel alto y bajo.
 
 Para acceder a los registros es necesario incluir la biblioteca $avr$ adecuada, 
-es este caso $io.h$.
+en este caso $io.h$.
 \subsubsection{Botón}
 El módulo Button es igual a Motor, salvo que el pin \textbf{PD2}, se configura 
 como entrada en \textbf{DDRD}, cuando un pin se elije como entrada, se obtiene 
-una impedancia muy grande en el mismo adicionalmente \textbf{PORTD}
+una impedancia muy grande en el mismo, adicionalmente \textbf{PORTD}
 tiene un comportamiento diferente, escribir un uno lógico implica conectar una
 resistencia de Pull Up\footnote{Una resistencia conectada a Vcc}, activar
 esta resistencia tiene una gran utilidad, pues sin ella la alta impedancia en el 

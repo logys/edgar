@@ -6,6 +6,6 @@ void Timer_delay::enable(void)
 }
 unsigned long Timer_delay::getTime(void)
 {
-	_delay_ms(1000);
+	_delay_ms(2000);
 	return 1000;
 }

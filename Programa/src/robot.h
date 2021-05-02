@@ -3,15 +3,14 @@
 
 #include "power_train.h"
 #include "timer.h"
-#include "button.h"
 
 class Robot{
 	private:
-		Button * button_;
 		PowerTrain * train_;
 		Timer * timer_;
 	public:
-		Robot(PowerTrain *, Timer *, Button *);
-		void moveFordward(void);
+		Robot(PowerTrain *, Timer *);
+		void moveForward(void);
+		void moveBackward(void);
 };
 #endif // ROBOT_H

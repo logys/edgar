@@ -13,7 +13,7 @@ enable_language(CXX)
 
 # The version number
 set (Edgar_VERSION_MAJOR 0)
-set (Edgar_VERSION_MINOR 2)
+set (Edgar_VERSION_MINOR 4)
 set (Edgar_VERSION_MICRO 0)
 
 set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)

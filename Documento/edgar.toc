@@ -5,9 +5,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Resumen}{VII}{chapter*.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Lista de figuras}{XI}{chapter*.4}%
+\contentsline {chapter}{Lista de figuras}{XIII}{chapter*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Lista de tablas}{XIII}{chapter*.5}%
+\contentsline {chapter}{Lista de tablas}{XV}{chapter*.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -138,3 +138,23 @@
 \contentsline {section}{\numberline {6.6}Objetivos refinados}{49}{section.6.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {7}Moverse en línea recta}{51}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Requerimientos}{52}{section.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Análisis}{52}{section.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Diseño}{52}{section.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.1}Diseño del programa}{53}{subsection.7.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Timer 0}{53}{section*.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Arquitectura de software}{55}{section*.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Código}{55}{section*.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Pruebas}{60}{section.7.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.5}Objetivos refinados}{60}{section.7.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Un nuevo giro al proyecto}{63}{chapter.8}%

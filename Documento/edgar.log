@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.18)  20 APR 2021 15:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.29)  1 MAY 2021 23:24
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -625,6 +625,77 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 runsystem(mkdir -p _minted-edgar)...executed.
 
+
+(/usr/share/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count429
+\mult@box=\box58
+\multicol@leftmargin=\dimen166
+\c@unbalance=\count430
+\c@collectmore=\count431
+\doublecol@number=\count432
+\multicoltolerance=\count433
+\multicolpretolerance=\count434
+\full@width=\dimen167
+\page@free=\dimen168
+\premulticols=\dimen169
+\postmulticols=\dimen170
+\multicolsep=\skip80
+\multicolbaselineskip=\skip81
+\partial@page=\box59
+\last@line=\box60
+\maxbalancingoverflow=\dimen171
+\mult@rightbox=\box61
+\mult@grightbox=\box62
+\mult@gfirstbox=\box63
+\mult@firstbox=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\c@minrows=\count435
+\c@columnbadness=\count436
+\c@finalcolumnbadness=\count437
+\last@try=\dimen172
+\multicolovershoot=\dimen173
+\multicolundershoot=\dimen174
+\mult@nat@firstbox=\box102
+\colbreak@box=\box103
+\mc@col@check@num=\count438
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -652,7 +723,7 @@ runsystem(which pygmentize && touch edgar.aex)...executed.
 runsystem(rm edgar.aex)...executed.
 
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 2
-0.
+1.
 
 (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
@@ -660,25 +731,26 @@ File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
  (./objetivos.aux) (./metodologia.aux) (./trazadora.aux) (./doble_propulsor.aux
-) (./it3/atras.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-Package hyperref Info: Link coloring OFF on input line 20.
- (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+) (./it3/atras.aux) (./it4/pwm.aux) (./it5/giro.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+Package hyperref Info: Link coloring OFF on input line 21.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
 (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -687,29 +759,29 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count429
+\c@section@level=\count439
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
 
 (./edgar.out) (./edgar.out)
 \@outlinefile=\write6
-LaTeX Info: Redefining \. on input line 20.
-LaTeX Info: Redefining \% on input line 20.
+LaTeX Info: Redefining \. on input line 21.
+LaTeX Info: Redefining \% on input line 21.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count430
-\scratchdimen=\dimen166
-\scratchbox=\box58
-\nofMPsegments=\count431
-\nofMParguments=\count432
+\scratchcounter=\count440
+\scratchdimen=\dimen175
+\scratchbox=\box104
+\nofMPsegments=\count441
+\nofMParguments=\count442
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count433
-\MPscratchDim=\dimen167
-\MPnumerator=\count434
-\makeMPintoPDFobject=\count435
+\MPscratchCnt=\count443
+\MPscratchDim=\dimen176
+\MPnumerator=\count444
+\makeMPintoPDFobject=\count445
 \everyMPtoPDFconversion=\toks31
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -732,14 +804,14 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'edgar.bbl' found.
  (./edgar.bbl)
-Package biblatex Info: Reference section=0 on input line 20.
-Package biblatex Info: Reference segment=0 on input line 20.
+Package biblatex Info: Reference section=0 on input line 21.
+Package biblatex Info: Reference segment=0 on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 22.
+(Font)              <12> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 22.
+(Font)              <8> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 22.
+(Font)              <6> on input line 23.
 
 [1
 
@@ -749,14 +821,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ] [3] [4
 
 ] [5]
-LaTeX Info: Redefining \. on input line 55.
-LaTeX Info: Redefining \% on input line 55.
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
  [6
 
 ]
 [7]
-LaTeX Info: Redefining \. on input line 62.
-LaTeX Info: Redefining \% on input line 62.
+LaTeX Info: Redefining \. on input line 63.
+LaTeX Info: Redefining \% on input line 63.
  [8
 
 ] (./edgar.toc
@@ -767,23 +839,31 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 6.
- [9])
+ [9]
+LaTeX Info: Redefining \sptext on input line 148.
+LaTeX Info: Redefining \. on input line 148.
+LaTeX Info: Redefining \% on input line 148.
+ [10])
 \tf@toc=\write7
-LaTeX Info: Redefining \. on input line 63.
-LaTeX Info: Redefining \% on input line 63.
- [10] (./edgar.lof
+LaTeX Info: Redefining \. on input line 64.
+LaTeX Info: Redefining \% on input line 64.
+ [11]
+LaTeX Info: Redefining \. on input line 64.
+LaTeX Info: Redefining \% on input line 64.
+ [12
+
+] (./edgar.lof
 LaTeX Info: Redefining \sptext on input line 2.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 )
 \tf@lof=\write8
- [11
-
+ [13
 
 ]
-LaTeX Info: Redefining \. on input line 67.
-LaTeX Info: Redefining \% on input line 67.
- [12
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
+ [14
 
 ] (./edgar.lot
 LaTeX Info: Redefining \sptext on input line 2.
@@ -791,13 +871,13 @@ LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 )
 \tf@lot=\write9
- [13
+
+[15
 
 ]
-LaTeX Info: Redefining \. on input line 73.
-LaTeX Info: Redefining \% on input line 73.
-
-[14
+LaTeX Info: Redefining \. on input line 74.
+LaTeX Info: Redefining \% on input line 74.
+ [16
 
 ]
 Cap\'{\i }tulo 1.
@@ -805,8 +885,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 \include{objetivos}
-                         [1] (./objetivos.tex
+l.100 \include{objetivos}
+                          [1] (./objetivos.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
@@ -820,8 +900,8 @@ l.1 \chapter
 ]
 Cap\'{\i }tulo 2.
 [3])
-LaTeX Info: Redefining \. on input line 99.
-LaTeX Info: Redefining \% on input line 99.
+LaTeX Info: Redefining \. on input line 100.
+LaTeX Info: Redefining \% on input line 100.
  [4] (./metodologia.tex
 Cap\'{\i }tulo 3.
 [5
@@ -836,8 +916,8 @@ LaTeX Info: Redefining \% on input line 83.
 LaTeX Info: Redefining \. on input line 119.
 LaTeX Info: Redefining \% on input line 119.
  [7])
-LaTeX Info: Redefining \. on input line 100.
-LaTeX Info: Redefining \% on input line 100.
+LaTeX Info: Redefining \. on input line 101.
+LaTeX Info: Redefining \% on input line 101.
  [8] (./trazadora.tex
 Cap\'{\i }tulo 4.
 
@@ -849,81 +929,81 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
 
 [10]
-LaTeX Info: Redefining \. on input line 120.
-LaTeX Info: Redefining \% on input line 120.
+LaTeX Info: Redefining \. on input line 118.
+LaTeX Info: Redefining \% on input line 118.
  [11]
-<img/esquematico1.pdf, id=442, 794.97pt x 614.295pt>
+<img/esquematico1.pdf, id=495, 794.97pt x 614.295pt>
 File: img/esquematico1.pdf Graphic file (type pdf)
 <use img/esquematico1.pdf>
-Package pdftex.def Info: img/esquematico1.pdf  used on input line 139.
+Package pdftex.def Info: img/esquematico1.pdf  used on input line 137.
 (pdftex.def)             Requested size: 466.0pt x 360.09692pt.
-LaTeX Info: Redefining \. on input line 157.
-LaTeX Info: Redefining \% on input line 157.
+LaTeX Info: Redefining \. on input line 155.
+LaTeX Info: Redefining \% on input line 155.
  [12]
-LaTeX Info: Redefining \. on input line 157.
-LaTeX Info: Redefining \% on input line 157.
+LaTeX Info: Redefining \. on input line 155.
+LaTeX Info: Redefining \% on input line 155.
  [13pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.157 R
+l.155 R
        epito la prueba pero con el robot bloqueado, con la misma tensión, l...
  <./img/esquematico1.pdf>]
-LaTeX Info: Redefining \. on input line 196.
-LaTeX Info: Redefining \% on input line 196.
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
  [14]
-LaTeX Info: Redefining \. on input line 239.
-LaTeX Info: Redefining \% on input line 239.
+LaTeX Info: Redefining \. on input line 240.
+LaTeX Info: Redefining \% on input line 240.
  [15]
-<img/arquitecturaSoftware1.png, id=509, 329.23pt x 137.51375pt>
+<img/arquitecturaSoftware1.png, id=562, 329.23pt x 137.51375pt>
 File: img/arquitecturaSoftware1.png Graphic file (type png)
 <use img/arquitecturaSoftware1.png>
-Package pdftex.def Info: img/arquitecturaSoftware1.png  used on input line 258.
+Package pdftex.def Info: img/arquitecturaSoftware1.png  used on input line 259.
 
 (pdftex.def)             Requested size: 164.6146pt x 68.7567pt.
-<img/arquitecturaSoftware1.2.png, id=513, 437.635pt x 375.4025pt>
+<img/arquitecturaSoftware1.2.png, id=566, 437.635pt x 375.4025pt>
 File: img/arquitecturaSoftware1.2.png Graphic file (type png)
 <use img/arquitecturaSoftware1.2.png>
 Package pdftex.def Info: img/arquitecturaSoftware1.2.png  used on input line 28
-1.
+2.
 (pdftex.def)             Requested size: 218.81696pt x 187.70079pt.
-LaTeX Info: Redefining \. on input line 293.
-LaTeX Info: Redefining \% on input line 293.
+LaTeX Info: Redefining \. on input line 294.
+LaTeX Info: Redefining \% on input line 294.
  [16pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.293 
+l.294 
        <./img/arquitecturaSoftware1.png>]
-<img/plano1.pdf, id=527, 845.1575pt x 597.23125pt>
+<img/plano1.pdf, id=580, 845.1575pt x 597.23125pt>
 File: img/plano1.pdf Graphic file (type pdf)
 <use img/plano1.pdf>
-Package pdftex.def Info: img/plano1.pdf  used on input line 297.
+Package pdftex.def Info: img/plano1.pdf  used on input line 298.
 (pdftex.def)             Requested size: 466.0pt x 329.30748pt.
-LaTeX Info: Redefining \. on input line 309.
-LaTeX Info: Redefining \% on input line 309.
+LaTeX Info: Redefining \. on input line 310.
+LaTeX Info: Redefining \% on input line 310.
  [17pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.309 
+l.310 
        <./img/arquitecturaSoftware1.2.png>]
-LaTeX Info: Redefining \. on input line 309.
-LaTeX Info: Redefining \% on input line 309.
+LaTeX Info: Redefining \. on input line 310.
+LaTeX Info: Redefining \% on input line 310.
  [18pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.309 
+l.310 
        <./img/plano1.pdf>]
-<img/robot1.png, id=544, 263.0628pt x 264.0264pt>
+<img/robot1.png, id=596, 263.0628pt x 264.0264pt>
 File: img/robot1.png Graphic file (type png)
 <use img/robot1.png>
-Package pdftex.def Info: img/robot1.png  used on input line 314.
+Package pdftex.def Info: img/robot1.png  used on input line 315.
 (pdftex.def)             Requested size: 263.06215pt x 264.02574pt.
  (./_minted-edgar/default-pyg-prefix.pygstyle)
 (./_minted-edgar/default.pygstyle)
@@ -949,8 +1029,8 @@ l.11 ...G{o}{*} \PYG{n}{button\PYGZus{}}\PYG{p}{;}
                                                    <./img/robot1.png>])
 (./_minted-edgar/0E6B51CA1E0EC7F8B97A17B44B2F0E887F683EBDC3AE89028A3832D3B9AA27
 5E.pygtex)
-LaTeX Info: Redefining \. on input line 393.
-LaTeX Info: Redefining \% on input line 393.
+LaTeX Info: Redefining \. on input line 394.
+LaTeX Info: Redefining \% on input line 394.
  [21]
 (./_minted-edgar/48C6CE4E44BFAC78B522A968C676EBDE85678FA7EB90FCC914563A0F1D0788
 C1.pygtex)
@@ -980,16 +1060,16 @@ C1.pygtex
 LaTeX Info: Redefining \. on input line 19.
 LaTeX Info: Redefining \% on input line 19.
  [25])
-LaTeX Info: Redefining \. on input line 596.
-LaTeX Info: Redefining \% on input line 596.
+LaTeX Info: Redefining \. on input line 597.
+LaTeX Info: Redefining \% on input line 597.
  [26]
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-598.
+599.
  (/usr/share/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ))
-LaTeX Info: Redefining \. on input line 101.
-LaTeX Info: Redefining \% on input line 101.
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
 
 [27] (./doble_propulsor.tex
 LaTeX Info: Redefining \. on input line 1.
@@ -1002,17 +1082,17 @@ LaTeX Info: Redefining \% on input line 1.
 ]
 Cap\'{\i }tulo 5.
 [29]
-<img/esquematico2.pdf, id=619, 794.97pt x 614.295pt>
+<img/esquematico2.pdf, id=671, 794.97pt x 614.295pt>
 File: img/esquematico2.pdf Graphic file (type pdf)
 <use img/esquematico2.pdf>
 Package pdftex.def Info: img/esquematico2.pdf  used on input line 27.
 (pdftex.def)             Requested size: 466.0pt x 360.09692pt.
-<img/plano2.pdf, id=621, 845.1575pt x 597.23125pt>
+<img/plano2.pdf, id=673, 845.1575pt x 597.23125pt>
 File: img/plano2.pdf Graphic file (type pdf)
 <use img/plano2.pdf>
 Package pdftex.def Info: img/plano2.pdf  used on input line 31.
 (pdftex.def)             Requested size: 466.0pt x 329.30748pt.
-<img/arquitecturaSoftware2.png, id=623, 390.45876pt x 478.78876pt>
+<img/arquitecturaSoftware2.png, id=675, 390.45876pt x 478.78876pt>
 File: img/arquitecturaSoftware2.png Graphic file (type png)
 <use img/arquitecturaSoftware2.png>
 Package pdftex.def Info: img/arquitecturaSoftware2.png  used on input line 38.
@@ -1062,12 +1142,12 @@ LaTeX Info: Redefining \% on input line 15.
 LaTeX Info: Redefining \. on input line 134.
 LaTeX Info: Redefining \% on input line 134.
  [35]
-<img/esquematico2.2.pdf, id=734, 794.97pt x 614.295pt>
+<img/esquematico2.2.pdf, id=786, 794.97pt x 614.295pt>
 File: img/esquematico2.2.pdf Graphic file (type pdf)
 <use img/esquematico2.2.pdf>
 Package pdftex.def Info: img/esquematico2.2.pdf  used on input line 137.
 (pdftex.def)             Requested size: 466.0pt x 360.09692pt.
-<img/arquitecturaSoftware2.2.png, id=736, 395.4775pt x 517.935pt>
+<img/arquitecturaSoftware2.2.png, id=788, 395.4775pt x 517.935pt>
 File: img/arquitecturaSoftware2.2.png Graphic file (type png)
 <use img/arquitecturaSoftware2.2.png>
 Package pdftex.def Info: img/arquitecturaSoftware2.2.png  used on input line 14
@@ -1092,8 +1172,8 @@ LaTeX Info: Redefining \% on input line 176.
                                                   
 l.176 				\end{itemize}
                         <./img/arquitecturaSoftware2.2.png>])
-LaTeX Info: Redefining \. on input line 102.
-LaTeX Info: Redefining \% on input line 102.
+LaTeX Info: Redefining \. on input line 103.
+LaTeX Info: Redefining \% on input line 103.
  [39]
 (./it3/atras.tex
 LaTeX Info: Redefining \. on input line 1.
@@ -1106,145 +1186,212 @@ LaTeX Info: Redefining \% on input line 1.
 ]
 Cap\'{\i }tulo 6.
 [41]
-<it3/img/motordc.pdf, id=850, page=1, 794.97pt x 614.295pt>
+<it3/img/motordc.pdf, id=903, page=1, 794.97pt x 614.295pt>
 File: it3/img/motordc.pdf Graphic file (type pdf)
 <use it3/img/motordc.pdf, page 1>
 Package pdftex.def Info: it3/img/motordc.pdf , page1 used on input line 32.
 (pdftex.def)             Requested size: 310.4979pt x 239.93027pt.
-<it3/img/esquematico3.pdf, id=855, 4267.91315pt x 3442.78334pt>
+<it3/img/esquematico3.pdf, id=908, 4267.91315pt x 3442.78334pt>
 File: it3/img/esquematico3.pdf Graphic file (type pdf)
 <use it3/img/esquematico3.pdf>
-Package pdftex.def Info: it3/img/esquematico3.pdf  used on input line 51.
+Package pdftex.def Info: it3/img/esquematico3.pdf  used on input line 52.
 (pdftex.def)             Requested size: 466.0pt x 375.87059pt.
-LaTeX Info: Redefining \. on input line 56.
-LaTeX Info: Redefining \% on input line 56.
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
  [42pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
 1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.56 \begin{description}
+l.57 \begin{description}
                          <./it3/img/motordc.pdf>]
-LaTeX Info: Redefining \. on input line 77.
-LaTeX Info: Redefining \% on input line 77.
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
  [43]
-LaTeX Info: Redefining \. on input line 77.
-LaTeX Info: Redefining \% on input line 77.
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
  [44pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
 2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.77 M
+l.78 M
       odificamos la clase $MotorDc$ para contener los tres pines y para aña...
  <./it3/img/esquematico3.pdf>]
-(./_minted-edgar/30C090BD640A5C251DDFBA4F584D36B285678FA7EB90FCC914563A0F1D0788
+(./_minted-edgar/FADD7172B3C624F230506F32F8F6AEB485678FA7EB90FCC914563A0F1D0788
 C1.pygtex)
-(./_minted-edgar/094884FDAB59D8CC860FF7A91F79CD2885678FA7EB90FCC914563A0F1D0788
+(./_minted-edgar/35F82A715CAEF824DACAB8085539F49185678FA7EB90FCC914563A0F1D0788
 C1.pygtex
-LaTeX Info: Redefining \. on input line 20.
-LaTeX Info: Redefining \% on input line 20.
+LaTeX Info: Redefining \. on input line 18.
+LaTeX Info: Redefining \% on input line 18.
  [45])
 (./_minted-edgar/DCFEC6D443F0FB6253842863D5BA1B3285678FA7EB90FCC914563A0F1D0788
 C1.pygtex
-LaTeX Info: Redefining \. on input line 20.
-LaTeX Info: Redefining \% on input line 20.
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
  [46])
 (./_minted-edgar/507815E65340D3A52FF9254AC8AD50E485678FA7EB90FCC914563A0F1D0788
 C1.pygtex)
 (./_minted-edgar/4472B1B12E60E3626A55CBF91C76660C85678FA7EB90FCC914563A0F1D0788
 C1.pygtex
-LaTeX Info: Redefining \. on input line 10.
-LaTeX Info: Redefining \% on input line 10.
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
  [47])
 (./_minted-edgar/1436D86F20777B7E274862729356824A85678FA7EB90FCC914563A0F1D0788
 C1.pygtex
-LaTeX Info: Redefining \. on input line 24.
-LaTeX Info: Redefining \% on input line 24.
+LaTeX Info: Redefining \. on input line 19.
+LaTeX Info: Redefining \% on input line 19.
  [48])
-LaTeX Info: Redefining \. on input line 275.
-LaTeX Info: Redefining \% on input line 275.
+LaTeX Info: Redefining \. on input line 278.
+LaTeX Info: Redefining \% on input line 278.
  [49])
-LaTeX Info: Redefining \. on input line 103.
-LaTeX Info: Redefining \% on input line 103.
+LaTeX Info: Redefining \. on input line 104.
+LaTeX Info: Redefining \% on input line 104.
  [50] (./it4/pwm.tex
 Cap\'{\i }tulo 7.
-) [51
+<it4/img/pwm.png, id=1028, 610.53094pt x 180.675pt>
+File: it4/img/pwm.png Graphic file (type png)
+<use it4/img/pwm.png>
+Package pdftex.def Info: it4/img/pwm.png  used on input line 28.
+(pdftex.def)             Requested size: 305.26472pt x 90.33727pt.
+[51
 
 
 
 
 ]
+LaTeX Info: Redefining \. on input line 71.
+LaTeX Info: Redefining \% on input line 71.
+ [52pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
+1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.71 
+      <./it4/img/pwm.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 104.
+LaTeX Info: Redefining \% on input line 104.
+ [53]
+LaTeX Info: Redefining \. on input line 159.
+LaTeX Info: Redefining \% on input line 159.
+ [54]
+<it4/img/arcSoftware.png, id=1063, 394.47375pt x 594.22pt>
+File: it4/img/arcSoftware.png Graphic file (type png)
+<use it4/img/arcSoftware.png>
+Package pdftex.def Info: it4/img/arcSoftware.png  used on input line 181.
+(pdftex.def)             Requested size: 197.23639pt x 297.10927pt.
+
+(./_minted-edgar/3316CC5A42A0746CEEFDE202AFC4F25A85678FA7EB90FCC914563A0F1D0788
+C1.pygtex)
+(./_minted-edgar/FDF8D4F26AB84B2CE43A1A40E20B6F1485678FA7EB90FCC914563A0F1D0788
+C1.pygtex
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+ [55]
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+ [56pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
+2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.7 ...pin} \PYG{o}{==} \PYG{l+m+mi}{10}\PYG{p}{)}
+                                                   <./it4/img/arcSoftware.png>]
+LaTeX Info: Redefining \. on input line 43.
+LaTeX Info: Redefining \% on input line 43.
+[57])
+(./_minted-edgar/E47C2B55B92EBD2058F8374F42A3E8BF85678FA7EB90FCC914563A0F1D0788
+C1.pygtex)
+(./_minted-edgar/60B6A0010FB2CEE629F36D319DDB430985678FA7EB90FCC914563A0F1D0788
+C1.pygtex
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
+ [58])
+(./_minted-edgar/B1EB1A147E9F9FC4B2903AEBBC24884985678FA7EB90FCC914563A0F1D0788
+C1.pygtex
+LaTeX Info: Redefining \. on input line 21.
+LaTeX Info: Redefining \% on input line 21.
+ [59])
+LaTeX Info: Redefining \. on input line 365.
+LaTeX Info: Redefining \% on input line 365.
+ [60])
 LaTeX Info: Redefining \. on input line 105.
 LaTeX Info: Redefining \% on input line 105.
- [52
+ [61] (./it5/giro.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [62
+
+
+
+
+]
+Cap\'{\i }tulo 8.
+) [63]
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
+ [64
 
 
 
 ]
 
 LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <10> not available
-(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 105.
+(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 107.
 
 
-Overfull \hbox (14.88832pt too wide) in paragraph at lines 105--105
+Overfull \hbox (14.88832pt too wide) in paragraph at lines 107--107
 \T1/cmss/m/n/10 me-ga328p. 7810D-AVR-01/15. Mi-cro-chip. 2015. \T1/cmr/m/sc/10 
 url\T1/cmss/m/n/10 : []$\T1/cmtt/m/n/10 https : / / ww1 . microchip .
  []
 
 
-Overfull \hbox (24.19055pt too wide) in paragraph at lines 105--105
+Overfull \hbox (24.19055pt too wide) in paragraph at lines 107--107
 \T1/cmtt/m/n/10 com / downloads / en / DeviceDoc / Atmel -[] 7810 -[] Automotiv
 e -[] Microcontrollers -[]
  []
 
-[53] (./edgar.aux
+[65] (./edgar.aux
 LaTeX Info: Redefining \sptext on input line 26.
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
  (./objetivos.aux) (./metodologia.aux) (./trazadora.aux)
-(./doble_propulsor.aux) (./it3/atras.aux) (./it4/pwm.aux))
-
-Package rerunfilecheck Warning: File `edgar.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `edgar.out':
-(rerunfilecheck)             Before: D8A4C8887475FF8D4722BB6BC42E4A83;3687
-(rerunfilecheck)             After:  7B00AE621A4FB0BB9C039D7874A65AAE;3748.
+(./doble_propulsor.aux) (./it3/atras.aux) (./it4/pwm.aux) (./it5/giro.aux))
+Package rerunfilecheck Info: File `edgar.out' has not changed.
+(rerunfilecheck)             Checksum: 24AA7B3E3B975AD5CECC972D3FA2F15E;4180.
 runsystem(rm edgar.pyg)...executed.
 
 Package logreq Info: Writing requests to 'edgar.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 18341 strings out of 479383
- 329687 string characters out of 5875830
- 1136675 words of memory out of 5000000
- 34863 multiletter control sequences out of 15000+600000
+ 18583 strings out of 479383
+ 334755 string characters out of 5875830
+ 1147439 words of memory out of 5000000
+ 35029 multiletter control sequences out of 15000+600000
  421743 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,10n,85p,738b,2192s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 80i,10n,85p,738b,2196s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
 exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-share/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/share/texmf-dis
-t/fonts/type1/public/cm-super/sfit1000.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/cm-super/sfrm0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
-sfsi1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfso2488.pfb></
-usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf
--dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/cm-super/sfss0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
-per/sfss1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1200.pf
-b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1728.pfb></usr/share/t
-exmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf-dist/fonts
-/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf-dist/fonts/type1/public/c
-m-super/sfsx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx207
-4.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on edgar.pdf (67 pages, 3324185 bytes).
+mi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/cm-super/sfcc1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
+fit1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></u
+sr/share/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf-
+dist/fonts/type1/public/cm-super/sfso2488.pfb></usr/share/texmf-dist/fonts/type
+1/public/cm-super/sfss0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
+er/sfss0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb
+></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/te
+xmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf-dist/fonts/
+type1/public/cm-super/sfss1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm
+-super/sfsx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1200
+.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/texmf-dist/fo
+nts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/cm-super/sftt1000.pfb>
+Output written on edgar.pdf (81 pages, 3385040 bytes).
 PDF statistics:
- 1109 PDF objects out of 1200 (max. 8388607)
- 891 compressed objects within 9 object streams
- 206 named destinations out of 1000 (max. 500000)
- 501 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1262 PDF objects out of 1440 (max. 8388607)
+ 1023 compressed objects within 11 object streams
+ 252 named destinations out of 1000 (max. 500000)
+ 575 words of extra memory for PDF output out of 10000 (max. 10000000)
 

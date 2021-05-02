@@ -5,15 +5,20 @@
 #include "../src/timer.h"
 
 class Train_stub : public PowerTrain{
-	virtual void on(void) override
+	virtual void forward(void) override
 	{
-		mock().actualCall("on");
+		mock().actualCall("forward");
+	}
+	virtual void backward(void) override
+	{
+		mock().actualCall("backward");
 	}
 	virtual void off(void) override
 	{
 		mock().actualCall("off");
 	}
 };
+
 class TimerStub : public Timer{
 	virtual void enable(void) override
 	{
@@ -24,14 +29,7 @@ class TimerStub : public Timer{
 		return mock().actualCall("getTime").returnIntValue();
 	}
 };
-class ButtonStub : public Button{
-	virtual bool pushed(void) override
-	{
-		return mock().actualCall("pushed").returnBoolValue();
-	}
-};
 
-Button * button;
 PowerTrain * train;
 Timer * timer;
 Robot * robot;
@@ -41,15 +39,13 @@ TEST_GROUP(ROBOT)
 
 	void setup(void)
 	{
-		button = new ButtonStub();
 		train = new Train_stub();
 		timer = new TimerStub();
-		robot = new Robot(train, timer, button);
+		robot = new Robot(train, timer);
 	}
 
 	void teardown(void)
 	{
-		delete button;
 		delete train;
 		delete timer;
 		delete robot;
@@ -57,69 +53,26 @@ TEST_GROUP(ROBOT)
 	}
 };
 
-TEST(ROBOT, MotorPowerOn)
+TEST(ROBOT, forward)
 {
-	mock().expectOneCall("pushed").andReturnValue(true);
-	mock().expectOneCall("on");
-	mock().ignoreOtherCalls();
-
-	robot->moveFordward();
-
-	mock().checkExpectations();
-}
-
-TEST(ROBOT, TimerOn)
-{
-	mock().expectOneCall("pushed").andReturnValue(true);
+	mock().expectOneCall("forward");
 	mock().expectOneCall("enable");
-	mock().ignoreOtherCalls();
-
-	robot->moveFordward();
-
-	mock().checkExpectations();
-}
-
-TEST(ROBOT, UnpoushedNoInit)
-{
-	mock().expectOneCall("pushed").andReturnValue(false);
-	mock().expectNoCall("on");
-
-	robot->moveFordward();
-
-	mock().checkExpectations();
-}
-
-
-TEST(ROBOT, getCeroTimeAtInit)
-{
-	mock().expectOneCall("pushed").andReturnValue(true);
-	mock().expectOneCall("getTime").andReturnValue(0);
-	mock().ignoreOtherCalls();
-
-	robot->moveFordward();
-
-	mock().checkExpectations();
-}
-
-TEST(ROBOT, lessOfOneMinuteMotorOn)
-{
-	mock().expectOneCall("pushed").andReturnValue(true);
-	mock().expectOneCall("getTime").andReturnValue(999);
-	mock().expectNoCall("off");
-	mock().ignoreOtherCalls();
-
-	robot->moveFordward();
-
-	mock().checkExpectations();
-}
-TEST(ROBOT, poweroffMotorAfterOneSecond)
-{
-	mock().expectOneCall("pushed").andReturnValue(true);
 	mock().expectOneCall("getTime").andReturnValue(1000);
 	mock().expectOneCall("off");
-	mock().ignoreOtherCalls();
 
-	robot->moveFordward();
+	robot->moveForward();
+
+	mock().checkExpectations();
+}
+
+TEST(ROBOT, backward)
+{
+	mock().expectOneCall("backward");
+	mock().expectOneCall("enable");
+	mock().expectOneCall("getTime").andReturnValue(1000);
+	mock().expectOneCall("off");
+
+	robot->moveBackward();
 
 	mock().checkExpectations();
 }

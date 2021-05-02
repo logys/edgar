@@ -1,8 +1,9 @@
 #include "CppUTest/TestHarness.h"
-#include "CppUTestExt/MockSupport.h"
 #include "../src/motorDc.h"
 #include "../src/motor.h"
 #include "../src/gpio.h"
+#include "../src/pwm.h"
+#include <avr/io.h>
 
 static Motor * motor;
 
@@ -10,56 +11,58 @@ TEST_GROUP(MOTOR)
 {
 	void setup(void)
 	{
+		short const pin_enable = 9;
+		short const pin_input1 = 1;
+		short const pin_input2 = 2;
+		motor = new MotorDc(9, 1, 2);
 	}
 	void teardown(void)
 	{
-		mock().clear();
+		delete motor;
 	}
 };
 
-void gpio_setDirection(short const pin, DIRECTION direction) 
+TEST(MOTOR, enable_pwm_timer)
 {
-	mock().actualCall("gpio_setDirection");
+	TCCR0B = 0x00;
+
+	MotorDc dummy(9, 1, 2);
+
+	BITS_EQUAL(1<<CS01, TCCR0B, 1<<CS01);
 }
 
-void gpio_setLevel(short const pin, LEVEL level) 
+TEST(MOTOR, enable_pin_pwm)
 {
-	if(level == HIGH)
-		mock().actualCall("gpio_setLevelHigh");
-	else
-		mock().actualCall("gpio_setLevelLow");
+	TCCR0A = 0x00;
+
+	motor->forward(0);
+
+	BITS_EQUAL(1<<COM0B1|1<<COM0B0, TCCR0A, 1<<COM0B1|1<<COM0B0);
 }
 
-TEST(MOTOR, enablePin)
+TEST(MOTOR, forward)
 {
-	mock().expectOneCall("gpio_setDirection");
-	short const pin = 1;
+	OCR0B = 0x00;
 
-	MotorDc dummy(pin);
+	motor->forward(100);
 
-	mock().checkExpectations();
+	CHECK_EQUAL(255, OCR0B);
 }
 
-TEST(MOTOR, on)
+TEST(MOTOR, backward)
 {
-	mock().expectOneCall("gpio_setLevelHigh");
-	mock().ignoreOtherCalls();
-	short const pin = 1;
-	MotorDc dummy(pin);
+	OCR0B = 0x00;
 
-	dummy.on();
+	motor->backward(100);
 
-	mock().checkExpectations();
+	CHECK_EQUAL(255, OCR0B);
 }
 
 TEST(MOTOR, off)
 {
-	mock().expectOneCall("gpio_setLevelLow");
-	mock().ignoreOtherCalls();
-	short const pin = 1;
-	MotorDc dummy(pin);
+	TCCR0A = 0xFF;
 
-	dummy.off();
+	motor->off();
 
-	mock().checkExpectations();
+	BITS_EQUAL(0, TCCR0A, 1<<COM0B1|1<<COM0B0);
 }

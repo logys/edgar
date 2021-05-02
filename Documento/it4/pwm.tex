@@ -1,1 +1,398 @@
 \chapter{Moverse en línea recta}
+Me interesa crear una trayectoria, para lograrlo requiero que el robot se mueva 
+en línea recta cuando yo lo indique. Actualmente el robot se desvía de 
+la trayectoria recta, la razón es la diferencia de potencia en los motores. Para
+corregir la desviación propongo reducir la potencia del motor ``dominante'', e
+igualarla con el motor más débil. 
+
+Para reducir la potencia se requiere reducir la corriente que pasa por el motor,
+una resistencia en serie bastaría, para calcular el valor de la resistencia se 
+tendría que hacer un experimento probando diferentes resistencias y encontrar la
+óptima por prueba y error. 
+
+Otra forma de hacerlo es reduciendo la tensión por medio de una onda 
+pwm.\footnote{Pulsed
+Wave Modulated.} El circuito integrado que utilizamos para controlar la potencia
+de los motores tiene un pin para habilitar y deshabilitar la corriente en los 
+motores, cuando el pin esta habilitado la tensión en los motores es de 
+$9[V]$,\footnote{En realidad es de $7[V]$, este circuito tiene una caída de tensión
+debido a los transistores con los que esta construido.} por el contrario, cuando
+el pin esta deshabilitado la tensión es $0[V]$.
+
+Una onda pwm se comporta como un interruptor que se enciende y apaga constantemente
+a un ritmo determinado, al ritmo se le llama frecuencia, a la relación que
+existe entre el tiempo de encendido y apagado
+se le conoce como ciclo de trabajo o como ancho de pulso figura \ref{fig:pwm}.
+\begin{figure}[hbp]
+	\centering
+	\includegraphics[scale=0.5]{it4/img/pwm}
+	\caption{PWM}
+	\label{fig:pwm}
+\end{figure}
+Como consecuencia de una onda pwm en el pin de habilitación, la tensión se reduce 
+proporcionalmente al ciclo de trabajo, para un ciclo de trabajo del cincuenta por 
+ciento, la tensión se reduce en esa misma proporción. 
+
+Si creamos una onda pwm de frecuencia igual a diez segundos y con un ciclo de
+trabajo del cincuenta por ciento, ¿tendremos la mitad de la tensión durante los
+diez segundos?, por supuesto que no. El promedio de la tensión es la mitad, pero 
+físicamente no vemos ese comportamiento con frecuencias tan bajas, para 
+apreciarlo se requiere frecuencias
+relativamente altas del orden de los kilohertz, si en lugar de hacer una pwm de
+diez segundos la hacemos de un milisegundo y de duración total de diez 
+segundos, entonces si percibiremos una caída de tensión a la mitad.
+
+\section{Requerimientos}
+Para poder realizar algunas trayectorias es necesario que el robot se mueva de
+forma rectilínea.
+\section{Análisis}
+Para la situación actual basta con reducir la potencia en el motor más potente.
+\begin{itemize}
+	\item Rediseñar la interfaz de motor para indicar la intensidad de la 
+		acción al motor.
+	\item Implementar cambio de intensidad con una onda pwm.
+\end{itemize}
+
+\section{Diseño}
+El diseño mecánico se mantiene igual que la iteración anterior. El diseño
+electrónico se modifica mínimamente se cambian los dos pines
+habilitadores de los motores, el pin habilitador del motor izquierdo se cambia
+al pin 10 y el del derecho al pin 9, no se muestra el diagrama.
+
+\subsection{Diseño del programa}
+En este instante tengo la disyuntiva de usar \emph{concurrencia} o no. Hasta 
+ahora el programa se ejecuta en un solo proceso, instrucción por instrucción y 
+el flujo es guiado por las condiciones que he impuesto, añadir concurrencia 
+implica añadir un segundo proceso, que ejecute parte del programa en pseudo 
+paralelo,\footnote{Realmente no se ejecuta en paralelo, simplemente se ejecuta
+un proceso durante un tiempo y después se intercambia por el otro proceso.}
+añadir un segundo proceso simplifica el desarrollo, pero decrementa la 
+portabilidad y peor aun la mantenibilidad.
+
+¿Para qué necesitamos concurrencia?, el atmega328p contiene hardware para 
+realizar señales pwm via un timer. Un timer es un periférico del microcontrolador
+cuyas funcionalidades están especializadas en manejo de ciclos del reloj.
+La operación del timer implica un proceso concurrente. 
+
+Actualmente utilizo la función delay, esta función bloquea el flujo, realizar la pwm
+por hardware implica poder seguir usando delay, realizar la pwm por software por el 
+contrario me impide seguir utilizando delay, obligándome a diseñar un nuevo 
+reloj que no bloqueé el flujo. Además el código es totalmente dependiente de los
+registros del dispositivo.
+
+La metodología XP recomienda hacer cambios pequeños e incrementales, por este motivo
+decido agregar la concurrencia utilizando las capacidades del hardware asumiendo
+las desventajas que esta decisión conlleva. 
+
+\subsubsection{Timer 0}
+El atmega328p tiene tres timer's o temporizadores,
+\begin{itemize}
+	\item Timer 0, 8 bits.
+	\item Timer 1, 16 bits.
+	\item Timer 2. 8 bits.
+\end{itemize}
+Los tres temporizadores tienen el hardware necesario para hacer pwm, el segundo 
+tiene mayor flexibilidad, pero es más difícil de configurar, elijo el timer 0.
+
+La generación de ondas pwm con un timer es sencillo, involucra tan solo cuatro 
+elementos,
+\begin{itemize}
+	\item Un reloj para el timer.
+	\item Un registro contador TCNT.
+	\item Un registro comparador OCR.
+	\item Un pin donde se genera la señal.
+\end{itemize}
+Se indica un valor en el registro de comparación $ORC$, el pin inicia en nivel bajo,
+se enciende el reloj, 
+con cada ciclo de reloj el registro $TCNT$ incrementa su valor en uno; cuando han 
+pasado suficientes ciclos de reloj y el valor de $TCNT$ alcanza al valor de $ORC$,
+automáticamente el nivel del pin es cambiado a alto, $TCNT$ sigue aumentando con
+cada ciclo de reloj hasta  llegar a $255$, con un ciclo de reloj adicional $TCNT0$ 
+cambia a $0$, a esto se le conoce como overflow, $TCNT0$ vuelve a ser menor que
+$OCR$, automáticamente el pin de señal cambia a nivel bajo.
+
+El timer tiene dos modos de ondas pwm, 
+\begin{itemize}
+	\item Fast.
+	\item Phase correct.
+\end{itemize}
+El modo fast, nos permite una mayor frecuencia a cambio de un error en el ancho 
+de pulso, no es un error que considere relevante para el propósito de controlar
+el motor, el modo phase correct no tiene este error pero las frecuencias son
+más bajas.
+
+Para evitar problemas de conmutación seleccionare una frecuencia no tan alta, pues
+al circuito integrado que controla a los motores L298, no le gustan las frecuencias
+altas, otra razón más para cambiarlo. Para el reloj de $16[MHz]$ las frecuencias
+permitidas son:
+	
+\begin{multicols}{2}
+Modo fast
+\begin{enumerate}
+	\item $62.5[kHz]$
+	\item $7.8[kHz]$
+	\item $976[Hz]$
+	\item $244[Hz]$
+	\item $61[Hz]$
+\end{enumerate}
+Modo phase correct
+\begin{enumerate}
+	\item $31.3[kHz]$
+	\item $3.9[kHz]$
+	\item $490[Hz]$
+	\item $122[Hz]$
+	\item $30[Hz]$
+\end{enumerate}
+\end{multicols}
+La frecuencia más interesante sin duda es la de $31.3[kHz]$, esta justo por arriba
+de la frecuencia audible, sin embargo la hoja de datos del circuito integrado
+L298 nos
+recomienda una frecuencia de $25[kHz]$, por ahora elegiré una frecuencia más 
+baja y si cambio el integrado aumentaré la frecuencia, $7.8[kHz]$ es la opción 
+elegida. 
+
+Desafortunadamente los pines generadores están fijos y no son configurables, para
+el timer 0 son solo dos, los pines 9 y 10, suficientes pues solo tenemos dos motores.
+
+A continuación una lista de los registros que se requieren modificar y lo que se
+modificar en ellos sin entrar en detalles.
+\begin{description}
+	\item[TCCR0A] Registro A de control del timer 0, habilitamos los pines 
+		9 y 10 para la generación de ondas e indicamos que el timer se
+		utilizara en modo generación fast pwm.
+	\item[TCCR0B] Registro B de control de timer 0, habilitamos el counter 
+		$TCNT0$ y seleccionamos la frecuencia.
+	\item[TCNT0] Counter register, incrementa su valor con cada ciclo del
+		reloj de timer.
+	\item[OCR0A] Output compare register A, aquí indicamos el valor al que
+		TCNT0 tiene que llegar para cambiar el valor del pin que genera
+		la onda(pin 10).
+	\item[OCR0B] Output compare register B, aquí indicamos el valor al que
+		TCNT0 tiene que llegar para cambiar el valor del pin que genera
+		la onda(pin 9).
+\end{description}
+Hay registros adicionales para mayores funcionalidades, nos quedamos con esto por
+ahora y si lo necesitamos los utilizaremos.
+
+\subsubsection{Arquitectura de software}
+La modificación a la arquitectura se muestra en la figura \ref{fig:Arquirectura 4},
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[scale=0.5]{it4/img/arcSoftware}
+	\caption{Arquitectura de software 4}
+	\label{fig:Arquirectura 4}
+\end{figure}
+
+\subsubsection{Código}
+Desarrollamos un nuevo módulo que implemente los cambios en los registros para
+generar una pwm en los pines 9 y 10, la declaración del modulo es la siguiente:
+\begin{minted}{C++}
+void pwm_enablePin(short const pin);
+void pwm_disablePin(short const pin);
+void pwm_enableTimer(void);
+void pwm_disableTimer(void);
+void pwm_setWorkCycle(short const pin, short wc);
+\end{minted}
+La implementación es igual de simple:
+\begin{minted}{C++}
+#include "pwm.h"
+#include <avr/io.h>
+
+void pwm_enablePin(short const pin)
+{
+	if(pin == 10)
+		TCCR0A |= 1<<COM0A1|1<<COM0A0;
+	else if(pin == 9)
+		TCCR0A |= 1<<COM0B1|1<<COM0B0;
+	//enable Fast mode
+	TCCR0A |= 1<<WGM01|1<<WGM00;
+}
+
+void pwm_disablePin(short const pin)
+{
+	if(pin == 9)
+		TCCR0A &= ~(1<<COM0B1|1<<COM0B0);
+	else if(pin == 10)
+		TCCR0A &= ~(1<<COM0A1|1<<COM0A0);
+}
+
+void pwm_enableTimer(void)
+{
+	TCCR0B |= 1<<CS01;
+}
+
+void pwm_disableTimer(void)
+{
+	TCCR0B &= ~(1<<CS01);
+}
+
+void pwm_setWorkCycle(short const pin, short wc)
+{
+	if(wc > 100)
+		wc = 100;
+	if(wc < 0)
+		wc = 0;
+	if(pin == 10)
+		OCR0A = wc/100.0*255;
+	else if(pin == 9)
+		OCR0B = wc/100.0*255;
+}
+\end{minted}
+Las funciones únicamente cambian el valor de los registros. 
+
+Motor debe cambiar su interfaz, deberá recibir como argumento el porcentaje de 
+potencia que queremos que desarrolle.
+\begin{minted}{C++}
+class Motor{
+	public: 
+		virtual void forward(short const power) = 0;
+		virtual void backward(short const power) = 0;
+		virtual void off(void) = 0;
+};
+\end{minted}
+Basta con un include en $MotorDc$ para obtener las nuevas funcionalidades 
+de pwm.
+
+La implementación en el módulo $MotorDC$ es la siguiente:
+\begin{minted}[linenos, highlightlines={3,15,23,22,31,30,38}]{C++}
+#include "motorDc.h"
+#include "gpio.h"
+#include "pwm.h"
+
+MotorDc::MotorDc(short const pin_enable,
+	short const pin_input1,
+	short const pin_input2) :
+	pin_enable_{pin_enable},
+	pin_input1_{pin_input1},
+	pin_input2_{pin_input2}
+{
+	gpio_setDirection(pin_enable_, OUTPUT);
+	gpio_setDirection(pin_input1_, OUTPUT);
+	gpio_setDirection(pin_input2_, OUTPUT);
+	pwm_enableTimer();
+}
+
+void MotorDc::forward(short const power)
+{
+	gpio_setLevel(pin_input1_, HIGH);
+	gpio_setLevel(pin_input2_, LOW);
+	pwm_setWorkCycle(pin_enable_, power);
+	pwm_enablePin(pin_enable_);
+}
+
+void MotorDc::backward(short const power)
+{
+	gpio_setLevel(pin_input1_, LOW);
+	gpio_setLevel(pin_input2_, HIGH);
+	pwm_setWorkCycle(pin_enable_, power);
+	pwm_enablePin(pin_enable_);
+}
+
+void MotorDc::off(void)
+{
+	gpio_setLevel(pin_input1_, LOW);
+	gpio_setLevel(pin_input2_, LOW);
+	pwm_disablePin(pin_enable_);
+}
+\end{minted}
+
+Es el pin $pin\_enable$ quien actúa con la interfaz pwm.
+
+Para finalizar, el módulo diferencial debe ser actualizado pues la interfaz $motor$
+fue modificada, ahora podemos especificar la potencia a cada motor, por ejemplo 
+para un 70-100, basta con:
+\begin{minted}[linenos]{C++}
+#include "differential.h"
+Differential::Differential(Motor * left, Motor * right) :
+       	rigth_{right}, left_{left}
+{
+}
+
+void Differential::forward(void)
+{
+	left_->forward(70);
+	rigth_->backward(100);
+}
+
+void Differential::backward(void)
+{
+	left_->backward(70);
+	rigth_->forward(100);
+}
+
+void Differential::off(void)
+{
+	rigth_->off();
+	left_->off();
+}
+\end{minted}
+
+\section{Pruebas}
+Descargado el nuevo código sobre el microcontrolador, se realizan varios eventos,
+donde por prueba y error se trata de corregir la desviación cambiando la onda
+pwm de cada motor.
+
+Las sensaciones son frustrantes, no es posible obtener una línea recta con solo 
+cambiar la potencia de los motores.
+\begin{itemize}
+	\item Encontrar los valores de potencia adecuados es difícil.
+	\item Si la superficie cambia, los valores también cambian.
+	\item Para cada valor se tiene que descargar el programa.
+\end{itemize}
+
+Fui demasiado optimista, por más ajustes que haga no me sera posible obtener la
+línea recta, prefiero dar por concluido esté hito, pero sin tachar el objetivo y
+en su lugar agregar y tachar, potencia diferenciada, aprovecharemos la onda pwm 
+para realizar un controlador por asignación de polos que definitivamente nos
+hará cumplir el objetivo de ir en línea recta.
+
+\section{Objetivos refinados}
+\begin{itemize}
+	\item Para el paciente.
+		\begin{enumerate}
+			\item Mover el robot de un punto A a B.
+				\begin{itemize}
+					\item \st{Mover hacia adelante}.
+					\item \st{Mover hacia atr\'as}.
+					\item \st{Potencia diferenciada}.
+					\item Mover hacia adelante/atrás, en línea
+						recta.
+					\item Mover hacia adelante una x distancia.
+					\item Mover hacia atrás una x distancia.
+					\item Mover hacia adelante/atrás y girar hacia
+						la derecha/izquierda.
+					\item Girar x grados.
+					\item Mover sobre una trayectoria curva.
+				\end{itemize}
+			\item Potencia suficiente para soportar la carga.
+				\begin{itemize}
+					\item Fuente de controlador.
+					\item Fuente de potencia.
+					\item Selección del circuito de potencia.
+					\item Tamaño y materiales de la llanta.
+					\item Motores con el tamaño y torque adecuado.
+					\item Acoplamiento con la base.
+				\end{itemize}
+			\item Movimiento save.
+				\begin{itemize}
+					\item Control de la velocidad.
+					\item Control de la aceleración.
+					\item Control diferenciado de ambos motores.
+					\item Generación y seguimiento de trayectorias.
+				\end{itemize}
+			\item Rotación libre.
+				\begin{itemize}
+					\item Basé rígida y pesada.
+					\item Acoplamiento encima la base.
+				\end{itemize}
+		\end{enumerate}
+	\item Para el médico.
+		\begin{enumerate}
+			\item Interfaz de trayectorias.
+		\end{enumerate}
+	\item Para el desarrollador.
+		\begin{enumerate}
+			\item Dominar un nuevo lenguaje de programación.
+			\item Metodologías RUP y XP.
+		\end{enumerate}
+\end{itemize}

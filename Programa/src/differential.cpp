@@ -1,12 +1,21 @@
 #include "differential.h"
-Differential::Differential(Motor * left, Motor * right) : rigth_{right}, left_{left}
+Differential::Differential(Motor * left, Motor * right) :
+       	rigth_{right}, left_{left}
 {
 }
-void Differential::on(void)
+
+void Differential::forward(void)
 {
-	rigth_->on();
-	left_->on();
+	left_->forward(97);
+	rigth_->backward(100);
 }
+
+void Differential::backward(void)
+{
+	left_->backward(97);
+	rigth_->forward(100);
+}
+
 void Differential::off(void)
 {
 	rigth_->off();

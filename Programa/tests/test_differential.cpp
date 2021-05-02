@@ -4,9 +4,13 @@
 #include "../src/motor.h"
 
 class Motor_stub : public Motor{
-	virtual void on(void) override
+	virtual void forward(short const power) override
 	{
-		mock().actualCall("on");
+		mock().actualCall("forward");
+	}
+	virtual void backward(short const power) override
+	{
+		mock().actualCall("backward");
 	}
 	virtual void off(void) override
 	{
@@ -35,11 +39,22 @@ TEST_GROUP(DIFFERENTIAL)
 	}
 };
 
-TEST(DIFFERENTIAL, On)
+TEST(DIFFERENTIAL, forward)
 {
-	mock().expectNCalls(2, "on");
+	mock().expectOneCall("forward");
+	mock().expectOneCall("backward");
 
-	differential->on();
+	differential->forward();
+
+	mock().checkExpectations();
+}
+
+TEST(DIFFERENTIAL, backward)
+{
+	mock().expectOneCall("backward");
+	mock().expectOneCall("forward");
+
+	differential->backward();
 
 	mock().checkExpectations();
 }

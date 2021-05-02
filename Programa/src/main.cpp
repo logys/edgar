@@ -7,16 +7,18 @@
 
 int main(void)
 {
-	MotorDc left(1);
-	MotorDc right(2);
+	MotorDc left(10, 1, 2);
+	MotorDc right(9, 23, 24);
 	Differential train(&left, &right);
 	Timer_delay timer;
-	Push push(2);
-	Robot robot(&train, &timer, &push);
+	Robot robot(&train, &timer);
+	Push push(32);
 
 	while(1){
-		robot.moveFordward();
+		if(push.pushed()){
+			robot.moveForward();
+			robot.moveBackward();
+		}
 	}
-
 	return 0;
 }

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 5906 4764
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "Primera iteración"
 Date "2021-03-29"
 Rev "0.1.0"
@@ -13,46 +13,17 @@ Comment2 ""
 Comment3 ""
 Comment4 "Control de movimiento de un motor"
 $EndDescr
-Wire Wire Line
-	3400 1750 3400 1600
 $Comp
 L power:GND #PWR02
 U 1 1 60645E2B
-P 3400 1750
-F 0 "#PWR02" H 3400 1500 50  0001 C CNN
-F 1 "GND" H 3405 1577 50  0000 C CNN
-F 2 "" H 3400 1750 50  0001 C CNN
-F 3 "" H 3400 1750 50  0001 C CNN
-	1    3400 1750
+P 3650 1400
+F 0 "#PWR02" H 3650 1150 50  0001 C CNN
+F 1 "GND" H 3655 1227 50  0000 C CNN
+F 2 "" H 3650 1400 50  0001 C CNN
+F 3 "" H 3650 1400 50  0001 C CNN
+	1    3650 1400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R1
-U 1 1 60644C18
-P 2400 2900
-F 0 "R1" V 2193 2900 50  0000 C CNN
-F 1 "1k" V 2284 2900 50  0000 C CNN
-F 2 "" V 2330 2900 50  0001 C CNN
-F 3 "~" H 2400 2900 50  0001 C CNN
-	1    2400 2900
-	0    1    1    0   
-$EndComp
-Connection ~ 3000 2450
-Wire Wire Line
-	3000 2450 3000 2700
-Wire Wire Line
-	2450 2350 2450 2450
-Wire Wire Line
-	2450 2450 3000 2450
-Wire Wire Line
-	3000 1900 3000 1600
-Connection ~ 3000 1900
-Wire Wire Line
-	2450 1900 3000 1900
-Wire Wire Line
-	2450 1950 2450 1900
-Wire Wire Line
-	3000 1950 3000 1900
 $Comp
 L power:GND #PWR04
 U 1 1 6063A0BC
@@ -62,17 +33,6 @@ F 1 "GND" H 2405 927 50  0000 C CNN
 F 2 "" H 2400 1100 50  0001 C CNN
 F 3 "" H 2400 1100 50  0001 C CNN
 	1    2400 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NPN_BCE Q1
-U 1 1 6062AB37
-P 2900 2900
-F 0 "Q1" H 3091 2946 50  0000 L CNN
-F 1 "Q_NPN_BCE" H 3091 2855 50  0000 L CNN
-F 2 "" H 3100 3000 50  0001 C CNN
-F 3 "~" H 2900 2900 50  0001 C CNN
-	1    2900 2900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -87,37 +47,26 @@ F 3 "" H 3000 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pspice:DIODE D1
-U 1 1 6062C388
-P 2450 2150
-F 0 "D1" V 2496 2022 50  0000 R CNN
-F 1 "DIODE" V 2405 2022 50  0000 R CNN
-F 2 "" H 2450 2150 50  0001 C CNN
-F 3 "~" H 2450 2150 50  0001 C CNN
-	1    2450 2150
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Motor:Motor_DC M1
 U 1 1 6062B3C5
-P 3000 2150
-F 0 "M1" H 3158 2146 50  0000 L CNN
-F 1 "Motor_DC" H 3158 2055 50  0000 L CNN
-F 2 "" H 3000 2060 50  0001 C CNN
-F 3 "~" H 3000 2060 50  0001 C CNN
-	1    3000 2150
+P 5050 2150
+F 0 "M1" H 5208 2146 50  0000 L CNN
+F 1 "Motor_DC" H 5208 2055 50  0000 L CNN
+F 2 "" H 5050 2060 50  0001 C CNN
+F 3 "~" H 5050 2060 50  0001 C CNN
+	1    5050 2150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Battery BT1
 U 1 1 6062A16A
-P 3200 1600
-F 0 "BT1" V 3445 1600 50  0000 C CNN
-F 1 "9V" V 3354 1600 50  0000 C CNN
-F 2 "" V 3200 1660 50  0001 C CNN
-F 3 "~" V 3200 1660 50  0001 C CNN
-	1    3200 1600
-	0    -1   -1   0   
+P 3850 1400
+F 0 "BT1" V 4095 1400 50  0000 C CNN
+F 1 "9V" V 4004 1400 50  0000 C CNN
+F 2 "" V 3850 1460 50  0001 C CNN
+F 3 "~" V 3850 1460 50  0001 C CNN
+	1    3850 1400
+	0    1    1    0   
 $EndComp
 $Comp
 L MCU_Microchip_ATmega:ATmega328P-AU U1
@@ -146,25 +95,6 @@ F 3 "" H 1300 3800 50  0001 C CNN
 	1    1300 3800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3000 3100 3000 3350
-Wire Wire Line
-	2700 2900 2550 2900
-Wire Wire Line
-	2250 2900 2100 2900
-Wire Wire Line
-	2100 2900 2100 3000
-Wire Wire Line
-	2100 3000 1900 3000
-Wire Wire Line
-	2200 3350 2200 3100
-Wire Wire Line
-	2200 3100 1900 3100
-Wire Wire Line
-	2600 3350 3000 3350
-Connection ~ 3000 3350
-Wire Wire Line
-	3000 3350 3000 3400
 $Comp
 L Regulator_Linear:L7805 U2
 U 1 1 6065C1D8
@@ -178,94 +108,28 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b
 $EndComp
 Wire Wire Line
 	3000 800  2700 800 
-Connection ~ 3000 1600
-$Comp
-L Device:R R2
-U 1 1 606DA723
-P 4150 2800
-F 0 "R2" V 3943 2800 50  0000 C CNN
-F 1 "1k" V 4034 2800 50  0000 C CNN
-F 2 "" V 4080 2800 50  0001 C CNN
-F 3 "~" H 4150 2800 50  0001 C CNN
-	1    4150 2800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4750 2350 4750 2450
-$Comp
-L Device:Q_NPN_BCE Q2
-U 1 1 606DA732
-P 4650 2800
-F 0 "Q2" H 4841 2846 50  0000 L CNN
-F 1 "Q_NPN_BCE" H 4841 2755 50  0000 L CNN
-F 2 "" H 4850 2900 50  0001 C CNN
-F 3 "~" H 4650 2800 50  0001 C CNN
-	1    4650 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L pspice:DIODE D2
-U 1 1 606DA738
-P 5150 2050
-F 0 "D2" V 5196 1922 50  0000 R CNN
-F 1 "DIODE" V 5105 1922 50  0000 R CNN
-F 2 "" H 5150 2050 50  0001 C CNN
-F 3 "~" H 5150 2050 50  0001 C CNN
-	1    5150 2050
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Motor:Motor_DC M2
 U 1 1 606DA73E
-P 4750 2150
-F 0 "M2" H 4908 2146 50  0000 L CNN
-F 1 "Motor_DC" H 4908 2055 50  0000 L CNN
-F 2 "" H 4750 2060 50  0001 C CNN
-F 3 "~" H 4750 2060 50  0001 C CNN
-	1    4750 2150
-	-1   0    0    1   
+P 5050 2900
+F 0 "M2" H 5208 2896 50  0000 L CNN
+F 1 "Motor_DC" H 5208 2805 50  0000 L CNN
+F 2 "" H 5050 2810 50  0001 C CNN
+F 3 "~" H 5050 2810 50  0001 C CNN
+	1    5050 2900
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4450 2800 4300 2800
-Wire Wire Line
-	4000 2800 3850 2800
-Wire Wire Line
-	4750 1150 3000 1150
-Wire Wire Line
-	3000 1150 3000 1600
 $Comp
 L power:GND #PWR05
 U 1 1 606E1658
-P 4750 3250
-F 0 "#PWR05" H 4750 3000 50  0001 C CNN
-F 1 "GND" H 4755 3077 50  0000 C CNN
-F 2 "" H 4750 3250 50  0001 C CNN
-F 3 "" H 4750 3250 50  0001 C CNN
-	1    4750 3250
+P 4100 3300
+F 0 "#PWR05" H 4100 3050 50  0001 C CNN
+F 1 "GND" H 4105 3127 50  0000 C CNN
+F 2 "" H 4100 3300 50  0001 C CNN
+F 3 "" H 4100 3300 50  0001 C CNN
+	1    4100 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4750 3000 4750 3250
-Wire Wire Line
-	5150 1850 5150 1750
-Wire Wire Line
-	5150 1750 4750 1750
-Wire Wire Line
-	4750 1150 4750 1750
-Connection ~ 4750 1750
-Wire Wire Line
-	4750 1750 4750 1850
-Wire Wire Line
-	5150 2250 5150 2450
-Wire Wire Line
-	5150 2450 4750 2450
-Connection ~ 4750 2450
-Wire Wire Line
-	4750 2450 4750 2600
-Text GLabel 3850 2800 0    50   Input ~ 0
-PD4
-Text GLabel 1900 3200 2    50   Input ~ 0
-PD4
 $Comp
 L Device:Battery BT2
 U 1 1 6076A98B
@@ -295,28 +159,159 @@ Wire Wire Line
 $Comp
 L Switch:SW_Push_Open SW1
 U 1 1 6076CD93
-P 2400 3350
-F 0 "SW1" H 2400 3565 50  0000 C CNN
-F 1 "SW_Push_Open" H 2400 3474 50  0000 C CNN
-F 2 "" H 2400 3550 50  0001 C CNN
-F 3 "~" H 2400 3550 50  0001 C CNN
-	1    2400 3350
+P 2400 3000
+F 0 "SW1" H 2400 3215 50  0000 C CNN
+F 1 "SW_Push_Open" H 2400 3124 50  0000 C CNN
+F 2 "" H 2400 3200 50  0001 C CNN
+F 3 "~" H 2400 3200 50  0001 C CNN
+	1    2400 3000
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	3050 1100 3500 1100
-Wire Notes Line
-	3500 1100 3500 500 
-Wire Notes Line
-	3500 500  3050 500 
-Wire Notes Line
-	3050 500  3050 1100
-Wire Notes Line
-	2100 3450 2650 3450
-Wire Notes Line
-	2650 3450 2650 3050
-Wire Notes Line
-	2650 3050 2100 3050
-Wire Notes Line
-	2100 3050 2100 3450
+$Sheet
+S 6500 2250 1450 1750
+U 60796CD1
+F0 "Sheet60796CD0" 50
+F1 "file60796CD0.sch" 50
+$EndSheet
+$Comp
+L Driver_Motor:L298HN U3
+U 1 1 607CB805
+P 4100 2500
+F 0 "U3" H 4100 3381 50  0000 C CNN
+F 1 "L298HN" H 4100 3290 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-15_P2.54x2.54mm_StaggerOdd_Lead4.58mm_Vertical" H 4150 1850 50  0001 L CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000240.pdf" H 4250 2750 50  0001 C CNN
+	1    4100 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3000 2200 3000
+Wire Wire Line
+	2600 3000 3000 3000
+Wire Wire Line
+	3000 3000 3000 3400
+Wire Wire Line
+	4100 3300 4100 3250
+Wire Wire Line
+	4700 2300 4750 2300
+Wire Wire Line
+	4750 2300 4750 1950
+Wire Wire Line
+	4750 1950 5050 1950
+Wire Wire Line
+	5050 2450 4700 2450
+Wire Wire Line
+	4700 2450 4700 2400
+Wire Wire Line
+	4700 2600 5050 2600
+Wire Wire Line
+	5050 2600 5050 2700
+Wire Wire Line
+	5050 3200 4800 3200
+Wire Wire Line
+	4800 3200 4800 2700
+Wire Wire Line
+	4800 2700 4700 2700
+Entry Wire Line
+	3150 1900 3250 2000
+Entry Wire Line
+	3150 2000 3250 2100
+Entry Wire Line
+	3150 2100 3250 2200
+Entry Wire Line
+	1950 3200 2050 3300
+Entry Wire Line
+	1950 3300 2050 3400
+Entry Wire Line
+	1950 3100 2050 3200
+Wire Wire Line
+	1950 3100 1900 3100
+Wire Wire Line
+	1900 3200 1950 3200
+Wire Wire Line
+	1950 3300 1900 3300
+Entry Wire Line
+	1950 2000 2050 2100
+Entry Wire Line
+	1950 2100 2050 2200
+Wire Wire Line
+	1950 2000 1900 2000
+Wire Wire Line
+	1900 2100 1950 2100
+Entry Wire Line
+	3150 2500 3250 2600
+Entry Wire Line
+	3150 2300 3250 2400
+Text Label 3250 2000 0    50   ~ 0
+M1-1
+Text Label 3250 2100 0    50   ~ 0
+M1-2
+Text Label 3250 2200 0    50   ~ 0
+M1-E
+Wire Wire Line
+	4100 1800 4100 1400
+Wire Wire Line
+	4100 1400 4050 1400
+Text Label 1700 800  0    50   ~ 0
+5v
+Wire Wire Line
+	3250 2200 3500 2200
+Wire Wire Line
+	3250 2100 3500 2100
+Wire Wire Line
+	3250 2000 3500 2000
+Wire Wire Line
+	3250 2400 3500 2400
+Wire Wire Line
+	3250 2500 3500 2500
+Wire Wire Line
+	3250 2600 3500 2600
+Text Label 3250 2400 0    50   ~ 0
+M2-1
+Entry Wire Line
+	3150 2400 3250 2500
+Text Label 3250 2500 0    50   ~ 0
+M2-2
+Text Label 3250 2600 0    50   ~ 0
+M2-E
+Text Label 1950 2000 0    50   ~ 0
+M2-1
+Text Label 1950 2100 0    50   ~ 0
+M2-2
+Text Label 1950 3100 0    50   ~ 0
+M1-1
+Text Label 1950 3200 0    50   ~ 0
+M1-2
+Text Label 1950 3300 0    50   ~ 0
+M2-E
+Wire Wire Line
+	3900 3200 3900 3250
+Wire Wire Line
+	3900 3250 4100 3250
+Connection ~ 4100 3250
+Wire Wire Line
+	4100 3250 4100 3200
+Wire Wire Line
+	3800 3200 3800 3300
+Wire Wire Line
+	3800 3300 4100 3300
+Connection ~ 4100 3300
+Wire Wire Line
+	4200 1800 4400 1800
+Text Label 4300 1800 0    50   ~ 0
+5v
+Entry Wire Line
+	1950 3400 2050 3500
+Wire Wire Line
+	1950 3400 1900 3400
+Wire Bus Line
+	3150 2300 3150 2500
+Wire Bus Line
+	3150 1900 3150 2100
+Wire Bus Line
+	2050 2100 2050 2300
+Wire Bus Line
+	2050 3200 2050 3500
+Text Label 1950 3400 0    50   ~ 0
+M1-E
 $EndSCHEMATC

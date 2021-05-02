@@ -38,29 +38,29 @@ TEST(GPIO, convertPin2)
 
 	CHECK_EQUAL(PD4, pin_gpio);
 }
-
+*/
+/*
 TEST(GPIO, setDirectionInput)
 {
 	DDRD = 0xFF;
 	short pin = 1;
-	short pin_gpio = pinToGpio(pin);
 
 	gpio_setDirection(pin, INPUT);
 
-	BITS_EQUAL(0<<pin_gpio, DDRD, 1<<pin_gpio);
+	BITS_EQUAL(0<<PD3, DDRD, 1<<PD3);
 }
 
 TEST(GPIO, setDirectionOutput)
 {
 	DDRD = 0x00;
 	short pin = 2;
-	short pin_gpio = pinToGpio(pin);
 
 	gpio_setDirection(pin, OUTPUT);
 
-	BITS_EQUAL(1<<pin_gpio, DDRD, 1<<pin_gpio);
+	BITS_EQUAL(1<<PD4, DDRD, 1<<PD4);
 }
-
+*/
+/*
 TEST(GPIO, setLevelLow)
 {
 	PORTD = 0xFF;
