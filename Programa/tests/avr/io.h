@@ -102,5 +102,20 @@ extern uint8_t MCUCR;
 #define ISC00 0
 #define ISC01 1
 
+extern uint8_t UCSR0A;
+#define RXC0 7
+
+extern uint8_t UCSR0B;
+#define TXEN0 3
+#define RXEN0 4
+
+extern uint8_t UCSR0C;
+#define UCSZ00 1
+#define UCSZ01 2
+#define UMSEL00 6
+#define UMSEL01 7
+
+extern uint8_t UBRR0L;
+extern uint8_t UDR0;
 
 #endif // _AVR_IOM328P_H_

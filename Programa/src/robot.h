@@ -1,16 +1,8 @@
 #ifndef ROBOT_H
 #define ROBOT_H
-
-#include "power_train.h"
-#include "timer.h"
-
 class Robot{
-	private:
-		PowerTrain * train_;
-		Timer * timer_;
 	public:
-		Robot(PowerTrain *, Timer *);
-		void moveForward(void);
-		void moveBackward(void);
+		virtual void moveForward(void) = 0;
+		virtual void moveBackward(void) = 0;
 };
-#endif // ROBOT_H
+#endif// ROBOT_H

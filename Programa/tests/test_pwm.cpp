@@ -64,7 +64,7 @@ TEST(PWM, setWorkCicle)
 
 	pwm_setWorkCycle(pin, wc);
 
-	CHECK_EQUAL(0, OCR0B);
+	CHECK_EQUAL(255, OCR0B);
 }
 
 TEST(PWM, overflowWorkCicle)
@@ -75,5 +75,5 @@ TEST(PWM, overflowWorkCicle)
 
 	pwm_setWorkCycle(pin, wc);
 
-	CHECK_EQUAL(255, OCR0A);
+	CHECK_EQUAL(0, OCR0A);
 }

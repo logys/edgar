@@ -1,9 +1,10 @@
-#include "robot.h"
+#include "mobile_robot.h"
 #include "motorDc.h"
 #include "differential.h"
 #include "timer_delay.h"
-#include "push.h"
-
+#include "robotController.h"
+#include "bluetooth.h"
+#include "serial.h"
 
 int main(void)
 {
@@ -11,13 +12,15 @@ int main(void)
 	MotorDc right(9, 23, 24);
 	Differential train(&left, &right);
 	Timer_delay timer;
-	Robot robot(&train, &timer);
-	Push push(32);
+	MobileRobot robot(&train, &timer);
+	RobotController controller(&robot);
+	Bluetooth ble(&controller);
+	serial_init(&ble);
 
 	while(1){
-		if(push.pushed()){
-			robot.moveForward();
-			robot.moveBackward();
+		if(serial_dataNew()){
+			auto data = serial_read();
+			serial_asyncCall(data);
 		}
 	}
 	return 0;

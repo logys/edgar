@@ -46,7 +46,7 @@ TEST(MOTOR, forward)
 
 	motor->forward(100);
 
-	CHECK_EQUAL(255, OCR0B);
+	CHECK_EQUAL(0, OCR0B);
 }
 
 TEST(MOTOR, backward)
@@ -55,7 +55,7 @@ TEST(MOTOR, backward)
 
 	motor->backward(100);
 
-	CHECK_EQUAL(255, OCR0B);
+	CHECK_EQUAL(0, OCR0B);
 }
 
 TEST(MOTOR, off)

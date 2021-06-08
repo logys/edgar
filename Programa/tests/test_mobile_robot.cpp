@@ -1,6 +1,6 @@
 #include "CppUTest/TestHarness.h"
 #include "CppUTestExt/MockSupport.h"
-#include "../src/robot.h"
+#include "../src/mobile_robot.h"
 #include "../src/power_train.h"
 #include "../src/timer.h"
 
@@ -32,7 +32,7 @@ class TimerStub : public Timer{
 
 PowerTrain * train;
 Timer * timer;
-Robot * robot;
+MobileRobot * robot;
 
 TEST_GROUP(ROBOT)
 {
@@ -41,7 +41,7 @@ TEST_GROUP(ROBOT)
 	{
 		train = new Train_stub();
 		timer = new TimerStub();
-		robot = new Robot(train, timer);
+		robot = new MobileRobot(train, timer);
 	}
 
 	void teardown(void)
