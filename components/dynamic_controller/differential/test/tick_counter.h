@@ -1,0 +1,2 @@
+typedef struct TickCounter{
+}TickCounter;
