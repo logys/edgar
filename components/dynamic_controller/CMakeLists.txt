@@ -5,6 +5,7 @@ idf_component_register(SRCS 	dynamic_controller.c
 				encoder/src/encoder.c
 				pwm/src/pwm.c
 				tick_counter/src/tick_counter.c
+				pid/src/pid.c
                     INCLUDE_DIRS "include"
 		    	differential/include
 			wheel/include
@@ -12,6 +13,7 @@ idf_component_register(SRCS 	dynamic_controller.c
 			encoder/include
 			pwm/include
 			tick_counter/include
+			pid/include
 
 		    REQUIRES 
 		    )

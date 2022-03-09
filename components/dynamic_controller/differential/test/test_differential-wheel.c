@@ -11,5 +11,3 @@ FAKE_VOID_FUNC(motor_setWC, Motor *, float);
 void setUp(void)
 {
 }
-
-void test_

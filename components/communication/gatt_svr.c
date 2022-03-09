@@ -71,34 +71,48 @@ static const struct ble_gatt_svc_def gatt_svr_svcs[] = {
 
 #include "dynamic_controller.h"
 #include <string.h>
+
+#define START 0
+#define STOP 1
+#define LINEAL 3
+#define ANGULAR 4
+#define KPL 5
+#define KPR 6
+#define KPI 7
+
 static int handleCommands(uint16_t conn_handle, uint16_t attr_handle,
                              struct ble_gatt_access_ctxt *ctxt,
                              void *arg)
 {
-	uint8_t command[7];
+	uint8_t command[8];
 	uint16_t length;
-	ble_hs_mbuf_to_flat(ctxt->om, &command, 7, &length);
-	switch(length){
-		case 5:
+	ble_hs_mbuf_to_flat(ctxt->om, &command, 8, &length);
+	uint8_t command_value = command[0];
+	float data = *(float *)(command+1);
+	switch(command_value){
+		case START:
 			MODLOG_DFLT(INFO, "Arrancando motores\n");
 			dynamicController_start();
 			break;
-		case 4:
+		case STOP:
 			MODLOG_DFLT(INFO, "Deteniendo motores\n");
 			dynamicController_stop();
 			break;
-		case 7: {
-				if(command[0] == 'l'){
-					float speed = strtof((char *)command+3, NULL);
-					MODLOG_DFLT(INFO, "Velocidad lin :%0.2f\n", speed);
-					dynamicController_setLinear(speed);
-				}else if(command[0] == 'a'){
-					float speed = strtof((char *)command+3, NULL);
-					MODLOG_DFLT(INFO, "Velocidad ang :%0.2f\n", speed);
-					dynamicController_setAngular(speed);
-				}
-				break;
-			}
+		case LINEAL:
+			dynamicController_setLinear(data);
+			break;
+		case ANGULAR:
+			dynamicController_setAngular(data);
+			break;
+		case KPL:
+			dynamicController_setKp(KPL, data);
+			break;
+		case KPR:
+			dynamicController_setKp(KPR, data);
+			break;
+		case KPI:
+			dynamicController_setKi(KPR, data);
+			break;
 	}
 	return 0;
 }

@@ -71,6 +71,6 @@ void test_controll(void)
 	differential_do();
 
 	float get = wheel_setSpeedPercent_fake.arg1_val;
-	float want = -10;
+	float want = 20;
 	TEST_ASSERT_EQUAL_FLOAT(want, get);
 }

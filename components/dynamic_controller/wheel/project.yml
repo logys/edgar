@@ -36,6 +36,7 @@
   :source:
     - include/
     - src/**
+    - ../motor/include
   :support:
     - test/support
   :libraries: []

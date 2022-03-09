@@ -34,15 +34,7 @@
     - +:test/**
     - -:test/support
   :source:
-    - include/
-    - ../wheel/include
-    - ../wheel/src
-    - ../encoder/include
-    - ../encoder/src
-    - ../motor/include
-    - ../motor/src
-    - ../pid/src
-    - ../pid/include
+    - include
     - src/**
   :support:
     - test/support

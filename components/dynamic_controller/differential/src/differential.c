@@ -1,57 +1,68 @@
 #include "differential.h"
 #include "wheel.h"
+#include "pid.h"
 #include "esp_log.h"
 
 static const char * tag = "differential";
 
-#define WHEELS_D 0.20
+#define WHEELS_D 200
 
 static Wheel * left_wheel;
 static Wheel * right_wheel;
 static float vl_ref = 0;
 static float vr_ref = 0;
+static float _linear = 0;
+static float _angular = 0;
+static Pid _left_pid;
+static Pid _right_pid;
 
 static void limitCv(float * cv);
 
-static float l_linear = 0;
-static float l_angular = 0;
-
 void differential_setSpeeds(float linear, float angular)
 {
-	l_linear = linear;
-	l_angular = angular;
-	vl_ref = l_linear - WHEELS_D*l_angular/2.0;
-	vr_ref = l_linear + WHEELS_D*l_angular/2.0;
+	_linear = linear;
+	_angular = angular;
+	vl_ref =10*(_linear - WHEELS_D*_angular/2.0);
+	vr_ref =10*(_linear + WHEELS_D*_angular/2.0);
+	pid_setSp(&_left_pid, vl_ref);
+	pid_setSp(&_right_pid, vr_ref);
 }
 
 void differential_setLinearSpeed(float speed)
 {
-	differential_setSpeeds(speed, l_angular);
+	differential_setSpeeds(speed, _angular);
 }
 
 void differential_setAngularSpeed(float speed)
 {
-	differential_setSpeeds(l_linear, speed);
+	differential_setSpeeds(_linear, speed);
 }
 
-#define KP 20
+void differential_setKp(float kp)
+{
+	pid_setKp(&_left_pid, kp);
+	pid_setKp(&_right_pid, kp);
+}
+
+void differential_setKi(float ki)
+{
+	pid_setKi(&_left_pid, ki);
+	pid_setKi(&_right_pid, ki);
+}
+
 static float current_vl;
 static float current_vr;
 static float cv_vl = 0; //variable de control
 static float cv_vr = 0;
-static float error_vl = 0;
-static float error_vr = 0;
 
 void differential_do(void)
 {
-	ESP_LOGI(tag, "vl_ref,: %0.2f, c_vl :%0.4f, cv_vl; %0.4f",vl_ref, current_vl, cv_vl);
-	ESP_LOGI(tag, "vr_ref,: %0.2f, c_vr :%0.4f, cv_vr; %0.4f",vr_ref, current_vr, cv_vr);
+	ESP_LOGI(tag, "vl_ref,: %0.2f, c_vl :%0.4f, cv_vl; %0.4f", vl_ref, current_vl, cv_vl);
+	ESP_LOGI(tag, "vr_ref,: %0.2f, c_vr :%0.4f, cv_vr; %0.4f", vr_ref, current_vr, cv_vr);
 	current_vl = wheel_tangentialSpeed(left_wheel);
 	current_vr = -wheel_tangentialSpeed(right_wheel);
-	error_vl = vl_ref - current_vl;
-	error_vr = vr_ref - current_vr;
-	cv_vl += KP*error_vl;
-	cv_vr += KP*error_vr;
+	cv_vl = pid_do(&_left_pid, current_vl);
+	cv_vr = pid_do(&_right_pid, current_vr);
 	limitCv(&cv_vl);
 	limitCv(&cv_vr);
 	wheel_setSpeedPercent(left_wheel, -cv_vl);
@@ -68,10 +79,10 @@ void differential_init(Wheel * left_wheel_, Wheel * right_wheel_)
 	current_vr = 0;
 	cv_vl = 0;
 	cv_vr = 0;
-	error_vl = 0;
-	error_vr = 0;
-	l_linear = 0;
-	l_angular = 0;
+	_linear = 0;
+	_angular = 0;
+	_left_pid = pid_create();
+	_right_pid = pid_create();
 }
 
 void differential_stop(void)
