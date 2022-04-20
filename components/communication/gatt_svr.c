@@ -72,46 +72,53 @@ static const struct ble_gatt_svc_def gatt_svr_svcs[] = {
 #include "dynamic_controller.h"
 #include <string.h>
 
-#define START 0
-#define STOP 1
-#define LINEAL 3
-#define ANGULAR 4
-#define KPL 5
-#define KPR 6
-#define KPI 7
+enum {
+	START = 0,
+	STOP,
+	DYNKP = 50,
+	DYNKI,
+	DYNKD,
+	SPEEDS = 100,
+	POINT 
+};
+	
+#include "point_controller.h"
+#include "point.h"
 
 static int handleCommands(uint16_t conn_handle, uint16_t attr_handle,
                              struct ble_gatt_access_ctxt *ctxt,
                              void *arg)
 {
-	uint8_t command[8];
+	uint8_t command[9];
 	uint16_t length;
-	ble_hs_mbuf_to_flat(ctxt->om, &command, 8, &length);
+	ble_hs_mbuf_to_flat(ctxt->om, &command, 9, &length);
 	uint8_t command_value = command[0];
 	float data = *(float *)(command+1);
 	switch(command_value){
 		case START:
 			MODLOG_DFLT(INFO, "Arrancando motores\n");
 			dynamicController_start();
+			pointController_enable();
 			break;
 		case STOP:
 			MODLOG_DFLT(INFO, "Deteniendo motores\n");
 			dynamicController_stop();
 			break;
-		case LINEAL:
-			dynamicController_setLinear(data);
+		case DYNKP:
+			dynamicController_setKp(DYNKP, data);
 			break;
-		case ANGULAR:
-			dynamicController_setAngular(data);
+		case DYNKI:
+			dynamicController_setKi(DYNKP, data);
 			break;
-		case KPL:
-			dynamicController_setKp(KPL, data);
+		case SPEEDS: {
+  				     float data2 = *(float*)(command+5);
+			dynamicController_setSpeeds((Speeds){data, data2});
+			     }
 			break;
-		case KPR:
-			dynamicController_setKp(KPR, data);
-			break;
-		case KPI:
-			dynamicController_setKi(KPR, data);
+		case POINT:{
+				   float data2 = *(float*)(command+5);
+			pointController_setPoint((Point){data, data2});
+			   }
 			break;
 	}
 	return 0;

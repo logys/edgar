@@ -7,4 +7,5 @@ idf_component_register(SRCS 	communication.c
 		    REQUIRES 	nvs_flash
 		    		console
 				dynamic_controller
+				point_controller
 		    		bt)

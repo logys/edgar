@@ -7,6 +7,7 @@
 #include "motor.h"
 #include "encoder.h"
 #include "tick_counter.h"
+#include "pid.h"
 
 //#include "esp_log.h"
 //static const char * tag = "Dynamic-speed";
@@ -14,15 +15,14 @@
 #define STACK_SIZE 2000
 #define TASK_DINAMIC_PRIORITY 2
 
+//task structures
 StaticTask_t xTaskBuffer;
 StackType_t xStack[STACK_SIZE];
 static TaskHandle_t task_handle_dynamic;
-StaticQueue_t xQueueBuffer;
-QueueHandle_t queue_handle_ref;
-static uint8_t queue_storage_speed[sizeof(float)];
-StaticQueue_t xQueueBufferAng;
-QueueHandle_t queue_handle_angular;
-static uint8_t queue_storage_angular[sizeof(float)];
+//queue structures
+StaticQueue_t xQueueBufferSpeeds;
+QueueHandle_t queue_handle_speeds;
+static uint8_t queue_storage_speeds[sizeof(Speeds)];
 StaticQueue_t xQueueBufferKp;
 QueueHandle_t queue_handle_kp;
 static uint8_t queue_storage_kp[sizeof(float)];
@@ -42,7 +42,7 @@ static uint8_t queue_storage_ki[sizeof(float)];
 #define LEFT_ENCODER_PHASEB_PIN 32
 #define RIGHT_ENCODER_PHASEA_PIN 16
 #define RIGHT_ENCODER_PHASEB_PIN 17
-#define WHEEL_RAD 35
+#define WHEEL_RAD 3.5f
 
 static TickCounter left_tick;
 static TickCounter right_tick;
@@ -56,11 +56,13 @@ static Motor left_motor;
 static Motor right_motor;
 static Wheel left_wheel;
 static Wheel right_wheel;
+static Pid left_pid;
+static Pid right_pid;
 
 static void init_structures(void);
 static void init_queues(void);
 static void dynamicController_task(void * param);
-static void checkForNewValues(void);
+static void newCommands(void);
 static void init_task(void);
 
 void dynamicController_init(void)
@@ -86,22 +88,18 @@ static void init_structures(void)
 	right_motor = motor_create(&right_pwmIn1, &right_pwmIn2);
 	left_wheel = wheel_create(&left_motor, &left_encoder, WHEEL_RAD);
 	right_wheel = wheel_create(&right_motor, &right_encoder, WHEEL_RAD);
-	differential_init(&left_wheel, &right_wheel);
+	left_pid = pid_create();
+	right_pid = pid_create();
+	differential_init(&left_wheel, &right_wheel, &left_pid, &right_pid);
 }
 
 static void init_queues(void)
 {
-	queue_handle_ref = xQueueCreateStatic(
+	queue_handle_speeds = xQueueCreateStatic(
 			1,
-			sizeof(float),
-			&(queue_storage_speed[0]),
-			&xQueueBuffer
-	);
-	queue_handle_angular = xQueueCreateStatic(
-			1,
-			sizeof(float),
-			&(queue_storage_angular[0]),
-			&xQueueBufferAng
+			sizeof(Speeds),
+			&(queue_storage_speeds[0]),
+			&xQueueBufferSpeeds
 	);
 	queue_handle_kp = xQueueCreateStatic(
 			1,
@@ -131,25 +129,23 @@ static void init_task(void)
 	vTaskSuspend(task_handle_dynamic);
 }
 
-
 static void dynamicController_task(void * param)
 {
 	while(1){
-		checkForNewValues();
+		newCommands();
 		differential_do();
 		vTaskDelay(CONTROLLER_PERIOD_MS/portTICK_PERIOD_MS);
 	}
 }
 
-static void checkForNewValues(void)
+static void newCommands(void)
 {
+	Speeds buffer_speeds = {};
+	if(pdTRUE == xQueueReceive(queue_handle_speeds, &buffer_speeds, 0)){
+		differential_setSpeeds(buffer_speeds.linear, 
+				buffer_speeds.angular);
+	}
 	float buffer_speed = 0;
-	if(pdTRUE == xQueueReceive(queue_handle_ref, &buffer_speed, 0)){
-		differential_setLinearSpeed(buffer_speed);
-	}
-	if(pdTRUE == xQueueReceive(queue_handle_angular, &buffer_speed, 0)){
-		differential_setAngularSpeed(buffer_speed);
-	}
 	if(pdTRUE == xQueueReceive(queue_handle_kp, &buffer_speed, 0)){
 		differential_setKp(buffer_speed);
 	}
@@ -179,12 +175,7 @@ void dynamicController_setKi(uint8_t motor, float ki)
 	xQueueSend(queue_handle_ki, &ki, 0);
 }
 
-void dynamicController_setLinear(float speed)
+void dynamicController_setSpeeds(Speeds speeds)
 {
-	xQueueSend(queue_handle_ref, &speed, 0);
-}
-
-void dynamicController_setAngular(float speed)
-{
-	xQueueSend(queue_handle_angular, &speed, 0);
+	xQueueSend(queue_handle_speeds, &speeds, 0);
 }
