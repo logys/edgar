@@ -73,8 +73,10 @@ static const struct ble_gatt_svc_def gatt_svr_svcs[] = {
 #include <string.h>
 
 enum {
-	START = 0,
-	STOP,
+	DYNSTART = 0,
+	DYNSTOP,
+	POINTSTART,
+	POINTSTOP,
 	DYNKP = 50,
 	DYNKI,
 	DYNKD,
@@ -95,14 +97,17 @@ static int handleCommands(uint16_t conn_handle, uint16_t attr_handle,
 	uint8_t command_value = command[0];
 	float data = *(float *)(command+1);
 	switch(command_value){
-		case START:
-			MODLOG_DFLT(INFO, "Arrancando motores\n");
+		case DYNSTART:
 			dynamicController_start();
-			pointController_enable();
 			break;
-		case STOP:
-			MODLOG_DFLT(INFO, "Deteniendo motores\n");
+		case DYNSTOP:
 			dynamicController_stop();
+			break;
+		case POINTSTART:
+			pointController_start();
+			break;
+		case POINTSTOP:
+			pointController_stop();
 			break;
 		case DYNKP:
 			dynamicController_setKp(DYNKP, data);

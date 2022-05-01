@@ -12,6 +12,7 @@ void differential_init(Wheel * left,
 		Wheel *right, Pid * left_pid, Pid * right_pid);
 void differential_do(void);
 void differential_stop(void);
+Speeds differential_speeds(void);
 float differential_linearSpeed(void);
 float differential_angularSpeed(void);
 

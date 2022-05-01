@@ -64,3 +64,7 @@ velocidades angular y lineal y calculándose la velocidad de cada rueda.
 -- Dadas las velocidades configuradas inicialmente
 -- Cuando se recibe el commando
 -- Las velocidades se actualizan
+
+### Controlador de puntos
+## Metas
+- Diseñar un controlador de tal forma que 

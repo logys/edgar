@@ -8,6 +8,7 @@
 #include "encoder.h"
 #include "tick_counter.h"
 #include "pid.h"
+#include "point_controller.h"
 
 //#include "esp_log.h"
 //static const char * tag = "Dynamic-speed";
@@ -131,9 +132,16 @@ static void init_task(void)
 
 static void dynamicController_task(void * param)
 {
+	uint8_t point_counter = 0;
 	while(1){
 		newCommands();
 		differential_do();
+		if(point_counter == 10){
+			Speeds speeds = differential_speeds();
+			pointController_setSpeeds(speeds);
+			point_counter = 0;
+		}
+		point_counter ++;
 		vTaskDelay(CONTROLLER_PERIOD_MS/portTICK_PERIOD_MS);
 	}
 }

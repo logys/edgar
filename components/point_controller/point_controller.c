@@ -6,6 +6,9 @@
 #include "math.h"
 #include "dynamic_controller.h"
 #include "speeds.h"
+#include "esp_log.h"
+
+static char * tag = "points: ";
 
 #define STACK_SIZE 2000
 #define TASK_DYNAMIC_PRIORITY 3
@@ -76,12 +79,16 @@ static void checkNewPoints(void);
 
 #define KW 1
 #define KV 1
+#define KPHI 1
+#define TS 1
+
 float phi_position_ = 0;
-Point speeds_ = {};
+Speeds speeds_ = {};
 
 static void pointController_task(void * param)
 {
 	while(1){
+		ESP_LOGI(tag, "p actual: %0.4f, %0.4f, %0.4f", position_.x, position_.y, phi_position_);
 		checkNewPoints();
 		float phi_ref = atan2(
 				reference_.y - position_.y,
@@ -93,17 +100,23 @@ static void pointController_task(void * param)
 		float phierror = phi_ref - phi_position_;
 		//Control
 		Speeds speeds = {};
-		speeds.linear = KW*phierror;
-		speeds.angular = KV*sqrt(pow(xerror, 2) + pow(yerror, 2));
+		speeds.angular = KW*phierror;
+		speeds.linear = KV*sqrt(pow(xerror, 2) + pow(yerror, 2));
 		//limit speeds TODO
 		//Send speeds TODO
 		dynamicController_setSpeeds(speeds);
 		//wait speeds TODO
-		Point buffer;
+		Speeds buffer;
 		if( pdTRUE == xQueueReceive(queue_handle_speeds, 
 					&buffer, portMAX_DELAY))
 			speeds_ = buffer;
 		//Compute position TODO
+		float dx = speeds.linear*cos(phi_position_);
+		float dy = speeds.linear*sin(phi_position_);
+		float dphi = speeds.linear/20*tan(KPHI*phierror);
+		position_.x += TS*dx;
+		position_.y += TS*dy;
+		phi_position_ += TS*dphi;
 	}
 }
 
@@ -115,8 +128,9 @@ static void checkNewPoints(void)
 	}
 }
 
-void pointController_enable(void)
+void pointController_start(void)
 {
+	dynamicController_start();
 	vTaskResume(task_handle_point);
 }
 
@@ -125,7 +139,13 @@ void pointController_setPoint(Point point)
 	xQueueSend(queue_handle_point, &point, 0);
 }
 
-void pointController_disable(void)
+void pointController_stop(void)
 {
-	//TODO
+	vTaskSuspend(task_handle_point);
+	dynamicController_stop();
+}
+
+void pointController_setSpeeds(Speeds speeds)
+{
+	xQueueSend(queue_handle_speeds, &speeds, 0);
 }

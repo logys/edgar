@@ -16,4 +16,5 @@ idf_component_register(SRCS 	dynamic_controller.c
 			pid/include
 
 		    REQUIRES 
+		    	point_controller
 		    )

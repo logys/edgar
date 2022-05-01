@@ -14,8 +14,10 @@ async def main():
         print(e)
     finally:
         commands = {
-                "start" : 0,
-                "stop" : 1,
+                "dstart" : 0,
+                "dstop" : 1,
+                "pstart" : 2,
+                "pstop" : 3,
                 "dynKp" : 50,
                 "dynKi" : 51,
                 "dynKd" : 52,
