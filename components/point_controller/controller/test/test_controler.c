@@ -57,5 +57,21 @@ void test_should_calculate_positions(void)
 
 	TEST_ASSERT_EQUAL_FLOAT(1*dt, get.x);
 	TEST_ASSERT_EQUAL_FLOAT(0*dt, get.y);
-	TEST_ASSERT_EQUAL_FLOAT(0.7853982*dt, get.phi);
+	TEST_ASSERT_EQUAL_FLOAT(0.05*dt, get.phi);
+}
+
+void test_should_go_to_point(void)
+{
+	Point point = {.x = 10, .y = 10};
+	controller_setPoint(point);
+
+	Speeds speeds = {};
+	for(int i = 0; i<10; i++){
+		speeds = controller_do();
+		controller_updatePosition(speeds);
+	}
+	Position get = controller_updatePosition(speeds);
+
+	TEST_ASSERT_EQUAL_FLOAT(10, get.x);
+	TEST_ASSERT_EQUAL_FLOAT(10, get.y);
 }

@@ -75,23 +75,17 @@ static void task_init(void)
 
 static void checkNewPoints(void);
 
-#define KW 1
-#define KV 1
-#define KPHI 1
-#define TS 1
-
-static float phi_position_ = 0;
 static Speeds speeds_ = {};
 static Point reference_ = {};
-static Point position_ = {};
+static Position position_ = {};
 
 static void pointController_task(void * param)
 {
 	while(1){
-		ESP_LOGI(tag, "p actual: %0.4f, %0.4f, %0.4f", position_.x, position_.y, phi_position_);
+		ESP_LOGI(tag, "p actual: %0.4f, %0.4f, %0.4f", 
+				position_.x, position_.y, position_.phi);
 		checkNewPoints();
 		Speeds speeds = controller_do();
-		//limit speeds TODO
 		dynamicController_setSpeeds(speeds);
 		//wait speeds TODO
 		Speeds buffer;
@@ -99,7 +93,7 @@ static void pointController_task(void * param)
 					&buffer, portMAX_DELAY))
 			speeds_ = buffer;
 		//Compute position TODO
-		controller_updatePosition(buffer);
+		position_ = controller_updatePosition(buffer);
 	}
 }
 
