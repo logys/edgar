@@ -7,6 +7,7 @@
 #include "dynamic_controller.h"
 #include "speeds.h"
 #include "esp_log.h"
+#include "controller.h"
 
 static char * tag = "points: ";
 
@@ -25,9 +26,6 @@ static uint8_t queue_storage_point[sizeof(struct Point)];
 static StaticQueue_t xQueueBufferSpeeds;
 static QueueHandle_t queue_handle_speeds;
 static uint8_t queue_storage_speeds[sizeof(struct Point)];
-
-static Point reference_ = {};
-static Point position_ = {};
 
 static void pointController_task(void * param);
 static void task_init(void);
@@ -82,28 +80,18 @@ static void checkNewPoints(void);
 #define KPHI 1
 #define TS 1
 
-float phi_position_ = 0;
-Speeds speeds_ = {};
+static float phi_position_ = 0;
+static Speeds speeds_ = {};
+static Point reference_ = {};
+static Point position_ = {};
 
 static void pointController_task(void * param)
 {
 	while(1){
 		ESP_LOGI(tag, "p actual: %0.4f, %0.4f, %0.4f", position_.x, position_.y, phi_position_);
 		checkNewPoints();
-		float phi_ref = atan2(
-				reference_.y - position_.y,
-				reference_.x - position_.x
-				);
-		//calculate errors
-		float xerror = reference_.x - position_.x;
-		float yerror = reference_.y - position_.y;
-		float phierror = phi_ref - phi_position_;
-		//Control
-		Speeds speeds = {};
-		speeds.angular = KW*phierror;
-		speeds.linear = KV*sqrt(pow(xerror, 2) + pow(yerror, 2));
+		Speeds speeds = controller_do();
 		//limit speeds TODO
-		//Send speeds TODO
 		dynamicController_setSpeeds(speeds);
 		//wait speeds TODO
 		Speeds buffer;
@@ -111,12 +99,7 @@ static void pointController_task(void * param)
 					&buffer, portMAX_DELAY))
 			speeds_ = buffer;
 		//Compute position TODO
-		float dx = speeds.linear*cos(phi_position_);
-		float dy = speeds.linear*sin(phi_position_);
-		float dphi = speeds.linear/20*tan(KPHI*phierror);
-		position_.x += TS*dx;
-		position_.y += TS*dy;
-		phi_position_ += TS*dphi;
+		controller_updatePosition(buffer);
 	}
 }
 
@@ -125,6 +108,7 @@ static void checkNewPoints(void)
 	Point buffer;
 	if( pdTRUE == xQueueReceive(queue_handle_point, &buffer, 0 )){
 		reference_ = buffer;
+		controller_setPoint(buffer);
 	}
 }
 
