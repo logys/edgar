@@ -1,0 +1,13 @@
+active: true
+derived: false
+header: ''
+level: 1.0
+links:
+- Edgar003: null
+normative: false
+ref: ''
+reviewed: null
+text: |
+  Comunicación
+
+  Por el bajo consumo y suficiente ancho de banda bluetooth es el protocolo de comunicación requerido.

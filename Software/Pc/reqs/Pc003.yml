@@ -1,0 +1,12 @@
+active: true
+derived: false
+header: ''
+level: 3.0
+links: []
+normative: false
+ref: ''
+reviewed: null
+text: |
+  Windows
+
+  Aunque el proyecto se desarrolla en linux fedora, el objetivo es distribuirlo en Windows 10, pues es el Sistema Operativo utilizado en la mayoría de los dispositivos en los laboratorios.

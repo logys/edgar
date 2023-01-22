@@ -1,0 +1,12 @@
+active: true
+derived: false
+header: ''
+level: 3.0
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  Communicación
+
+  Se requiere una interfaz de comunicación entre el robot y la computadora, la interfaz seleccionada es Blueetooth

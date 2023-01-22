@@ -1,0 +1,13 @@
+active: true
+derived: false
+header: ''
+level: 1.0
+links:
+- Edgar003: null
+normative: false
+ref: ''
+reviewed: null
+text: |
+  Communicación
+
+  Se utilizara el protocolo bluetooth disponible en la mayoria de los dispositivos modernos o un dongle usb si el equipo carece del hardware.

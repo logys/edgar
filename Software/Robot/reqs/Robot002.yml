@@ -1,0 +1,13 @@
+active: true
+derived: false
+header: ''
+level: 1.1.0
+links:
+- Robot001: null
+normative: true
+ref: ''
+reviewed: null
+text: |
+  Nombre "Edgar"
+
+  Se requiere un nombre personalizado para evitar confundirlo con otro dispositivo.
